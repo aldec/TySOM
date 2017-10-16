@@ -21,22 +21,7 @@ Doughter Cards provided by Aldec:
 -	[FMC-QSFP](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_qsfp)
 -	[FMC-INDUSTRY](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_industry)
 
-## SDx-platforms
+## 1. SDx-platforms
 
-### TySOM-1-7Z030
+Collection of configuration platforms for Xilinx SDx tool to help customers using Aldec TySOM board with SDx to accelerate algorithms in Zynq FPGA chip.
 
-### TySOM-2-7Z045
-
-### TySOM-2-7Z045_FMC2_FMC-ADAS
-
-### TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION
-
-### TySOM-2-7Z100
-
-### TySOM-2-7Z100_FMC2_FMC-ADAS
-
-### TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION
-
-### TySOM-2A-7Z030
-
-### TySOM-2A-7Z030_FMC-ADAS
