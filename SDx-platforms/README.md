@@ -6,21 +6,18 @@ This pages contains configuration platforms for Xilinx SDx tool for Aldec TySOM 
 
 The configuration for Aldec TySOM-1-7Z030 which contains
 
-SoC   | Miscellaneous
---------|-----------
+SoC   |Miscellaneous
+:--------|:-----------
 Xilinx Zynq XC7Z030-1FBG484C SoC      |8x User Dip Switch
-Memory	| 8x User LED
---------| 
+__Memory__| 8x User LED
 512 MB DDR3 Memory (2x 256 MB) | PL, PS Reset Pushbuttons
 128 Mb SPI Flash Memory | Real Time Clock/Calendar
 64 Kb EEPROM |1 GTX (MMCX Connectors)
 uSD Card Socket | XADC
-Interfaces | Accelerometer
---------| 
+**Interfaces** | Accelerometer
 Ethernet 10/100/1000 |Temperature Sensor
 2x USB 3.0 |4x Clock Oscillators
-2x USB 2.0 | Audio/Video
- |--------
+2x USB 2.0 | **Audio/Video**
 2x UART Connector | HDMI
 miniPCI-Express Connector | Audio Codec (Audio IN/OUT)
 Digilent PmodTM Compatible Header |CMOS Camera Connector
