@@ -1,0 +1,25 @@
+{
+    "example" : "Harris - File I/O",
+    "overview" : "Harris",
+    "board" : [
+        "TySOM_2A_7Z030_FMC_ADAS"
+    ],
+    "os" : [
+        "Linux"
+    ],
+    "system" : {
+        "dmclkid" : "2"
+    },
+    "accelerators" : [
+        {
+            "name" : "xFCornerHarris",
+            "location" : "<PLATFORM>/sw/config0_0/inc/xfopencv/include/features/xf_harris.hpp",
+            "clkid" : "2"
+        }
+    ],
+    "compiler" : {
+        "symbols" : [
+            "HLS_NO_XIL_FPO_LIB"
+        ]
+		}
+}
