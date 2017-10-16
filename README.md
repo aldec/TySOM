@@ -8,7 +8,7 @@ Aldec provides the following list of boards:
 -	[TySOM-2](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
 -	[TySOM-2A](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
 
-[Link to the project wiki](https://www.aldec.com/en/products/emulation/tysom_boards)
+[Link to the TySOM boards page](https://www.aldec.com/en/products/emulation/tysom_boards)
 
 TySOM-2 and TySOM-2A family boards contains FMC connectors which can be used to extend devices and peripherals not included in TySOM boards. Due to using non-proprietary connectors like FMC or BPX the daughter cards can be reused across different hardware platforms.
 

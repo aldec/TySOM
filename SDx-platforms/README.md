@@ -145,6 +145,4 @@ Temperature Sensor |
 
 ### TySOM-2A-7Z030_FMC-ADAS
 
-[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
-
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
