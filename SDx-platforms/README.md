@@ -112,9 +112,38 @@ Temperature Sensor |
 
 ## TySOM-2A-7Z030
 
+The configuration for Aldec TySOM-2A-7Z030 board which contains
+
+SoC |
+:-------- |
+Xilinx Zynq XC7Z030-2FFG676I SoC |
+**Memory** |
+1GB DDR3 Memory (4x 256MB) |
+128 Mb SPI Flash Memory |
+64 Kb EEPROM |
+uSD Card Socket |
+**Connector Type for External Daughter Board** |
+FMC HPC standard connector VITA 57.1-2010 compliant |
+**Interfaces** |
+Ethernet 10/100/1000 |
+Ethernet 10/100/1000 IEEE1588 |
+4x USB 2.0 |
+USB to UART Bridge |
+JTAG PL Header – Xilinx JTAG Connector |
+**Miscellaneous** |
+HDMI |
+Wi-Fi and Bluetooth |
+XADC analog inputs/14 x GPIO |
+8x User Dip Switch |
+4x User LED |
+PL and PS Reset Pushbuttons |
+Real Time Clock/Calendar |
+Accelerometer |
+Temperature Sensor |
+
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
 
-## TySOM-2A-7Z030_FMC-ADAS
+### TySOM-2A-7Z030_FMC-ADAS
 
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
 
