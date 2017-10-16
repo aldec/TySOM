@@ -5,6 +5,7 @@ This pages contains configuration platforms for Xilinx SDx tool for Aldec TySOM 
 ## TySOM-1-7Z030
 
 The configuration for Aldec TySOM-1-7Z030 which contains
+
 SoC   | Miscellaneous
 --------|-----------
 Xilinx Zynq XC7Z030-1FBG484C SoC      |8x User Dip Switch
