@@ -1,10 +1,10 @@
 # TySOM - SDx-platforms
 
-This pages contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. All the configurations are ready to use with SDx and TySOM boards.
+This pages contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
 
 ## TySOM-1-7Z030
 
-The configuration for Aldec TySOM-1-7Z030 board which contains
+The configuration for Aldec TySOM-1-7Z030 board consists of:
 
 SoC   |Miscellaneous
 :--------|:-----------
@@ -28,7 +28,7 @@ JTAG PL Header – Xilinx JTAG Connector |LCD Connector
 
 ## TySOM-2-7Z045
 
-The configuration for Aldec TySOM-2-7Z045 board which contains
+The configuration for Aldec TySOM-2-7Z045 board consists of:
 
 SoC |
 :-------- |
@@ -70,7 +70,7 @@ Temperature Sensor |
 
 ## TySOM-2-7Z100
 
-The configuration for Aldec TySOM-2-7Z100 board which contains
+The configuration for Aldec TySOM-2-7Z100 board consists of:
 
 SoC |
 :-------- |
@@ -112,7 +112,7 @@ Temperature Sensor |
 
 ## TySOM-2A-7Z030
 
-The configuration for Aldec TySOM-2A-7Z030 board which contains
+The configuration for Aldec TySOM-2A-7Z030 board consists of:
 
 SoC |
 :-------- |
