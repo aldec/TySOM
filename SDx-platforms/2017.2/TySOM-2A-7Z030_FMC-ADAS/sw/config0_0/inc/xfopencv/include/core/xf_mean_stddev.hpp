@@ -40,13 +40,16 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "hls_stream.h"
 #include "common/xf_common.h"
 #include "core/xf_math.h"
+
+namespace xf{
+
 template<int ROWS, int COLS, int DEPTH, int NPC, int WORDWIDTH, int TC>
 void xFStddevkernel(hls::stream<XF_SNAME(WORDWIDTH)>&  _src_mat1,unsigned short* _mean,unsigned short*_dst_stddev,uint16_t height,uint16_t width)
 {
 #pragma HLS inline
 	ap_uint<4> j;
 	ap_uint<45> tmp_var_vals[(1<<XF_BITSHIFT(NPC))];
-	uint64_t var = 0;
+	ap_uint<64> var = 0;
 	uint32_t tmp_sum_vals[(1<<XF_BITSHIFT(NPC))];
 	uint64_t sum = 0;
 
@@ -60,7 +63,7 @@ void xFStddevkernel(hls::stream<XF_SNAME(WORDWIDTH)>&  _src_mat1,unsigned short*
 		tmp_var_vals[j] = 0;
 		tmp_sum_vals[j] = 0;
 	}
-
+int p=0;
 	ap_uint<13> row,col;
 	Row_Loop1:
 	for( row = 0; row < height; row++)
@@ -85,7 +88,9 @@ void xFStddevkernel(hls::stream<XF_SNAME(WORDWIDTH)>&  _src_mat1,unsigned short*
 				XF_PTNAME(DEPTH) val;
 				val = in_buf.range(i+7, i);
 				tmp_sum_vals[j] = tmp_sum_vals[j] + val;
-				tmp_var_vals[j] += (val * val);
+				unsigned short int  temp=((unsigned short)val * (unsigned short)val);
+
+				tmp_var_vals[j] += temp;
 			}
 		}
 	}
@@ -99,30 +104,30 @@ void xFStddevkernel(hls::stream<XF_SNAME(WORDWIDTH)>&  _src_mat1,unsigned short*
 	for ( j = 0; j<(1<<XF_BITSHIFT(NPC));j++)
 	{
 #pragma HLS UNROLL
-		var += tmp_var_vals[j];
+		var =(ap_uint<64>)((ap_uint<64>) var+ (ap_uint<64>)tmp_var_vals[j]);
 	}
 
 	unsigned short tempmean;
 
-
+// temp_sum[0]=(unsigned long long int)sum;
+// temp_var[0]=(unsigned long long int)tmp_var_vals[0];
 
 	//uint32_t img_size = width * height;
 
 
-	tempmean = ((256*sum) / (width * height));
+	tempmean = (unsigned short)((ap_uint<64>)(256*(ap_uint<64>)sum) / (width * height));
 	_mean[0]  = tempmean;
 
 	/* Variance Computation */
 
-
-	uint32_t temp = ((65536 * var)/ (width * height));
+	uint32_t temp = (ap_uint<32>)((ap_uint<64>)(65536 * (ap_uint<64>)var)/(width * height));
 
 	uint32_t Varstddev = temp - (tempmean*tempmean);
 
 	uint32_t t1 = (uint32_t)((Varstddev >> 16) << 16);
 
 
-	_dst_stddev[0] = (unsigned short)xFSqrt(t1);//StdDev;//(StdDev >> 4);		    // STANDARD DEVIATION: Q(I,8) format
+	_dst_stddev[0] = (unsigned short)xf::Sqrt(t1);//StdDev;//(StdDev >> 4);		    // STANDARD DEVIATION: Q(I,8) format
 
 }
 
@@ -145,11 +150,14 @@ void xFMeanStddev(hls::stream< XF_SNAME(WORDWIDTH) >& _src_mat,unsigned short* _
 
 
 }
-#pragma SDS data data_mover("_src.data":AXIDMA_SIMPLE)
+//#pragma SDS data data_mover("_src.data":AXIDMA_SIMPLE)
 #pragma SDS data access_pattern("_src.data":SEQUENTIAL)
 #pragma SDS data copy("_src.data"[0:"_src.size"])
+
+
+
 template<int SRC_T,int ROWS, int COLS,int NPC=1>
-void xFmeanstd(xF::Mat<SRC_T, ROWS, COLS, NPC> & _src,unsigned short* _mean,unsigned short* _stddev)
+void meanStdDev(xf::Mat<SRC_T, ROWS, COLS, NPC> & _src,unsigned short* _mean,unsigned short* _stddev)
 {
 #pragma HLS inline off
 #pragma HLS dataflow
@@ -170,6 +178,7 @@ void xFmeanstd(xF::Mat<SRC_T, ROWS, COLS, NPC> & _src,unsigned short* _mean,unsi
 	}
 
 	xFMeanStddev<ROWS, COLS, XF_DEPTH(SRC_T,NPC), NPC, XF_WORDWIDTH(SRC_T,NPC)>(_src_stream, _mean, _stddev, _src.rows, _src.cols);
+}
 }
 
 #endif // _XF_MEAN_STDDEV_HPP_
