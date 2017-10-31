@@ -3,14 +3,15 @@
 TySOM is a family of development boards for embedded applications that features Xilinx® Zynq™ all programmable module combining FPGA with ARM® Cortex processor. Plethora of included peripherals makes these boards useful in various embedded applications like Automotive, IoT, Industrial automation or embedded HPC.
 
 Aldec provides the following list of boards:
--	[TySOM-1](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
--	[TySOM-1A](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1a)
--	[TySOM-2](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
--	[TySOM-2A](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
+-	[TySOM-3 (Xilinx Zynq UltraScale+ Zu7EV)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_3)
+-	[TySOM-2 (Xilinx Zynq XC7Z045 or XC7Z100)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
+-	[TySOM-2A (Xilinx Zynq XC7Z030)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
+-	[TySOM-1 (Xilinx Zynq XC7Z030)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
+-	[TySOM-1A (Xilinx Zynq XC7Z010)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1a)
 
 [Link to the TySOM boards page](https://www.aldec.com/en/products/emulation/tysom_boards)
 
-TySOM-2 and TySOM-2A families contain FMC connectors which can be used to extend devices and peripherals not included in TySOM boards. Due to non-proprietary connectors like FMC or BPX the daughter cards can be reused across different hardware platforms.
+TySOM-3, TySOM-2 and TySOM-2A families contain FMC connectors which can be used to extend devices and peripherals not included in TySOM boards. Due to non-proprietary connectors like FMC daughter cards can be reused across different hardware platforms.
 
 Doughter Cards provided by Aldec:
 -	[FMC-ADAS](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
