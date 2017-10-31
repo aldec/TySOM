@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a9" cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:comp cf:name="TySOM_2_7Z045_FMC2_FMC_ADAS" xd:componentRef="TySOM_2_7Z045_FMC2_FMC_ADAS" xd:clockId="2"/>
+</cf:model>
