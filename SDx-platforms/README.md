@@ -1,6 +1,6 @@
 # TySOM - SDx-platforms
 
-This pages contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
+This page contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
 
 ## TySOM-1-7Z030
 
