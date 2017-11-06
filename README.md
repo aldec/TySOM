@@ -26,4 +26,4 @@ Doughter Cards provided by Aldec:
 
 A collection of configuration platforms for Xilinx SDx tool that help customers use Aldec TySOM board with SDx to accelerate algorithms in Zynq FPGA chip.
 
-> Note: Provided SDx platfors use Chroma Resampler and On-Screen Display IP cores from LogicCORE. This is why additional licenses are required.
+> Note: Provided SDx platforms use Chroma Resampler and On-Screen Display IP cores from LogicCORE. This is why additional licenses are required.
