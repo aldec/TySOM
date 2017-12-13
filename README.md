@@ -58,10 +58,14 @@ Filesystem Version: 20160329-17
 - [Instruction how to build](https://www.aldec.com/en/downloads/private/940)
 ```
 ```
+```
+```
 
 ---
 
 3. Linux OS build system: Yocto Project
+
+<img align="left" width="365" height="138" src="images/yoctologo.png">
 
 Yocto project provides all necessary functions and scripts to build a custom Linux Operating system.
 - [Yocto Project webpage](https://www.yoctoproject.org/)
@@ -72,6 +76,8 @@ Yocto project provides all necessary functions and scripts to build a custom Lin
 ---
 
 4. Linux OS build system: Petalinux tools 
+
+<img align="left" width="298" height="68" src="images/petalinuxlogo.png">
 
 The Petalinux provides all necessary tools to build a custom operating system for Embedded solutions for board with Xilinx Zynq chips.
 Kernel version: 4.9
@@ -84,6 +90,8 @@ Filesystem Version: 2017.2
 
 5. VxWorks
 
+<img align="left" width="345" height="150" src="images/VxWorkslogo.png">
+
 The VxWorks is an industry’s real-time operating system which provides a set of very important features such as: safety and security. 
 VxWorks version: 7
 - [VxWorks webpage](https://www.windriver.com/products/vxworks/)
@@ -94,6 +102,8 @@ VxWorks version: 7
 
 6. freeRTOS
 
+<img align="left" width="364" height="138" src="images/freeRtoslogo.jpg">
+
 The most popular, free real-time operating system for embedded devices.
 freeRTOS version: 8.2.3
 - [freeRTOS webpage](https://www.freertos.org/)
@@ -103,6 +113,8 @@ freeRTOS version: 8.2.3
 ---
 
 7. OpenWrt
+
+<img align="left" width="469" height="107" src="images/openWrtLogo.png">
 
 The OpenWrt is a GNU/Linux distribution for embedded devices such as wireless routers. It is built to be easily modifiable operating system for routers.
 Kernel version: 4.4.14
