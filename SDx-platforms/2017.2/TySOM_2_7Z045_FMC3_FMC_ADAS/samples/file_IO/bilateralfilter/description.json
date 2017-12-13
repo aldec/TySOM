@@ -24,6 +24,16 @@
 	"options" : "-I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/6.2.1 -I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/6.2.1/aarch64-linux-gnu -I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/6.2.1/backward -I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/6.2.1/include -I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/6.2.1/include-fixed -I${XILINX_SDX}/SDK/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -Wno-overloaded-virtual -Wno-unused-label -Wno-strict-overflow -Wno-uninitialized -Wno-unused-function -Wno-unused-variable -Wno-unknown-attributes -Wno-unused-local-typedefs -Wno-sign-compare",
 	"includepaths" : [
 				"include"
-			]
+			],
+	"scripts" : [
+	{
+		"pre-build" : "echo before building",
+		"post-build" : "echo after building",
+		"prepack" : "echo before packing",
+		"postpack": "echo after packing",
+		"prerestore": "echo before restoring packages",
+		"postrestore": "echo after restoring packages"
 		}
+	]
+    }
 }
