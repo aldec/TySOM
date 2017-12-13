@@ -49,22 +49,25 @@ Filesystem Version: 20121124-560
 
 2. Debian-Linaro
 
+<img align="left" width="238" height="168" src="images/debianlogo.png">
+
 A Linaro version of Debian Linux System with support of standard interfaces: USB, HDMI, Ethernet, WiFi, Audio IN/OUT
 Kernel version: 4.4
 Filesystem Version: 20160329-17
-
 - [Linaro webpage](https://www.linaro.org/)
 - [Instruction how to build](https://www.aldec.com/en/downloads/private/940)
+```
+```
 
 ---
 
 3. Linux OS build system: Yocto Project
 
 Yocto project provides all necessary functions and scripts to build a custom Linux Operating system.
-
 - [Yocto Project webpage](https://www.yoctoproject.org/)
 - [Instruction how to build](https://www.aldec.com/en/downloads/private/903)
-
+```
+```
 
 ---
 
@@ -73,8 +76,9 @@ Yocto project provides all necessary functions and scripts to build a custom Lin
 The Petalinux provides all necessary tools to build a custom operating system for Embedded solutions for board with Xilinx Zynq chips.
 Kernel version: 4.9
 Filesystem Version: 2017.2
-
 - [Xilinx webpage](https://www.xilinx.com/products/design-tools/embedded-software/petalinux-sdk.html)
+```
+```
 
 ---
 
@@ -82,8 +86,9 @@ Filesystem Version: 2017.2
 
 The VxWorks is an industry’s real-time operating system which provides a set of very important features such as: safety and security. 
 VxWorks version: 7
-
 - [VxWorks webpage](https://www.windriver.com/products/vxworks/)
+```
+```
 
 ---
 
@@ -91,8 +96,9 @@ VxWorks version: 7
 
 The most popular, free real-time operating system for embedded devices.
 freeRTOS version: 8.2.3
-
 - [freeRTOS webpage](https://www.freertos.org/)
+```
+```
 
 ---
 
@@ -101,7 +107,8 @@ freeRTOS version: 8.2.3
 The OpenWrt is a GNU/Linux distribution for embedded devices such as wireless routers. It is built to be easily modifiable operating system for routers.
 Kernel version: 4.4.14
 OpenWrt version: 15.05.1
-
 - [OpenWrt webpage](https://openwrt.org/)
+```
+```
 
 ---
