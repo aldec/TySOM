@@ -37,90 +37,93 @@ Below is a list of supported OSes and additional information.
 
 1. Ubuntu-Linaro
 
-<img align="left" width="238" height="168" src="images/ubuntulogo.png">
+<img width="238" height="168" src="images/ubuntulogo.png">
 
 A stock version of Ubuntu Desktop Operating System with additional packages from Linaro. It supports all standard interfaces such as: USB, HDMI, Ethernet, WiFi, Audio IN/OUT.
+
 Filesystem Version: 20121124-560
+
 - [Linaro webpage](https://www.linaro.org/)
-```
-```
 
 ---
 
 2. Debian-Linaro
 
-<img align="left" width="155" height="204" src="images/debianlogo.png">
+<img width="155" height="204" src="images/debianlogo.png">
 
 A Linaro version of Debian Linux System with support of standard interfaces: USB, HDMI, Ethernet, WiFi, Audio IN/OUT
+
 Kernel version: 4.4
+
 Filesystem Version: 20160329-17
+
 - [Linaro webpage](https://www.linaro.org/)
+
 - [Instruction how to build](https://www.aldec.com/en/downloads/private/940)
-```
-```
-```
-```
 
 ---
 
 3. Linux OS build system: Yocto Project
 
-<img align="left" width="365" height="138" src="images/yoctologo.png">
+<img width="365" height="138" src="images/yoctologo.png">
 
 Yocto project provides all necessary functions and scripts to build a custom Linux Operating system.
+
 - [Yocto Project webpage](https://www.yoctoproject.org/)
+
 - [Instruction how to build](https://www.aldec.com/en/downloads/private/903)
-```
-```
 
 ---
 
 4. Linux OS build system: Petalinux tools 
 
-<img align="left" width="298" height="68" src="images/petalinuxlogo.png">
+<img width="298" height="68" src="images/petalinuxlogo.png">
 
 The Petalinux provides all necessary tools to build a custom operating system for Embedded solutions for board with Xilinx Zynq chips.
+
 Kernel version: 4.9
+
 Filesystem Version: 2017.2
+
 - [Xilinx webpage](https://www.xilinx.com/products/design-tools/embedded-software/petalinux-sdk.html)
-```
-```
 
 ---
 
 5. VxWorks
 
-<img align="left" width="345" height="150" src="images/VxWorkslogo.png">
+<img width="345" height="150" src="images/VxWorkslogo.png">
 
 The VxWorks is an industry’s real-time operating system which provides a set of very important features such as: safety and security. 
+
 VxWorks version: 7
+
 - [VxWorks webpage](https://www.windriver.com/products/vxworks/)
-```
-```
 
 ---
 
 6. freeRTOS
 
-<img align="left" width="364" height="138" src="images/freeRtoslogo.jpg">
+<img width="364" height="138" src="images/freeRtoslogo.jpg">
 
 The most popular, free real-time operating system for embedded devices.
+
 freeRTOS version: 8.2.3
+
 - [freeRTOS webpage](https://www.freertos.org/)
-```
-```
 
 ---
 
 7. OpenWrt
 
-<img align="left" width="312" height="71" src="images/openWrtLogo.png">
+<img width="312" height="71" src="images/openWrtLogo.png"> 
 
 The OpenWrt is a GNU/Linux distribution for embedded devices such as wireless routers. It is built to be easily modifiable operating system for routers.
+
 Kernel version: 4.4.14
+
 OpenWrt version: 15.05.1
+
 - [OpenWrt webpage](https://openwrt.org/)
-```
-```
+
 
 ---
