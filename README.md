@@ -114,7 +114,7 @@ freeRTOS version: 8.2.3
 
 7. OpenWrt
 
-<img align="left" width="469" height="107" src="images/openWrtLogo.png">
+<img align="left" width="312" height="71" src="images/openWrtLogo.png">
 
 The OpenWrt is a GNU/Linux distribution for embedded devices such as wireless routers. It is built to be easily modifiable operating system for routers.
 Kernel version: 4.4.14
