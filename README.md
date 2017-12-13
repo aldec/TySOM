@@ -37,13 +37,12 @@ Below is a list of supported OSes and additional information.
 
 1. Ubuntu-Linaro
 
-![](images/ffmpeg_lab/ffmpeg_lab.png)
-
 <img align="left" width="238" height="168" src="images/ubuntulogo.png">
 
 A stock version of Ubuntu Desktop Operating System with additional packages from Linaro. It supports all standard interfaces such as: USB, HDMI, Ethernet, WiFi, Audio IN/OUT.
 Filesystem Version: 20121124-560
 - [Linaro webpage](https://www.linaro.org/)
+
 
 ---
 
