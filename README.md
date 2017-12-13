@@ -49,7 +49,7 @@ Filesystem Version: 20121124-560
 
 2. Debian-Linaro
 
-<img align="left" width="238" height="168" src="images/debianlogo.png">
+<img align="left" width="155" height="204" src="images/debianlogo.png">
 
 A Linaro version of Debian Linux System with support of standard interfaces: USB, HDMI, Ethernet, WiFi, Audio IN/OUT
 Kernel version: 4.4
