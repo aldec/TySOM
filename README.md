@@ -42,7 +42,8 @@ Below is a list of supported OSes and additional information.
 A stock version of Ubuntu Desktop Operating System with additional packages from Linaro. It supports all standard interfaces such as: USB, HDMI, Ethernet, WiFi, Audio IN/OUT.
 Filesystem Version: 20121124-560
 - [Linaro webpage](https://www.linaro.org/)
-
+```
+```
 
 ---
 
