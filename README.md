@@ -50,8 +50,11 @@ A collection of configuration platforms for Xilinx SDx tool that help customers 
 
 ### How to use TySOM platform with SDx
 
-...
+To use Aldec TySOM board with Xilinx SDx tool an appropriate SDx platform need to be used. Download the platform for TySOM board and follow [Xilinx instruction](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug1027-sdsoc-user-guide.pdf)
 
+In **Choose Hardware Platform** window user has to add TySOM platform by using **Add Custom Platform** button. Next step is to select the platform.
+
+See **Appendix B: Managing Platforms and Repositories** of Xilinx instruction for more information.
 
 <a name="tysom_supported_os"/>
 
