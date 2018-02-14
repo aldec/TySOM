@@ -1,3 +1,9 @@
+# Table of Content
+1. [TySOM](#tysom_main)
+    - [SDx-platforms](#tysom_sdx_platforms)
+    - [Supported OSes](#tysom_supported_os)
+
+<a name="tysom_main"/>
 # TySOM
 
 TySOM is a family of development boards for embedded applications that features Xilinx® Zynq™ all programmable module combining FPGA with ARM® Cortex processor. Plethora of included peripherals makes these boards useful in various embedded applications like Automotive, IoT, Industrial automation or embedded HPC.
@@ -22,13 +28,15 @@ Daughter Cards provided by Aldec:
 -	[FMC-QSFP](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_qsfp)
 -	[FMC-INDUSTRY](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_industry)
 
-## 1. SDx-platforms
+<a name="tysom_sdx_platforms"/>
+## SDx-platforms
 
 A collection of configuration platforms for Xilinx SDx tool that help customers use Aldec TySOM board with SDx to accelerate algorithms in Zynq FPGA chip.
 
 > Note: Provided SDx platforms use Chroma Resampler and On-Screen Display IP cores from LogicCORE. This is why additional licenses are required.
 
-## 2. Supported OSes
+<a name="tysom_supported_os"/>
+## Supported OSes
 
 All Aldec TySOM boards were checked with different Operating Systems.
 Below is a list of supported OSes and additional information.
