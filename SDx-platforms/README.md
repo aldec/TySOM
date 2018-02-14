@@ -1,6 +1,22 @@
+# Table of Content
+1. [TySOM - SDx-platforms](#tysom_sdx_platforms)
+   - [TySOM-1-7Z030](#tysom_1_7z030)
+   - [TySOM-2-7Z045](#tysom_2_7z045)
+     - [TySOM-2-7Z045_FMC2_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_adas)
+     - [TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision)
+   - [TySOM-2-7Z100](#tysom_2_7z100)
+     - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
+     - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
+   - [TySOM-2A-7Z030](#tysom_2a_7z030)
+     - [TySOM-2A-7Z030_FMC2_FMC-ADAS](#tysom_2a_7z030_fmc2_fmc_adas)
+
+<a name="tysom_sdx_platforms"/>
+
 # TySOM - SDx-platforms
 
 This page contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
+
+<a name="tysom_1_7z030"/>
 
 ## TySOM-1-7Z030
 
@@ -25,6 +41,8 @@ JTAG PS Header – MIPI 10-pin ARM JTAG |Touch Panel Connector
 JTAG PL Header – Xilinx JTAG Connector |LCD Connector
 
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
+
+<a name="tysom_2_7z045"/>
 
 ## TySOM-2-7Z045
 
@@ -58,15 +76,21 @@ Temperature Sensor |
 
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
 
+<a name="tysom_2_7z045_fmc2_fmc_adas"/>
+
 ### TySOM-2-7Z045_FMC2_FMC-ADAS
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision"/>
 
 ### TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2_7z100"/>
 
 ## TySOM-2-7Z100
 
@@ -100,15 +124,21 @@ Temperature Sensor |
 
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
 
+<a name="tysom_2_7z100_fmc2_fmc_adas"/>
+
 ### TySOM-2-7Z100_FMC2_FMC-ADAS
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision"/>
 
 ### TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2a_7z030"/>
 
 ## TySOM-2A-7Z030
 
@@ -142,6 +172,8 @@ Accelerometer |
 Temperature Sensor |
 
 [Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
+
+<a name="tysom_2a_7z030_fmc2_fmc_adas"/>
 
 ### TySOM-2A-7Z030_FMC-ADAS
 
