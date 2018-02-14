@@ -1,7 +1,15 @@
 # Table of Content
 1. [TySOM](#tysom_main)
-    - [SDx-platforms](#tysom_sdx_platforms)
-    - [Supported OSes](#tysom_supported_os)
+   - [SDx-platforms](#tysom_sdx_platforms)
+     - [How to use TySOM platform with SDx](#tysom_sdx_platform_use)
+   - [Supported OSes](#tysom_supported_os)
+     - [Ubuntu-Linaro](#ubuntu_linaro_os)
+     - [Debian-Linaro](#debian_linaro_os)
+     - [Yocto Project](#yocto_project_os)
+     - [Petalinux tools](#petalinux_os)
+     - [VxWorks](#vxworks_os)
+     - [freeRTOS](#freertos_os)
+     - [OpenWrt](#openwrt_os)
 
 
 <a name="tysom_main"/>
@@ -38,6 +46,13 @@ A collection of configuration platforms for Xilinx SDx tool that help customers 
 
 > Note: Provided SDx platforms use Chroma Resampler and On-Screen Display IP cores from LogicCORE. This is why additional licenses are required.
 
+<a name="tysom_sdx_platform_use"/>
+
+### How to use TySOM platform with SDx
+
+...
+
+
 <a name="tysom_supported_os"/>
 
 ## Supported OSes
@@ -47,6 +62,7 @@ Below is a list of supported OSes and additional information.
 
 ---
 
+<a name="ubuntu_linaro_os"/>
 1. Ubuntu-Linaro
 
 <img width="238" height="168" src="images/ubuntulogo.png">
@@ -59,6 +75,7 @@ Filesystem Version: 20121124-560
 
 ---
 
+<a name="debian_linaro_os"/>
 2. Debian-Linaro
 
 <img width="155" height="204" src="images/debianlogo.png">
@@ -75,6 +92,7 @@ Filesystem Version: 20160329-17
 
 ---
 
+<a name="yocto_project_os"/>
 3. Linux OS build system: Yocto Project
 
 <img width="365" height="138" src="images/yoctologo.png">
@@ -87,6 +105,7 @@ Yocto project provides all necessary functions and scripts to build a custom Lin
 
 ---
 
+<a name="petalinux_os"/>
 4. Linux OS build system: Petalinux tools 
 
 <img width="298" height="68" src="images/petalinuxlogo.png">
@@ -101,6 +120,7 @@ Filesystem Version: 2017.2
 
 ---
 
+<a name="vxworks_os"/>
 5. VxWorks
 
 <img width="345" height="150" src="images/VxWorkslogo.png">
@@ -113,6 +133,7 @@ VxWorks version: 7
 
 ---
 
+<a name="freertos_os"/>
 6. freeRTOS
 
 <img width="364" height="138" src="images/freeRtoslogo.jpg">
@@ -125,6 +146,7 @@ freeRTOS version: 8.2.3
 
 ---
 
+<a name="openwrt_os"/>
 7. OpenWrt
 
 <img width="312" height="71" src="images/openWrtLogo.png"> 
