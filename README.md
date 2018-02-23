@@ -56,6 +56,8 @@ In **Choose Hardware Platform** window user has to add TySOM platform by using *
 
 See **Appendix B: Managing Platforms and Repositories** of Xilinx instruction for more information.
 
+[Document](https://github.com/Aldecinc/TySOM/blob/master/SDx-platforms/How_to_use_Aldec_TySOM_board_in_Xilinx_SDx.pdf) contains all necessary information about using Aldec TySOM board in Xilinx SDx tool.
+
 <a name="tysom_supported_os"/>
 
 ## Supported OSes
