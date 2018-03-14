@@ -1,14 +1,15 @@
 # Table of Content
-1. [TySOM - SDx-platforms](#tysom_sdx_platforms)
-   - [TySOM-1-7Z030](#tysom_1_7z030)
-   - [TySOM-2-7Z045](#tysom_2_7z045)
-     - [TySOM-2-7Z045_FMC2_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_adas)
-     - [TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision)
+[TySOM - SDx-platforms](#tysom_sdx_platforms)
+   - [TySOM-3-ZU7_FMC1_FMC-ADAS](tysom_3_zu7_fmc1_fmc_adas)
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
+   - [TySOM-2-7Z045](#tysom_2_7z045)
+     - [TySOM-2-7Z045_FMC2_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_adas)
+     - [TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision)
    - [TySOM-2A-7Z030](#tysom_2a_7z030)
      - [TySOM-2A-7Z030_FMC2_FMC-ADAS](#tysom_2a_7z030_fmc2_fmc_adas)
+   - [TySOM-1-7Z030](#tysom_1_7z030)
 
 <a name="tysom_sdx_platforms"/>
 
@@ -16,83 +17,49 @@
 
 This page contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
 
-<a name="tysom_1_7z030"/>
+<a name="tysom_3_zu7_fmc1_fmc_adas"/>
 
-## TySOM-1-7Z030
+## TySOM-3-ZU7_FMC1_FMC-ADAS
 
-The configuration for Aldec TySOM-1-7Z030 board consists of:
+Note: This platform is supported in Xilinx SDx 2017.4 or newer.
 
-SoC   |Miscellaneous
-:--------|:-----------
-Xilinx Zynq XC7Z030-1FBG484C SoC      |8x User Dip Switch
-__Memory__| 8x User LED
-512 MB DDR3 Memory (2x 256 MB) | PL, PS Reset Pushbuttons
-128 Mb SPI Flash Memory | Real Time Clock/Calendar
-64 Kb EEPROM |1 GTX (MMCX Connectors)
-uSD Card Socket | XADC
-**Interfaces** | Accelerometer
-Ethernet 10/100/1000 |Temperature Sensor
-2x USB 3.0 |4x Clock Oscillators
-2x USB 2.0 | **Audio/Video**
-2x UART Connector | HDMI
-miniPCI-Express Connector | Audio Codec (Audio IN/OUT)
-Digilent PmodTM Compatible Header |CMOS Camera Connector
-JTAG PS Header – MIPI 10-pin ARM JTAG |Touch Panel Connector
-JTAG PL Header – Xilinx JTAG Connector |LCD Connector
-
-[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
-
-<a name="tysom_2_7z045"/>
-
-## TySOM-2-7Z045
-
-The configuration for Aldec TySOM-2-7Z045 board consists of:
+The configuration for Aldec TySOM-3-ZU7 board consists of:
 
 SoC |
 :-------- |
-Xilinx Zynq XC7Z045-FFG900 SoC |
+Xilinx Zynq UltraScale+ ZU7EV-FFVC1156 MPSoC |
 **Memory** |
-1GB DDR3 Memory (4x 256MB) |
-128 Mb SPI Flash Memory |
-64 Kb EEPROM |
-uSD Card Socket |
+DDR4 SODIMM Memory for the Processing System |
+2 Gb NAND Memory |
+256Mb QSPI Flash Memory |
+uSD Card Socket up to 32 GB |
 **Connector Type for External Daughter Board** |
-2x FMC HPC standard connector VITA 57.1-2010 compliant |
+2× FMC (1× HPC and 1× LPC) VITA 57.1-2010 compliant |
 **Interfaces** |
-Ethernet 10/100/1000 |
-4x USB 2.0 |
+2× Gigabit Ethernet PHY DP83867CR |
+4x USB 3.0 ports |
 USB to UART Bridge |
 JTAG PL Header – Xilinx JTAG Connector |
+**Multimedia** |
+HDMI 2.0 Out - TE Connectivity 1888811-1 |
+DisplayPort |
 **Miscellaneous** |
-HDMI |
-8x User Dip Switch |
-4x User LED |
-PL and PS Reset Pushbuttons |
-Real Time Clock/Calendar |
-6x GPIO |
-XADC |
+6x User LEDs |
+Reset Pushbuttons for PS |
 Accelerometer |
 Temperature Sensor |
+SYSMON |
+Current Monitor |
 
-[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
-
-<a name="tysom_2_7z045_fmc2_fmc_adas"/>
-
-### TySOM-2-7Z045_FMC2_FMC-ADAS
+[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_ultrascale_mpsoc_boards/tysom_3)
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
-
-<a name="tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision"/>
-
-### TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION
-
-[Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
-
-[Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
 
 <a name="tysom_2_7z100"/>
 
 ## TySOM-2-7Z100
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 The configuration for Aldec TySOM-2-7Z100 board consists of:
 
@@ -128,11 +95,69 @@ Temperature Sensor |
 
 ### TySOM-2-7Z100_FMC2_FMC-ADAS
 
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 <a name="tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision"/>
 
 ### TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
+[Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+[Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2_7z045"/>
+
+## TySOM-2-7Z045
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
+The configuration for Aldec TySOM-2-7Z045 board consists of:
+
+SoC |
+:-------- |
+Xilinx Zynq XC7Z045-FFG900 SoC |
+**Memory** |
+1GB DDR3 Memory (4x 256MB) |
+128 Mb SPI Flash Memory |
+64 Kb EEPROM |
+uSD Card Socket |
+**Connector Type for External Daughter Board** |
+2x FMC HPC standard connector VITA 57.1-2010 compliant |
+**Interfaces** |
+Ethernet 10/100/1000 |
+4x USB 2.0 |
+USB to UART Bridge |
+JTAG PL Header – Xilinx JTAG Connector |
+**Miscellaneous** |
+HDMI |
+8x User Dip Switch |
+4x User LED |
+PL and PS Reset Pushbuttons |
+Real Time Clock/Calendar |
+6x GPIO |
+XADC |
+Accelerometer |
+Temperature Sensor |
+
+[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
+
+<a name="tysom_2_7z045_fmc2_fmc_adas"/>
+
+### TySOM-2-7Z045_FMC2_FMC-ADAS
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
+[Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision"/>
+
+### TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -141,6 +166,8 @@ Temperature Sensor |
 <a name="tysom_2a_7z030"/>
 
 ## TySOM-2A-7Z030
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 The configuration for Aldec TySOM-2A-7Z030 board consists of:
 
@@ -177,4 +204,34 @@ Temperature Sensor |
 
 ### TySOM-2A-7Z030_FMC-ADAS
 
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_1_7z030"/>
+
+## TySOM-1-7Z030
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+
+The configuration for Aldec TySOM-1-7Z030 board consists of:
+
+SoC   |Miscellaneous
+:--------|:-----------
+Xilinx Zynq XC7Z030-1FBG484C SoC      |8x User Dip Switch
+__Memory__| 8x User LED
+512 MB DDR3 Memory (2x 256 MB) | PL, PS Reset Pushbuttons
+128 Mb SPI Flash Memory | Real Time Clock/Calendar
+64 Kb EEPROM |1 GTX (MMCX Connectors)
+uSD Card Socket | XADC
+**Interfaces** | Accelerometer
+Ethernet 10/100/1000 |Temperature Sensor
+2x USB 3.0 |4x Clock Oscillators
+2x USB 2.0 | **Audio/Video**
+2x UART Connector | HDMI
+miniPCI-Express Connector | Audio Codec (Audio IN/OUT)
+Digilent PmodTM Compatible Header |CMOS Camera Connector
+JTAG PS Header – MIPI 10-pin ARM JTAG |Touch Panel Connector
+JTAG PL Header – Xilinx JTAG Connector |LCD Connector
+
+[Link to the TySOM board page](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
