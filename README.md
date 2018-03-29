@@ -44,6 +44,8 @@ Daughter Cards provided by Aldec:
 
 A collection of configuration platforms for Xilinx SDx tool that help customers use Aldec TySOM board with SDx to accelerate algorithms in Zynq FPGA chip.
 
+>**Note: These platforms have to be downloaded and a zip file has to be extracted on Linux. SDx platform extracted on Windows will not work!**
+
 > Note: Provided SDx platforms use Chroma Resampler and On-Screen Display IP cores from LogicCORE. This is why additional licenses are required.
 
 <a name="tysom_sdx_platform_use"/>
