@@ -7,8 +7,7 @@
 #
 
 # Uncomment and modify the line below to source the API script
-# source -notrace <SDSOC_INSTALL>/scripts/vivado/sdsoc_pfm.tcl
-source -notrace /edatools/Xilinx/SDx/2017.1/scripts/vivado/sdsoc_pfm.tcl
+#source -notrace <SDSOC_INSTALL>/scripts/vivado/sdsoc_pfm.tcl
 
 set pfm [sdsoc::create_pfm TySOM_1_7Z030.hpfm]
 sdsoc::pfm_name        $pfm "aldec.com" "xd" "TySOM_1_7Z030" "1.0"
