@@ -24,6 +24,10 @@
 
 #include <linux/v4l2-subdev.h>
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
 struct media_device;
 struct media_entity;
 
@@ -36,7 +40,7 @@ struct media_entity;
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_open(struct media_entity *entity);
+extern int v4l2_subdev_open(struct media_entity *entity);
 
 /**
  * @brief Close a sub-device.
@@ -45,7 +49,7 @@ int v4l2_subdev_open(struct media_entity *entity);
  * Close the V4L2 subdev device node associated with the @a entity and opened by
  * a previous call to v4l2_subdev_open() (either explicit or implicit).
  */
-void v4l2_subdev_close(struct media_entity *entity);
+extern void v4l2_subdev_close(struct media_entity *entity);
 
 /**
  * @brief Retrieve the format on a pad.
@@ -63,7 +67,7 @@ void v4l2_subdev_close(struct media_entity *entity);
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_get_format(struct media_entity *entity,
+extern int v4l2_subdev_get_format(struct media_entity *entity,
 	struct v4l2_mbus_framefmt *format, unsigned int pad,
 	enum v4l2_subdev_format_whence which);
 
@@ -84,7 +88,7 @@ int v4l2_subdev_get_format(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_set_format(struct media_entity *entity,
+extern int v4l2_subdev_set_format(struct media_entity *entity,
 	struct v4l2_mbus_framefmt *format, unsigned int pad,
 	enum v4l2_subdev_format_whence which);
 
@@ -106,7 +110,7 @@ int v4l2_subdev_set_format(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_get_selection(struct media_entity *entity,
+extern int v4l2_subdev_get_selection(struct media_entity *entity,
 	struct v4l2_rect *rect, unsigned int pad, unsigned int target,
 	enum v4l2_subdev_format_whence which);
 
@@ -128,7 +132,7 @@ int v4l2_subdev_get_selection(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_set_selection(struct media_entity *entity,
+extern int v4l2_subdev_set_selection(struct media_entity *entity,
 	struct v4l2_rect *rect, unsigned int pad, unsigned int target,
 	enum v4l2_subdev_format_whence which);
 
@@ -142,7 +146,7 @@ int v4l2_subdev_set_selection(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_get_dv_timings_caps(struct media_entity *entity,
+extern int v4l2_subdev_get_dv_timings_caps(struct media_entity *entity,
 	struct v4l2_dv_timings_cap *caps);
 
 /**
@@ -155,7 +159,7 @@ int v4l2_subdev_get_dv_timings_caps(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_query_dv_timings(struct media_entity *entity,
+extern int v4l2_subdev_query_dv_timings(struct media_entity *entity,
 	struct v4l2_dv_timings *timings);
 
 /**
@@ -168,7 +172,7 @@ int v4l2_subdev_query_dv_timings(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_get_dv_timings(struct media_entity *entity,
+extern int v4l2_subdev_get_dv_timings(struct media_entity *entity,
 	struct v4l2_dv_timings *timings);
 
 /**
@@ -182,7 +186,7 @@ int v4l2_subdev_get_dv_timings(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_set_dv_timings(struct media_entity *entity,
+extern int v4l2_subdev_set_dv_timings(struct media_entity *entity,
 	struct v4l2_dv_timings *timings);
 
 /**
@@ -199,7 +203,7 @@ int v4l2_subdev_set_dv_timings(struct media_entity *entity,
  * @return 0 on success, or a negative error code on failure.
  */
 
-int v4l2_subdev_get_frame_interval(struct media_entity *entity,
+extern int v4l2_subdev_get_frame_interval(struct media_entity *entity,
 	struct v4l2_fract *interval);
 
 /**
@@ -216,7 +220,7 @@ int v4l2_subdev_get_frame_interval(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_set_frame_interval(struct media_entity *entity,
+extern int v4l2_subdev_set_frame_interval(struct media_entity *entity,
 	struct v4l2_fract *interval);
 
 /**
@@ -233,7 +237,7 @@ int v4l2_subdev_set_frame_interval(struct media_entity *entity,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int v4l2_subdev_parse_setup_formats(struct media_device *media, const char *p);
+extern int v4l2_subdev_parse_setup_formats(struct media_device *media, const char *p);
 
 /**
  * @brief Convert media bus pixel code to string.
@@ -243,7 +247,7 @@ int v4l2_subdev_parse_setup_formats(struct media_device *media, const char *p);
  *
  * @return A pointer to a string on success, NULL on failure.
  */
-const char *v4l2_subdev_pixelcode_to_string(enum v4l2_mbus_pixelcode code);
+extern const char *v4l2_subdev_pixelcode_to_string(enum v4l2_mbus_pixelcode code);
 
 /**
  * @brief Parse string to media bus pixel code.
@@ -253,7 +257,7 @@ const char *v4l2_subdev_pixelcode_to_string(enum v4l2_mbus_pixelcode code);
  *
  * @return media bus pixelcode on success, -1 on failure.
  */
-enum v4l2_mbus_pixelcode v4l2_subdev_string_to_pixelcode(const char *string);
+extern enum v4l2_mbus_pixelcode v4l2_subdev_string_to_pixelcode(const char *string);
 
 /**
  * @brief Convert a field order to string.
@@ -263,7 +267,7 @@ enum v4l2_mbus_pixelcode v4l2_subdev_string_to_pixelcode(const char *string);
  *
  * @return A pointer to a string on success, NULL on failure.
  */
-const char *v4l2_subdev_field_to_string(enum v4l2_field field);
+extern const char *v4l2_subdev_field_to_string(enum v4l2_field field);
 
 /**
  * @brief Parse string to field order.
@@ -273,7 +277,7 @@ const char *v4l2_subdev_field_to_string(enum v4l2_field field);
  *
  * @return field order on success, -1 on failure.
  */
-enum v4l2_field v4l2_subdev_string_to_field(const char *string);
+extern enum v4l2_field v4l2_subdev_string_to_field(const char *string);
 
 /**
  * @brief Enumerate library supported media bus pixel codes.
@@ -283,7 +287,11 @@ enum v4l2_field v4l2_subdev_string_to_field(const char *string);
  *
  * @return A pointer to the pixel code array
  */
-const enum v4l2_mbus_pixelcode *v4l2_subdev_pixelcode_list(
+extern const enum v4l2_mbus_pixelcode *v4l2_subdev_pixelcode_list(
 	unsigned int *length);
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif

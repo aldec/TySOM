@@ -24,6 +24,10 @@
 
 #include <linux/media.h>
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
 struct media_link {
 	struct media_pad *source;
 	struct media_pad *sink;
@@ -57,7 +61,7 @@ struct media_entity;
  * @return A pointer to the new media device or NULL if memory cannot be
  * allocated.
  */
-struct media_device *media_device_new(const char *devnode);
+extern struct media_device *media_device_new(const char *devnode);
 
 /**
  * @brief Create a new emulated media device.
@@ -73,7 +77,7 @@ struct media_device *media_device_new(const char *devnode);
  * @return A pointer to the new media device or NULL if memory cannot be
  * allocated.
  */
-struct media_device *media_device_new_emulated(struct media_device_info *info);
+extern struct media_device *media_device_new_emulated(struct media_device_info *info);
 
 /**
  * @brief Take a reference to the device.
@@ -85,7 +89,7 @@ struct media_device *media_device_new_emulated(struct media_device_info *info);
  *
  * @return A pointer to @a media.
  */
-struct media_device *media_device_ref(struct media_device *media);
+extern struct media_device *media_device_ref(struct media_device *media);
 
 /**
  * @brief Release a reference to the device.
@@ -94,7 +98,7 @@ struct media_device *media_device_ref(struct media_device *media);
  * Release a reference to the media device. When the reference count reaches 0
  * this function frees the device.
  */
-void media_device_unref(struct media_device *media);
+extern void media_device_unref(struct media_device *media);
 
 /**
  * @brief Add an entity to an existing media device
@@ -128,7 +132,7 @@ void media_device_unref(struct media_device *media);
  *
  * @return Zero on success or -ENOMEM if memory cannot be allocated.
  */
-int media_device_add_entity(struct media_device *media,
+extern int media_device_add_entity(struct media_device *media,
 			    const struct media_entity_desc *desc,
 			    const char *devnode);
 
@@ -142,7 +146,7 @@ int media_device_add_entity(struct media_device *media,
  * debugging information is to be printed. The handler expects an
  * fprintf-like function.
  */
-void media_debug_set_handler(
+extern void media_debug_set_handler(
 	struct media_device *media, void (*debug_handler)(void *, ...),
 	void *debug_priv);
 
@@ -155,7 +159,7 @@ void media_debug_set_handler(
  *
  * @return Zero on success or a negative error code on failure.
  */
-int media_device_enumerate(struct media_device *media);
+extern int media_device_enumerate(struct media_device *media);
 
 /**
  * @brief Locate the pad at the other end of a link.
@@ -168,7 +172,7 @@ int media_device_enumerate(struct media_device *media);
  * @return A pointer to the connected source pad, or NULL if all links connected
  * to @a pad are disabled. Return NULL also if @a pad is not a sink pad.
  */
-struct media_pad *media_entity_remote_source(struct media_pad *pad);
+extern struct media_pad *media_entity_remote_source(struct media_pad *pad);
 
 /**
  * @brief Get information about a media entity
@@ -179,7 +183,7 @@ struct media_pad *media_entity_remote_source(struct media_pad *pad);
  *
  * @return A pointer to the media entity information
  */
-const struct media_entity_desc *media_entity_get_info(struct media_entity *entity);
+extern const struct media_entity_desc *media_entity_get_info(struct media_entity *entity);
 
 /**
  * @brief Get an entity pad
@@ -191,7 +195,7 @@ const struct media_entity_desc *media_entity_get_info(struct media_entity *entit
  *
  * @return A pointer to the pad
  */
-const struct media_pad *media_entity_get_pad(struct media_entity *entity,
+extern const struct media_pad *media_entity_get_pad(struct media_entity *entity,
 					     unsigned int index);
 
 /**
@@ -203,7 +207,7 @@ const struct media_pad *media_entity_get_pad(struct media_entity *entity,
  *
  * @return The number of links for the entity
  */
-unsigned int media_entity_get_links_count(struct media_entity *entity);
+extern unsigned int media_entity_get_links_count(struct media_entity *entity);
 
 /**
  * @brief Get an entity link
@@ -215,7 +219,7 @@ unsigned int media_entity_get_links_count(struct media_entity *entity);
  *
  * @return A pointer to the link
  */
-const struct media_link *media_entity_get_link(struct media_entity *entity,
+extern const struct media_link *media_entity_get_link(struct media_entity *entity,
 					       unsigned int index);
 
 /**
@@ -228,7 +232,7 @@ const struct media_link *media_entity_get_link(struct media_entity *entity,
  * @return A pointer to the device node name or NULL if the entity has no
  * associated device node
  */
-const char *media_entity_get_devname(struct media_entity *entity);
+extern const char *media_entity_get_devname(struct media_entity *entity);
 
 /**
  * @brief Get the type of an entity.
@@ -250,7 +254,7 @@ static inline unsigned int media_entity_type(struct media_entity *entity)
  *
  * @return A pointer to the entity if found, or NULL otherwise.
  */
-struct media_entity *media_get_entity_by_name(struct media_device *media,
+extern struct media_entity *media_get_entity_by_name(struct media_device *media,
 	const char *name);
 
 /**
@@ -266,7 +270,7 @@ struct media_entity *media_get_entity_by_name(struct media_device *media,
  *
  * @return A pointer to the entity if found, or NULL otherwise.
  */
-struct media_entity *media_get_entity_by_id(struct media_device *media,
+extern struct media_entity *media_get_entity_by_id(struct media_device *media,
 	__u32 id);
 
 /**
@@ -278,7 +282,7 @@ struct media_entity *media_get_entity_by_id(struct media_device *media,
  *
  * @return The number of entities in the media device
  */
-unsigned int media_get_entities_count(struct media_device *media);
+extern unsigned int media_get_entities_count(struct media_device *media);
 
 /**
  * @brief Get the entities
@@ -292,7 +296,7 @@ unsigned int media_get_entities_count(struct media_device *media);
  *
  * @return A pointer to an array of entities
  */
-struct media_entity *media_get_entity(struct media_device *media, unsigned int index);
+extern struct media_entity *media_get_entity(struct media_device *media, unsigned int index);
 
 /**
  * @brief Get the default entity for a given type
@@ -310,7 +314,7 @@ struct media_entity *media_get_entity(struct media_device *media, unsigned int i
  * @return A pointer to the default entity for the type if it exists, or NULL
  * otherwise.
  */
-struct media_entity *media_get_default_entity(struct media_device *media,
+extern struct media_entity *media_get_default_entity(struct media_device *media,
 					      unsigned int type);
 
 /**
@@ -322,7 +326,7 @@ struct media_entity *media_get_default_entity(struct media_device *media,
  *
  * @return A pointer to the media device information
  */
-const struct media_device_info *media_get_info(struct media_device *media);
+extern const struct media_device_info *media_get_info(struct media_device *media);
 
 /**
  * @brief Get the media device node name
@@ -333,7 +337,7 @@ const struct media_device_info *media_get_info(struct media_device *media);
  *
  * @return A pointer to the media device node name
  */
-const char *media_get_devnode(struct media_device *media);
+extern const char *media_get_devnode(struct media_device *media);
 
 /**
  * @brief Configure a link.
@@ -351,7 +355,7 @@ const char *media_get_devnode(struct media_device *media);
  *	   -ENOENT: link not found
  *	   - other error codes returned by MEDIA_IOC_SETUP_LINK
  */
-int media_setup_link(struct media_device *media,
+extern int media_setup_link(struct media_device *media,
 	struct media_pad *source, struct media_pad *sink,
 	__u32 flags);
 
@@ -364,7 +368,7 @@ int media_setup_link(struct media_device *media,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int media_reset_links(struct media_device *media);
+extern int media_reset_links(struct media_device *media);
 
 /**
  * @brief Parse string to an entity on the media device.
@@ -377,7 +381,7 @@ int media_reset_links(struct media_device *media);
  *
  * @return Pointer to struct media_entity on success, NULL on failure.
  */
-struct media_entity *media_parse_entity(struct media_device *media,
+extern struct media_entity *media_parse_entity(struct media_device *media,
 					const char *p, char **endp);
 
 /**
@@ -391,7 +395,7 @@ struct media_entity *media_parse_entity(struct media_device *media,
  *
  * @return Pointer to struct media_pad on success, NULL on failure.
  */
-struct media_pad *media_parse_pad(struct media_device *media,
+extern struct media_pad *media_parse_pad(struct media_device *media,
 				  const char *p, char **endp);
 
 /**
@@ -405,7 +409,7 @@ struct media_pad *media_parse_pad(struct media_device *media,
  *
  * @return Pointer to struct media_link on success, NULL on failure.
  */
-struct media_link *media_parse_link(struct media_device *media,
+extern struct media_link *media_parse_link(struct media_device *media,
 				    const char *p, char **endp);
 
 /**
@@ -418,7 +422,7 @@ struct media_link *media_parse_link(struct media_device *media,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int media_parse_setup_link(struct media_device *media,
+extern int media_parse_setup_link(struct media_device *media,
 			   const char *p, char **endp);
 
 /**
@@ -431,6 +435,10 @@ int media_parse_setup_link(struct media_device *media,
  *
  * @return 0 on success, or a negative error code on failure.
  */
-int media_parse_setup_links(struct media_device *media, const char *p);
+extern int media_parse_setup_links(struct media_device *media, const char *p);
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif
