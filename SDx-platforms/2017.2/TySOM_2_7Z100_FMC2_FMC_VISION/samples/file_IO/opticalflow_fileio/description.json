@@ -1,0 +1,25 @@
+{
+    "example" : "Dense Non-Pyramidal Optical Flow - File I/O",
+    "overview" : "Dense Non-Pyramidal Optical Flow",
+    "board" : [
+        "TySOM_2_7Z100_FMC2_FMC_VISION"
+    ],
+    "os" : [
+        "Linux"
+    ],
+    "system" : {
+        "dmclkid" : "2"
+    },
+    "accelerators" : [
+        {
+            "name" : "xFDenseNonPyrLKOpticalFlow",
+            "location" : "<PLATFORM>/sw/config0_0/inc/xfopencv/include/imgproc/xf_dense_npyr_optical_flow.hpp",
+            "clkid" : "2"
+        }
+    ],
+    "compiler" : {
+        "symbols" : [
+            "HLS_NO_XIL_FPO_LIB"
+        ]
+		}
+}
