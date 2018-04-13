@@ -4,6 +4,7 @@
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
+     - [TySOM-2-7Z100_FMC2_FMC-VISION](#tysom_2_7z100_fmc2_fmc_vision)
    - [TySOM-2-7Z045](#tysom_2_7z045)
      - [TySOM-2-7Z045_FMC2_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_adas)
      - [TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision)
@@ -16,6 +17,8 @@
 # TySOM - SDx-platforms
 
 This page contains configuration platforms for Xilinx SDx tool for Aldec TySOM boards. Every configuration is ready to use with SDx and TySOM boards.
+
+>**Note: These platforms have to be downloaded and a zip file has to be extracted on Linux. SDx platform extracted on Windows will not work!**
 
 <a name="tysom_3_zu7_fmc1_fmc_adas"/>
 
@@ -108,6 +111,14 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2_7z100_fmc2_fmc_vision"/>
+
+### TySOM-2-7Z100_FMC2_FMC-VISION
+
+[Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 <a name="tysom_2_7z045"/>
 
