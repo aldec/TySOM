@@ -1,8 +1,8 @@
 # Table of Content
 [TySOM - SDx-platforms](#tysom_sdx_platforms)
-   - [TySOM-3-ZU7](tysom_3_zu7)
-     - [TySOM-3-ZU7_FMC1_FMC-ADAS](tysom_3_zu7_fmc1_fmc_adas)
-     - [TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1](tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1)
+   - [TySOM-3-ZU7](#tysom_3_zu7)
+     - [TySOM-3-ZU7_FMC1_FMC-ADAS](#tysom_3_zu7_fmc1_fmc_adas)
+     - [TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1](#tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1)
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
