@@ -2,6 +2,7 @@
 [TySOM - SDx-platforms](#tysom_sdx_platforms)
    - [TySOM-3-ZU7](tysom_3_zu7)
      - [TySOM-3-ZU7_FMC1_FMC-ADAS](tysom_3_zu7_fmc1_fmc_adas)
+     - [TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1](tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1)
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
@@ -64,6 +65,16 @@ Current Monitor |
 Note: This platform is supported in Xilinx SDx 2017.4 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1"/>
+
+## TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1
+
+This platform utilizes [Leopard camera](https://leopardimaging.com/product/li-imx274mipi-fmc/) version v1.1 and allows grabbing frames from it and process on the board.
+
+Because of the size of the platform it is available on [Aldec website](https://www.aldec.com/en/downloads/private/1189)
+
+Note: This camera cannot be connected directly to the TySOM-3 board, special adapter Adapter_FMC_IMX274MIPI-TySOM-3 is required.
 
 <a name="tysom_2_7z100"/>
 
