@@ -5,11 +5,13 @@
      - [TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1](#tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1)
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
-     - [TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision)
+     - [TySOM-2-7Z100_FMC2_FMC-VISION_FMC3_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_vision_fmc3_fmc_adas)
+     - [TySOM-2-7Z100_FMC2_VISION_FMC3_ADAS](#tysom_2_7z100_fmc2_vision_fmc3_adas)
      - [TySOM-2-7Z100_FMC2_FMC-VISION](#tysom_2_7z100_fmc2_fmc_vision)
    - [TySOM-2-7Z045](#tysom_2_7z045)
      - [TySOM-2-7Z045_FMC2_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_adas)
-     - [TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION](#tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision)
+     - [TySOM-2-7Z045_FMC2_FMC-VISION_FMC3_FMC-ADAS](#tysom_2_7z045_fmc2_fmc_vision_fmc3_fmc_adas)
+     - [TySOM-2-7Z045_FMC2_VISION_FMC3_ADAS](#tysom_2_7z045_fmc2_vision_fmc3_adas)
    - [TySOM-2A-7Z030](#tysom_2a_7z030)
      - [TySOM-2A-7Z030_FMC2_FMC-ADAS](#tysom_2a_7z030_fmc2_fmc_adas)
    - [TySOM-1-7Z030](#tysom_1_7z030)
@@ -120,15 +122,21 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
-<a name="tysom_2_7z100_fmc2_fmc_adas_fmc3_fmc_vision"/>
+<a name="tysom_2_7z100_fmc2_fmc_vision_fmc3_fmc_adas"/>
 
-### TySOM-2-7Z100_FMC2_FMC-ADAS_FMC3_FMC-VISION
+### TySOM-2-7Z100_FMC2_FMC-VISION_FMC3_FMC-ADAS
 
 Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2_7z100_fmc2_vision_fmc3_adas"/>
+
+### TySOM-2-7Z100_FMC2_VISION_FMC3_ADAS
+
+This is a copy of TySOM-2-7Z100_FMC2_FMC-VISION_FMC3_FMC-ADAS platform with short name.
 
 <a name="tysom_2_7z100_fmc2_fmc_vision"/>
 
@@ -182,15 +190,21 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
-<a name="tysom_2_7z045_fmc2_fmc_adas_fmc3_fmc_vision"/>
+<a name="tysom_2_7z045_fmc2_fmc_vision_fmc3_fmc_adas"/>
 
-### TySOM-2-7Z045_FMC2_FMC-ADAS_FMC3_FMC-VISION
+### TySOM-2-7Z045_FMC2_FMC-VISION_FMC3_FMC-ADAS
 
 Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
+
+<a name="tysom_2_7z045_fmc2_vision_fmc3_adas"/>
+
+### TySOM-2-7Z045_FMC2_VISION_FMC3_ADAS
+
+This is a copy of TySOM-2-7Z045_FMC2_FMC-VISION_FMC3_FMC-ADAS platform with short name.
 
 <a name="tysom_2a_7z030"/>
 
