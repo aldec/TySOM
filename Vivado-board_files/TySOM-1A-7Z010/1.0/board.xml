@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<board schema_version="2.0" vendor="aldec.com" name="TySOM-1A-7Z010" display_name="TySOM-1A-7Z010" url="https://www.aldec.com/en/products/embedded/tysom" preset_file="preset.xml">
+    <images>
+        <image name="TySOM-1A_board.png" display_name="TySOM-1A-7Z010 BOARD" sub_type="board">
+            <description>TySOM-1A-7Z010 Board</description>
+        </image>
+    </images>
+    <compatible_board_revisions>
+        <revision id="0">1.0</revision>
+    </compatible_board_revisions>
+    <file_version>1.0</file_version>
+    <description>Aldec TySOM-1A-7Z010 Zynq Evaluation and Development Kit</description>
+    <components>
+        <component name="part0" display_name="Aldec TySOM-1A-7Z010 Zynq Evaluation and Development Kit" type="fpga" part_name="xc7z010clg225-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://www.aldec.com/en/products/embedded/tysom">
+            <description>FPGA part on the board</description>
+            <interfaces>
+                <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset">
+                </interface>
+
+                <interface mode="master" name="hdmi_out_hpd" type="xilinx.com:interface:gpio_rtl:1.0" of_component="hdmi_out_hpd" preset_proc="hdmi_out_hpd_preset" >
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_I" physical_port="hdmi_out_hpd_tri_i" dir="in">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="hdmi_out_hpd_tri_i"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+
+                <interface mode="master" name="gpio_pmod" type="xilinx.com:interface:gpio_rtl:1.0" of_component="gpio_pmod">
+                    <port_maps>
+                        <port_map logical_port="TRI_I" physical_port="gpio_0_tri_io" dir="in" left="15" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="gpio_0_tri_io_0"/>
+                                <pin_map port_index="1" component_pin="gpio_0_tri_io_1"/>
+                                <pin_map port_index="2" component_pin="gpio_0_tri_io_2"/>
+                                <pin_map port_index="3" component_pin="gpio_0_tri_io_3"/>
+                                <pin_map port_index="4" component_pin="gpio_0_tri_io_4"/>
+                                <pin_map port_index="5" component_pin="gpio_0_tri_io_5"/>
+                                <pin_map port_index="6" component_pin="gpio_0_tri_io_6"/>
+                                <pin_map port_index="7" component_pin="gpio_0_tri_io_7"/>
+                                <pin_map port_index="8" component_pin="gpio_0_tri_io_8"/>
+                                <pin_map port_index="9" component_pin="gpio_0_tri_io_9"/>
+                                <pin_map port_index="10" component_pin="gpio_0_tri_io_10"/>
+                                <pin_map port_index="11" component_pin="gpio_0_tri_io_11"/>
+                                <pin_map port_index="12" component_pin="gpio_0_tri_io_12"/>
+                                <pin_map port_index="13" component_pin="gpio_0_tri_io_13"/>
+                                <pin_map port_index="14" component_pin="gpio_0_tri_io_14"/>
+                                <pin_map port_index="15" component_pin="gpio_0_tri_io_15"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+            </interfaces>
+        </component>
+
+        <component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+
+        <component name="hdmi_out_hpd" display_name="HDMI_OUT HPD signal" type="chip" sub_type="chip" major_group="General Purpose Input or Output">
+            <description>HDMI_OUT HPD signal</description>
+        </component>
+
+        <component name="gpio_pmod" display_name="GPIO PMODs" type="chip" sub_type="chip" major_group="General Purpose Input or Output">
+            <description>GPIO PMODs connectrions</description>
+        </component>
+    </components>
+
+    <connections>
+        <connection name="part0_hdmi_out_hpd" component1="part0" component2="hdmi_out_hpd">
+            <connection_map name="part0_hdmi_out_hpd_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+        </connection>
+    </connections>
+</board>

@@ -1,0 +1,1679 @@
+<?xml version="1.0"?>
+<board schema_version="2.0" vendor="aldec.com" name="FMC-ADAS" display_name="Aldec FMC-ADAS" url="https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas--fpd-link-iii-fpga">
+<!-- NOTE:name tag above should not have any spaces-->
+	<compatible_board_revisions>
+		<revision id="0">1.0</revision>
+	</compatible_board_revisions>
+	<file_version>1.0</file_version>
+	<description>Aldec FMC-ADAS</description>
+	
+	<components>
+		<component name="fmc_connector" display_name="FMC-ADAS" type="connector" sub_type="fmc_hpc" major_group="FMC Generated">
+			<parameters>
+				<parameter name="mode" value="hpc0" value_type="list" range="hpc0"/>
+			</parameters>
+			<pins>
+				<pin index="1" name="" ></pin> <!-- A1 --> 
+	    			<pin index="2" name="" ></pin> <!-- A2 -->
+				<pin index="3" name="" ></pin> <!-- A3 -->
+				<pin index="4" name="" ></pin> <!-- A4 -->
+				<pin index="5" name="" ></pin> <!-- A5 -->
+				<pin index="6" name="" ></pin> <!-- A6 -->
+				<pin index="7" name="" ></pin> <!-- A7 -->
+				<pin index="8" name="" ></pin> <!-- A8 -->
+				<pin index="9" name="" ></pin> <!-- A9 -->
+				<pin index="10" name="" ></pin> <!-- A10 -->
+				<pin index="11" name="" ></pin> <!-- A11 -->
+				<pin index="12" name="" ></pin> <!-- A12 -->
+				<pin index="13" name="" ></pin> <!-- A13 -->
+				<pin index="14" name="" ></pin> <!-- A14 -->
+				<pin index="15" name="" ></pin> <!-- A15 -->
+				<pin index="16" name="" ></pin> <!-- A16 -->
+				<pin index="17" name="" ></pin> <!-- A17 -->
+				<pin index="18" name="" ></pin> <!-- A18 -->
+				<pin index="19" name="" ></pin> <!-- A19 -->
+				<pin index="20" name="" ></pin> <!-- A20 -->
+				<pin index="21" name="" ></pin> <!-- A21 -->
+				<pin index="22" name="" ></pin> <!-- A22 -->
+				<pin index="23" name="" ></pin> <!-- A23 -->
+				<pin index="24" name="" ></pin> <!-- A24 -->
+				<pin index="25" name="" ></pin> <!-- A25 -->
+				<pin index="26" name="" ></pin> <!-- A26 -->
+				<pin index="27" name="" ></pin> <!-- A27 -->
+				<pin index="28" name="" ></pin> <!-- A28 -->
+				<pin index="29" name="" ></pin> <!-- A29 -->
+				<pin index="30" name="" ></pin> <!-- A30 -->
+				<pin index="31" name="" ></pin> <!-- A31 -->
+				<pin index="32" name="" ></pin> <!-- A32 -->
+				<pin index="33" name="" ></pin> <!-- A33 -->
+				<pin index="34" name="" ></pin> <!-- A34 -->
+				<pin index="35" name="" ></pin> <!-- A35 -->
+				<pin index="36" name="" ></pin> <!-- A36 -->
+				<pin index="37" name="" ></pin> <!-- A37 -->
+				<pin index="38" name="" ></pin> <!-- A38 -->
+				<pin index="39" name="" ></pin> <!-- A39 -->
+				<pin index="40" name="" ></pin> <!-- A40 -->
+				<pin index="41" name="" ></pin> <!-- B1 -->
+				<pin index="42" name="" ></pin> <!-- B2 -->
+				<pin index="43" name="" ></pin> <!-- B3 -->
+				<pin index="44" name="" ></pin> <!-- B4 -->
+				<pin index="45" name="" ></pin> <!-- B5 -->
+				<pin index="46" name="" ></pin> <!-- B6 -->
+				<pin index="47" name="" ></pin> <!-- B7 -->
+				<pin index="48" name="" ></pin> <!-- B8 -->
+				<pin index="49" name="" ></pin> <!-- B9 -->
+				<pin index="50" name="" ></pin> <!-- B10 -->
+				<pin index="51" name="" ></pin> <!-- B11 -->
+				<pin index="52" name="" ></pin> <!-- B12 -->
+				<pin index="53" name="" ></pin> <!-- B13 -->
+				<pin index="54" name="" ></pin> <!-- B14 -->
+				<pin index="55" name="" ></pin> <!-- B15 -->
+				<pin index="56" name="" ></pin> <!-- B16 -->
+				<pin index="57" name="" ></pin> <!-- B17 -->
+				<pin index="58" name="" ></pin> <!-- B18 -->
+				<pin index="59" name="" ></pin> <!-- B19 -->
+				<pin index="60" name="" ></pin> <!-- B20 -->
+				<pin index="61" name="" ></pin> <!-- B21 -->
+				<pin index="62" name="" ></pin> <!-- B22 -->
+				<pin index="63" name="" ></pin> <!-- B23 -->
+				<pin index="64" name="" ></pin> <!-- B24 -->
+				<pin index="65" name="" ></pin> <!-- B25 -->
+				<pin index="66" name="" ></pin> <!-- B26 -->
+				<pin index="67" name="" ></pin> <!-- B27 -->
+				<pin index="68" name="" ></pin> <!-- B28 -->
+				<pin index="69" name="" ></pin> <!-- B29 -->
+				<pin index="70" name="" ></pin> <!-- B30 -->
+				<pin index="71" name="" ></pin> <!-- B31 -->
+				<pin index="72" name="" ></pin> <!-- B32 -->
+				<pin index="73" name="" ></pin> <!-- B33 -->
+				<pin index="74" name="" ></pin> <!-- B34 -->
+				<pin index="75" name="" ></pin> <!-- B35 -->
+				<pin index="76" name="" ></pin> <!-- B36 -->
+				<pin index="77" name="" ></pin> <!-- B37 -->
+				<pin index="78" name="" ></pin> <!-- B38 -->
+				<pin index="79" name="" ></pin> <!-- B39 -->
+				<pin index="80" name="" ></pin> <!-- B40 -->
+				<pin index="81" name="" ></pin> <!-- C1 --> 
+	    			<pin index="82" name="" ></pin> <!-- C2 -->
+				<pin index="83" name="" ></pin> <!-- C3 -->
+				<pin index="84" name="" ></pin> <!-- C4 -->
+				<pin index="85" name="" ></pin> <!-- C5 -->
+				<pin index="86" name="" ></pin> <!-- C6 -->
+				<pin index="87" name="" ></pin> <!-- C7 -->
+				<pin index="88" name="" ></pin> <!-- C8 -->
+				<pin index="89" name="" ></pin> <!-- C9 -->
+				<pin index="90" name="fmc_la06_p" ></pin> <!-- C10 -->
+				<pin index="91" name="fmc_la06_n" ></pin> <!-- C11 -->
+				<pin index="92" name="" ></pin> <!-- C12 -->
+				<pin index="93" name="" ></pin> <!-- C13 -->
+				<pin index="94" name="fmc_la10_p" ></pin> <!-- C14 -->
+				<pin index="95" name="fmc_la10_n" ></pin> <!-- C15 -->
+				<pin index="96" name="" ></pin> <!-- C16 -->
+				<pin index="97" name="" ></pin> <!-- C17 -->
+				<pin index="98" name="fmc_la14_p" ></pin> <!-- C18 -->
+				<pin index="99" name="fmc_la14_n" ></pin> <!-- C19 -->
+				<pin index="100" name="" ></pin> <!-- C20 -->
+				<pin index="101" name="" ></pin> <!-- C21 -->
+				<pin index="102" name="fmc_la18_cc_p" ></pin> <!-- C22 -->
+				<pin index="103" name="fmc_la18_cc_n" ></pin> <!-- C23 -->
+				<pin index="104" name="" ></pin> <!-- C24 -->
+				<pin index="105" name="" ></pin> <!-- C25 -->
+				<pin index="106" name="fmc_la27_p" ></pin> <!-- C26 -->
+				<pin index="107" name="fmc_la27_n" ></pin> <!-- C27 -->
+				<pin index="108" name="" ></pin> <!-- C28 -->
+				<pin index="109" name="" ></pin> <!-- C29 -->
+				<pin index="110" name="iic_scl_main" ></pin> <!-- C30 -->
+				<pin index="111" name="iic_sda_main" ></pin> <!-- C31 -->
+				<pin index="112" name="" ></pin> <!-- C32 -->
+				<pin index="113" name="" ></pin> <!-- C33 -->
+				<pin index="114" name="ga0" ></pin> <!-- C34 -->
+				<pin index="115" name="vcc12" ></pin> <!-- C35 -->
+				<pin index="116" name="" ></pin> <!-- C36 -->
+				<pin index="117" name="vcc12" ></pin> <!-- C37 -->
+				<pin index="118" name="" ></pin> <!-- C38 -->
+				<pin index="119" name="vcc3v3" ></pin> <!-- C39 -->
+				<pin index="120" name="" ></pin> <!-- C40 -->
+				<pin index="121" name="pg_c2m" ></pin> <!-- D1 -->
+				<pin index="122" name="" ></pin> <!-- D2 -->
+				<pin index="123" name="" ></pin> <!-- D3 -->
+				<pin index="124" name="" ></pin> <!-- D4 -->
+				<pin index="125" name="" ></pin> <!-- D5 -->
+				<pin index="126" name="" ></pin> <!-- D6 -->
+				<pin index="127" name="" ></pin> <!-- D7 -->
+				<pin index="128" name="fmc_la01_cc_p" ></pin> <!-- D8 -->
+				<pin index="129" name="fmc_la01_cc_n" ></pin> <!-- D9 -->
+				<pin index="130" name="" ></pin> <!-- D10 -->
+				<pin index="131" name="fmc_la05_p" ></pin> <!-- D11 -->
+				<pin index="132" name="fmc_la05_n" ></pin> <!-- D12 -->
+				<pin index="133" name="" ></pin> <!-- D13 -->
+				<pin index="134" name="fmc_la09_p" ></pin> <!-- D14 -->
+				<pin index="135" name="fmc_la09_n" ></pin> <!-- D15 -->
+				<pin index="136" name="" ></pin> <!-- D16 -->
+				<pin index="137" name="fmc_la13_p" ></pin> <!-- D17 -->
+				<pin index="138" name="fmc_la13_n" ></pin> <!-- D18 -->
+				<pin index="139" name="" ></pin> <!-- D19 -->
+				<pin index="140" name="fmc_la17_cc_p" ></pin> <!-- D20 -->
+				<pin index="141" name="fmc_la17_cc_n" ></pin> <!-- D21 -->
+				<pin index="142" name="" ></pin> <!-- D22 -->
+				<pin index="143" name="fmc_la23_p" ></pin> <!-- D23 -->
+				<pin index="144" name="fmc_la23_n" ></pin> <!-- D24 -->
+				<pin index="145" name="" ></pin> <!-- D25 -->
+				<pin index="146" name="fmc_la26_p" ></pin> <!-- D26 -->
+				<pin index="147" name="fmc_la26_n" ></pin> <!-- D27 -->
+				<pin index="148" name="" ></pin> <!-- D28 -->
+				<pin index="149" name="fmc_tck" ></pin> <!-- D29 -->
+				<pin index="150" name="fmc_tdi" ></pin> <!-- D30 -->
+				<pin index="151" name="fmc_tdo" ></pin> <!-- D31 -->
+				<pin index="152" name="vcc3v3_aux" ></pin> <!-- D32 -->
+				<pin index="153" name="fmc_tms" ></pin> <!-- D33 -->
+				<pin index="154" name="" ></pin> <!-- D34 -->
+				<pin index="155" name="ga1" ></pin> <!-- D35 -->
+				<pin index="156" name="vcc3v3" ></pin> <!-- D36 -->
+				<pin index="157" name="" ></pin> <!-- D37 -->
+				<pin index="158" name="vcc3v3" ></pin> <!-- D38 -->
+				<pin index="159" name="" ></pin> <!-- D39 -->
+				<pin index="160" name="vcc3v3" ></pin> <!-- D40 -->
+				<pin index="161" name="" ></pin> <!-- E1 -->
+				<pin index="162" name="fmc_ha01_cc_p" ></pin> <!-- E2 -->
+				<pin index="163" name="fmc_ha01_cc_n" ></pin> <!-- E3 -->
+				<pin index="164" name="" ></pin> <!-- E4 -->
+				<pin index="165" name="" ></pin> <!-- E5 -->
+				<pin index="166" name="fmc_ha05_p" ></pin> <!-- E6 -->
+				<pin index="167" name="fmc_ha05_n" ></pin> <!-- E7 -->
+				<pin index="168" name="" ></pin> <!-- E8 -->
+				<pin index="169" name="fmc_ha09_p" ></pin> <!-- E9 -->
+				<pin index="170" name="fmc_ha09_n" ></pin> <!-- E10 -->
+				<pin index="171" name="" ></pin> <!-- E11 -->
+				<pin index="172" name="fmc_ha13_p" ></pin> <!-- E12 -->
+				<pin index="173" name="fmc_ha13_n" ></pin> <!-- E13 -->
+				<pin index="174" name="" ></pin> <!-- E14 -->
+				<pin index="175" name="fmc_ha16_p" ></pin> <!-- E15 -->
+				<pin index="176" name="fmc_ha16_n" ></pin> <!-- E16 -->
+				<pin index="177" name="" ></pin> <!-- E17 -->
+				<pin index="178" name="fmc_ha20_p" ></pin> <!-- E18 -->
+				<pin index="179" name="fmc_ha20_n" ></pin> <!-- E19 -->
+				<pin index="180" name="" ></pin> <!-- E20 -->
+				<pin index="181" name="fmc_hb03_p" ></pin> <!-- E21 -->
+				<pin index="182" name="fmc_hb03_n" ></pin> <!-- E22 -->
+				<pin index="183" name="" ></pin> <!-- E23 -->
+				<pin index="184" name="fmc_hb05_p" ></pin> <!-- E24 -->
+				<pin index="185" name="fmc_hb05_n" ></pin> <!-- E25 -->
+				<pin index="186" name="" ></pin> <!-- E26 -->
+				<pin index="187" name="fmc_hb09_p" ></pin> <!-- E27 -->
+				<pin index="188" name="fmc_hb09_n" ></pin> <!-- E28 -->
+				<pin index="189" name="" ></pin> <!-- E29 -->
+				<pin index="190" name="fmc_hb13_p" ></pin> <!-- E30 -->
+				<pin index="191" name="fmc_hb13_n" ></pin> <!-- E31 -->
+				<pin index="192" name="" ></pin> <!-- E32 -->
+				<pin index="193" name="fmc_hb19_p" ></pin> <!-- E33 -->
+				<pin index="194" name="fmc_hb19_n" ></pin> <!-- E34 -->
+				<pin index="195" name="" ></pin> <!-- E35 -->
+				<pin index="196" name="fmc_hb21_p" ></pin> <!-- E36 -->
+				<pin index="197" name="fmc_hb21_n" ></pin> <!-- E37 -->
+				<pin index="198" name="" ></pin> <!-- E38 -->
+				<pin index="199" name="vadj" ></pin> <!-- E39 -->
+				<pin index="200" name="" ></pin> <!-- E40 -->
+				<pin index="201" name="fmc_pg_m2c" ></pin> <!-- F1 -->
+				<pin index="202" name="" ></pin> <!-- F2 -->
+				<pin index="203" name="" ></pin> <!-- F3 -->
+				<pin index="204" name="fmc_ha00_cc_p" ></pin> <!-- F4 -->
+				<pin index="205" name="fmc_ha00_cc_n" ></pin> <!-- F5 -->
+				<pin index="206" name="" ></pin> <!-- F6 -->
+				<pin index="207" name="fmc_ha04_p" ></pin> <!-- F7 -->
+				<pin index="208" name="fmc_ha04_n" ></pin> <!-- F8 -->
+				<pin index="209" name="" ></pin> <!-- F9 -->
+				<pin index="210" name="fmc_ha08_p" ></pin> <!-- F10 -->
+				<pin index="211" name="fmc_ha08_n" ></pin> <!-- F11 -->
+				<pin index="212" name="" ></pin> <!-- F12 -->
+				<pin index="213" name="fmc_ha12_p" ></pin> <!-- F13 -->
+				<pin index="214" name="fmc_ha12_n" ></pin> <!-- F14 -->
+				<pin index="215" name="" ></pin> <!-- F15 -->
+				<pin index="216" name="fmc_ha15_p" ></pin> <!-- F16 -->
+				<pin index="217" name="fmc_ha15_n" ></pin> <!-- F17 -->
+				<pin index="218" name="" ></pin> <!-- F18 -->
+				<pin index="219" name="fmc_ha19_p" ></pin> <!-- F19 -->
+				<pin index="220" name="fmc_ha19_n" ></pin> <!-- F20 -->
+				<pin index="221" name="" ></pin> <!-- F21 -->
+				<pin index="222" name="fmc_hb02_p" ></pin> <!-- F22 -->
+				<pin index="223" name="fmc_hb02_n" ></pin> <!-- F23 -->
+				<pin index="224" name="" ></pin> <!-- F24 -->
+				<pin index="225" name="fmc_hb04_p" ></pin> <!-- F25 -->
+				<pin index="226" name="fmc_hb04_n" ></pin> <!-- F26 -->
+				<pin index="227" name="" ></pin> <!-- F27 -->
+				<pin index="228" name="fmc_hb08_p" ></pin> <!-- F28 -->
+				<pin index="229" name="fmc_hb08_n" ></pin> <!-- F29 -->
+				<pin index="230" name="" ></pin> <!-- F30 -->
+				<pin index="231" name="fmc_hb12_p" ></pin> <!-- F31 -->
+				<pin index="232" name="fmc_hb12_n" ></pin> <!-- F32 -->
+				<pin index="233" name="" ></pin> <!-- F33 -->
+				<pin index="234" name="fmc_hb16_p" ></pin> <!-- F34 -->
+				<pin index="235" name="fmc_hb16_n" ></pin> <!-- F35 -->
+				<pin index="236" name="" ></pin> <!-- F36 -->
+				<pin index="237" name="fmc_hb20_p" ></pin> <!-- F37 -->
+				<pin index="238" name="fmc_hb20_n" ></pin> <!-- F38 -->
+				<pin index="239" name="" ></pin> <!-- F39 -->
+				<pin index="240" name="vadj" ></pin> <!-- F40 -->
+				<pin index="241" name="" ></pin> <!-- G1 -->
+				<pin index="242" name="clk1_m2c_p" ></pin> <!-- G2 -->
+				<pin index="243" name="clk1_m2c_n" ></pin> <!-- G3 -->
+				<pin index="244" name="" ></pin> <!-- G4 -->
+				<pin index="245" name="" ></pin> <!-- G5 -->
+				<pin index="246" name="fmc_la00_cc_p" ></pin> <!-- G6 -->
+				<pin index="247" name="fmc_la00_cc_n" ></pin> <!-- G7 -->
+				<pin index="248" name="" ></pin> <!-- G8 -->
+				<pin index="249" name="fmc_la03_p" ></pin> <!-- G9 -->
+				<pin index="250" name="fmc_la03_n" ></pin> <!-- G10 -->
+				<pin index="251" name="" ></pin> <!-- G11 -->
+				<pin index="252" name="fmc_la08_p" ></pin> <!-- G12 -->
+				<pin index="253" name="fmc_la08_n" ></pin> <!-- G13 -->
+				<pin index="254" name="" ></pin> <!-- G14 -->
+				<pin index="255" name="fmc_la12_p" ></pin> <!-- G15 -->
+				<pin index="256" name="fmc_la12_n" ></pin> <!-- G16 -->
+				<pin index="257" name="" ></pin> <!-- G17 -->
+				<pin index="258" name="fmc_la16_p" ></pin> <!-- G18 -->
+				<pin index="259" name="fmc_la16_n" ></pin> <!-- G19 -->
+				<pin index="260" name="" ></pin> <!-- G20 -->
+				<pin index="261" name="fmc_la20_p" ></pin> <!-- G21 -->
+				<pin index="262" name="fmc_la20_n" ></pin> <!-- G22 -->
+				<pin index="263" name="" ></pin> <!-- G23 -->
+				<pin index="264" name="fmc_la22_p" ></pin> <!-- G24 -->
+				<pin index="265" name="fmc_la22_n" ></pin> <!-- G25 -->
+				<pin index="266" name="" ></pin> <!-- G26 -->
+				<pin index="267" name="fmc_la25_p" ></pin> <!-- G27 -->
+				<pin index="268" name="fmc_la25_n" ></pin> <!-- G28 -->
+				<pin index="269" name="" ></pin> <!-- G29 -->
+				<pin index="270" name="fmc_la29_p" ></pin> <!-- G30 -->
+				<pin index="271" name="fmc_la29_n" ></pin> <!-- G31 -->
+				<pin index="272" name="" ></pin> <!-- G32 -->
+				<pin index="273" name="fmc_la31_p" ></pin> <!-- G33 -->
+				<pin index="274" name="fmc_la31_n" ></pin> <!-- G34 -->
+				<pin index="275" name="" ></pin> <!-- G35 -->
+				<pin index="276" name="fmc_la33_p" ></pin> <!-- G36 -->
+				<pin index="277" name="fmc_la33_n" ></pin> <!-- G37 -->
+				<pin index="278" name="vadj" ></pin> <!-- G38 -->
+				<pin index="279" name="" ></pin> <!-- G39 -->
+				<pin index="280" name="" ></pin> <!-- G40 -->
+				<pin index="281" name="" ></pin> <!-- H1 -->
+				<pin index="282" name="prsnt_m2c_l" ></pin> <!-- H2 -->
+				<pin index="283" name="" ></pin> <!-- H3 -->
+				<pin index="284" name="clk0_m2c_p" ></pin> <!-- H4 -->
+				<pin index="285" name="clk0_m2c_n" ></pin> <!-- H5 -->
+				<pin index="286" name="" ></pin> <!-- H6 -->
+				<pin index="287" name="fmc_la02_p" ></pin> <!-- H7 -->
+				<pin index="288" name="fmc_la02_n" ></pin> <!-- H8 -->
+				<pin index="289" name="" ></pin> <!-- H9 -->
+				<pin index="290" name="fmc_la04_p" ></pin> <!-- H10 -->
+				<pin index="291" name="fmc_la04_n" ></pin> <!-- H11 -->
+				<pin index="292" name="" ></pin> <!-- H12 -->
+				<pin index="293" name="fmc_la07_p" ></pin> <!-- H13 -->
+				<pin index="294" name="fmc_la07_n" ></pin> <!-- H14 -->
+				<pin index="295" name="" ></pin> <!-- H15 -->
+				<pin index="296" name="fmc_la11_p" ></pin> <!-- H16 -->
+				<pin index="297" name="fmc_la11_n" ></pin> <!-- H17 -->
+				<pin index="298" name="" ></pin> <!-- H18 -->
+				<pin index="299" name="fmc_la15_p" ></pin> <!-- H19 -->
+				<pin index="300" name="fmc_la15_n" ></pin> <!-- H20 -->
+				<pin index="301" name="" ></pin> <!-- H21 -->
+				<pin index="302" name="fmc_la19_p" ></pin> <!-- H22 -->
+				<pin index="303" name="fmc_la19_n" ></pin> <!-- H23 -->
+				<pin index="304" name="" ></pin> <!-- H24 -->
+				<pin index="305" name="fmc_la21_p" ></pin> <!-- H25 -->
+				<pin index="306" name="fmc_la21_n" ></pin> <!-- H26 -->
+				<pin index="307" name="" ></pin> <!-- H27 -->
+				<pin index="308" name="fmc_la24_p" ></pin> <!-- H28 -->
+				<pin index="309" name="fmc_la24_n" ></pin> <!-- H29 -->
+				<pin index="310" name="" ></pin> <!-- H30 -->
+				<pin index="311" name="fmc_la28_p" ></pin> <!-- H31 -->
+				<pin index="312" name="fmc_la28_n" ></pin> <!-- H32 -->
+				<pin index="313" name="" ></pin> <!-- H33 -->
+				<pin index="314" name="fmc_la30_p" ></pin> <!-- H34 -->
+				<pin index="315" name="fmc_la30_n" ></pin> <!-- H35 -->
+				<pin index="316" name="" ></pin> <!-- H36 -->
+				<pin index="317" name="fmc_la32_p" ></pin> <!-- H37 -->
+				<pin index="318" name="fmc_la32_n" ></pin> <!-- H38 -->
+				<pin index="319" name="" ></pin> <!-- H39 -->
+				<pin index="320" name="vadj" ></pin> <!-- H40 -->
+
+				<pin index="321" name="" ></pin> <!-- J1 -->
+				<pin index="322" name="" ></pin> <!-- J2 -->
+				<pin index="323" name="" ></pin> <!-- J3 -->
+				<pin index="324" name="" ></pin> <!-- J4 -->
+				<pin index="325" name="" ></pin> <!-- J5 -->
+				<pin index="326" name="fmc_ha03_p" ></pin> <!-- J6 -->
+				<pin index="327" name="fmc_ha03_n" ></pin> <!-- J7 -->
+				<pin index="328" name="" ></pin> <!-- J8 -->
+				<pin index="329" name="fmc_ha07_p" ></pin> <!-- J9 -->
+				<pin index="330" name="fmc_ha07_n" ></pin> <!-- J10 -->
+				<pin index="331" name="" ></pin> <!-- J11 -->
+				<pin index="332" name="fmc_ha11_p" ></pin> <!-- J12 -->
+				<pin index="333" name="fmc_ha11_n" ></pin> <!-- J13 -->
+				<pin index="334" name="" ></pin> <!-- J14 -->
+				<pin index="335" name="fmc_ha14_p" ></pin> <!-- J15 -->
+				<pin index="336" name="fmc_ha14_n" ></pin> <!-- J16 -->
+				<pin index="337" name="" ></pin> <!-- J17 -->
+				<pin index="338" name="fmc_ha18_p" ></pin> <!-- J18 -->
+				<pin index="339" name="fmc_ha18_n" ></pin> <!-- J19 -->
+				<pin index="340" name="" ></pin> <!-- J20 -->
+				<pin index="341" name="fmc_ha22_p" ></pin> <!-- J21 -->
+				<pin index="342" name="fmc_ha22_n" ></pin> <!-- J22 -->
+				<pin index="343" name="" ></pin> <!-- J23 -->
+				<pin index="344" name="fmc_hb01_p" ></pin> <!-- J24 -->
+				<pin index="345" name="fmc_hb01_n" ></pin> <!-- J25 -->
+				<pin index="346" name="" ></pin> <!-- J26 -->
+				<pin index="347" name="fmc_hb07_p" ></pin> <!-- J27 -->
+				<pin index="348" name="fmc_hb07_n" ></pin> <!-- J28 -->
+				<pin index="349" name="" ></pin> <!-- J29 -->
+				<pin index="350" name="fmc_hb11_p" ></pin> <!-- J30 -->
+				<pin index="351" name="fmc_hb11_n" ></pin> <!-- J31 -->
+				<pin index="352" name="" ></pin> <!-- J32 -->
+				<pin index="353" name="fmc_hb15_p" ></pin> <!-- J33 -->
+				<pin index="354" name="fmc_hb15_n" ></pin> <!-- J34 -->
+				<pin index="355" name="" ></pin> <!-- J35 -->
+				<pin index="356" name="fmc_hb18_p" ></pin> <!-- J36 -->
+				<pin index="357" name="fmc_hb18_n" ></pin> <!-- J37 -->
+				<pin index="358" name="" ></pin> <!-- J38 -->
+				<pin index="359" name="vadj" ></pin> <!-- J39 -->
+				<pin index="360" name="" ></pin> <!-- J40 -->
+				<pin index="361" name="" ></pin> <!-- K1 -->
+				<pin index="362" name="" ></pin> <!-- K2 -->
+				<pin index="363" name="" ></pin> <!-- K3 -->
+				<pin index="364" name="" ></pin> <!-- K4 -->
+				<pin index="365" name="" ></pin> <!-- K5 -->
+				<pin index="366" name="" ></pin> <!-- K6 -->
+				<pin index="367" name="fmc_ha02_p" ></pin> <!-- K7 -->
+				<pin index="368" name="fmc_ha02_n" ></pin> <!-- K8 -->
+				<pin index="369" name="" ></pin> <!-- K9 -->
+				<pin index="370" name="fmc_ha06_p" ></pin> <!-- K10 -->
+				<pin index="371" name="fmc_ha06_n" ></pin> <!-- K11 -->
+				<pin index="372" name="" ></pin> <!-- K12 -->
+				<pin index="373" name="fmc_ha10_p" ></pin> <!-- K13 -->
+				<pin index="374" name="fmc_ha10_n" ></pin> <!-- K14 -->
+				<pin index="375" name="" ></pin> <!-- K15 -->
+				<pin index="376" name="fmc_ha17_cc_p" ></pin> <!-- K16 -->
+				<pin index="377" name="fmc_ha17_cc_n" ></pin> <!-- K17 -->
+				<pin index="378" name="" ></pin> <!-- K18 -->
+				<pin index="379" name="fmc_ha21_p" ></pin> <!-- K19 -->
+				<pin index="380" name="fmc_ha21_n" ></pin> <!-- K20 -->
+				<pin index="381" name="" ></pin> <!-- K21 -->
+				<pin index="382" name="fmc_ha23_p" ></pin> <!-- K22 -->
+				<pin index="383" name="fmc_ha23_n" ></pin> <!-- K23 -->
+				<pin index="384" name="" ></pin> <!-- K24 -->
+				<pin index="385" name="fmc_hb00_cc_p" ></pin> <!-- K25 -->
+				<pin index="386" name="fmc_hb00_cc_n" ></pin> <!-- K26 -->
+				<pin index="387" name="" ></pin> <!-- K27 -->
+				<pin index="388" name="fmc_hb06_cc_p" ></pin> <!-- K28 -->
+				<pin index="389" name="fmc_hb06_cc_n" ></pin> <!-- K29 -->
+				<pin index="390" name="" ></pin> <!-- K30 -->
+				<pin index="391" name="fmc_hb10_p" ></pin> <!-- K31 -->
+				<pin index="392" name="fmc_hb10_n" ></pin> <!-- K32 -->
+				<pin index="393" name="" ></pin> <!-- K33 -->
+				<pin index="394" name="fmc_hb14_p" ></pin> <!-- K34 -->
+				<pin index="395" name="fmc_hb14_n" ></pin> <!-- K35 -->
+				<pin index="396" name="" ></pin> <!-- K36 -->
+				<pin index="397" name="fmc_hb17_cc_p" ></pin> <!-- K37 -->
+				<pin index="398" name="fmc_hb17_cc_n" ></pin> <!-- K38 -->
+				<pin index="399" name="" ></pin> <!-- K39 -->
+		    		<pin index="400" name="vadj" ></pin> <!-- K40 -->
+			</pins>
+			<interfaces>
+			
+				<!--DES common control signals-->
+				<interface mode="master" name="DES_common_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des_common_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES_common_ctrl" dir="out" left="3" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la11_p"/> <!--DES_BISTEN-->
+								<pin_map port_index="1" component_pin="fmc_la23_p"/> <!--DES_PDB-->  
+								<pin_map port_index="2" component_pin="fmc_la12_n"/> <!--DES_OEN--> 
+								<pin_map port_index="3" component_pin="fmc_la13_p"/> <!--DES_OSS_SEL-->
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+			
+				<!--DES1-->
+				<interface mode="slave" name="DES1_PCLK" type="xilinx.com:signal:clock_rtl:1.0" of_component="des1_pclk">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="DES1_PCLK" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la00_cc_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES1_HSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des1_hsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES1_HSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la02_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES1_VSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des1_vsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES1_VSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la02_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES1_ROUT" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des1_rout">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES1_ROUT" dir="in" left="11" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la09_p"/>
+								<pin_map port_index="1" component_pin="fmc_la10_p"/>
+								<pin_map port_index="2" component_pin="fmc_la07_p"/>
+								<pin_map port_index="3" component_pin="fmc_la08_n"/>
+								<pin_map port_index="4" component_pin="fmc_la08_p"/>
+								<pin_map port_index="5" component_pin="fmc_la05_n"/>
+								<pin_map port_index="6" component_pin="fmc_la04_n"/>
+								<pin_map port_index="7" component_pin="fmc_la05_p"/>
+								<pin_map port_index="8" component_pin="fmc_la06_n"/>
+								<pin_map port_index="9" component_pin="fmc_la04_p"/>
+								<pin_map port_index="10" component_pin="fmc_la03_n"/>
+								<pin_map port_index="11" component_pin="fmc_la06_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES1_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="des1_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="DES1_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="DES1_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="DES1_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="DES1_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la03_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="DES1_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la03_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="DES1_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la03_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES1_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des1_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES1_ctrl" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la01_cc_n"/> 
+								<pin_map port_index="1" component_pin="fmc_la01_cc_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--DES2-->
+				<interface mode="slave" name="DES2_PCLK" type="xilinx.com:signal:clock_rtl:1.0" of_component="des2_pclk">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="DES2_PCLK" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la21_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES2_HSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des2_hsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES2_HSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la26_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES2_VSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des2_vsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES2_VSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la27_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES2_ROUT" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des2_rout">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES2_ROUT" dir="in" left="11" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la28_n"/>
+								<pin_map port_index="1" component_pin="fmc_la31_p"/>
+								<pin_map port_index="2" component_pin="fmc_la28_p"/>
+								<pin_map port_index="3" component_pin="fmc_la29_n"/>
+								<pin_map port_index="4" component_pin="fmc_la29_p"/>
+								<pin_map port_index="5" component_pin="fmc_la24_n"/>
+								<pin_map port_index="6" component_pin="fmc_la25_n"/>
+								<pin_map port_index="7" component_pin="fmc_la24_p"/>
+								<pin_map port_index="8" component_pin="fmc_la27_n"/>
+								<pin_map port_index="9" component_pin="fmc_la25_p"/>
+								<pin_map port_index="10" component_pin="fmc_la26_n"/>
+								<pin_map port_index="11" component_pin="fmc_la21_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES2_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="des2_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="DES2_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="DES2_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="DES2_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="DES2_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="DES2_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="DES2_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la22_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES2_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des2_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES2_ctrl" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la23_n"/> 
+								<pin_map port_index="1" component_pin="fmc_la19_n"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--DES3-->
+				<interface mode="slave" name="DES3_PCLK" type="xilinx.com:signal:clock_rtl:1.0" of_component="des3_pclk">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="DES3_PCLK" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb07_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES3_HSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des3_hsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES3_HSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb06_cc_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES3_VSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des3_vsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES3_VSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb08_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES3_ROUT" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des3_rout">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES3_ROUT" dir="in" left="11" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb16_n"/>
+								<pin_map port_index="1" component_pin="fmc_hb12_n"/>
+								<pin_map port_index="2" component_pin="fmc_hb10_n"/>
+								<pin_map port_index="3" component_pin="fmc_hb13_n"/>
+								<pin_map port_index="4" component_pin="fmc_hb12_p"/>
+								<pin_map port_index="5" component_pin="fmc_hb11_n"/>
+								<pin_map port_index="6" component_pin="fmc_hb10_p"/>
+								<pin_map port_index="7" component_pin="fmc_hb13_p"/>
+								<pin_map port_index="8" component_pin="fmc_hb11_p"/>
+								<pin_map port_index="9" component_pin="fmc_hb09_n"/>
+								<pin_map port_index="10" component_pin="fmc_hb09_p"/>
+								<pin_map port_index="11" component_pin="fmc_hb08_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES3_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="des3_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="DES3_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb06_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="DES3_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb06_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="DES3_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb06_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="DES3_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb05_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="DES3_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb05_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="DES3_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb05_n"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES3_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des3_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES3_ctrl" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb05_p"/> 
+								<pin_map port_index="1" component_pin="fmc_hb07_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--DES4-->
+				<interface mode="slave" name="DES4_PCLK" type="xilinx.com:signal:clock_rtl:1.0" of_component="des4_pclk">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="DES4_PCLK" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha00_cc_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES4_HSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des4_hsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES4_HSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha03_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES4_VSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des4_vsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES4_VSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha03_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES4_ROUT" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des4_rout">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES4_ROUT" dir="in" left="11" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha06_n"/>
+								<pin_map port_index="1" component_pin="fmc_ha09_n"/>
+								<pin_map port_index="2" component_pin="fmc_ha08_p"/>
+								<pin_map port_index="3" component_pin="fmc_ha06_p"/>
+								<pin_map port_index="4" component_pin="fmc_ha07_n"/>
+								<pin_map port_index="5" component_pin="fmc_ha09_p"/>
+								<pin_map port_index="6" component_pin="fmc_ha07_p"/>
+								<pin_map port_index="7" component_pin="fmc_ha04_n"/>
+								<pin_map port_index="8" component_pin="fmc_ha02_n"/>
+								<pin_map port_index="9" component_pin="fmc_ha05_n"/>
+								<pin_map port_index="10" component_pin="fmc_ha04_p"/>
+								<pin_map port_index="11" component_pin="fmc_ha02_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES4_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="des4_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="DES4_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="DES4_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="DES4_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha00_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="DES4_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha01_cc_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="DES4_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha01_cc_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="DES4_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha01_cc_n"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES4_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des4_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES4_ctrl" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha01_cc_p"/> 
+								<pin_map port_index="1" component_pin="fmc_ha05_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--DES5-->
+				<interface mode="slave" name="DES5_PCLK" type="xilinx.com:signal:clock_rtl:1.0" of_component="des5_pclk">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="DES5_PCLK" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha10_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES5_HSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des5_hsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES5_HSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha13_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES5_VSYNC" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des5_vsync">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES5_VSYNC" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_ha12_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="DES5_ROUT" type="Aldec.com:aldec_lib:data_rtl:1.0" of_component="des5_rout">
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="DES_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="DATA" physical_port="DES5_ROUT" dir="in" left="11" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la14_n"/>
+								<pin_map port_index="1" component_pin="fmc_la17_cc_n"/>
+								<pin_map port_index="2" component_pin="fmc_la20_p"/>
+								<pin_map port_index="3" component_pin="fmc_la15_n"/>
+								<pin_map port_index="4" component_pin="fmc_la17_cc_p"/>
+								<pin_map port_index="5" component_pin="fmc_la15_p"/>
+								<pin_map port_index="6" component_pin="fmc_la16_n"/>
+								<pin_map port_index="7" component_pin="fmc_ha15_n"/>
+								<pin_map port_index="8" component_pin="fmc_ha14_n"/>
+								<pin_map port_index="9" component_pin="fmc_ha14_p"/>
+								<pin_map port_index="10" component_pin="fmc_ha12_n"/>
+								<pin_map port_index="11" component_pin="fmc_ha10_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES5_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="des5_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="DES5_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la11_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="DES5_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la11_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="DES5_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la11_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="DES5_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la13_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="DES5_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la13_n"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="DES5_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la13_n"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="DES5_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="des5_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="DES5_ctrl" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_la16_p"/> 
+								<pin_map port_index="1" component_pin="fmc_la14_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--ULTRASONIC SENSOR-->
+				<interface mode="master" name="ULTRASONIC_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="ultrasonic_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="ULTRASONIC_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb15_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="ULTRASONIC_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb15_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="ULTRASONIC_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb15_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="ULTRASONIC_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb19_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="ULTRASONIC_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb19_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="ULTRASONIC_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb19_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="ULTRASONIC_ctrl" type="xilinx.com:interface:gpio_rtl:1.0" of_component="ultrasonic_ctrl" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="ULTRASONIC_ctrl" dir="in" left="3" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb18_p"/> 
+								<pin_map port_index="1" component_pin="fmc_hb14_n"/>
+								<pin_map port_index="2" component_pin="fmc_hb15_n"/>  
+								<pin_map port_index="3" component_pin="fmc_hb19_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="ULTRASONIC_UART" type="xilinx.com:interface:uart_rtl:1.0" of_component="ultrasonic_uart" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="RxD" physical_port="ULTRASONIC_RX" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb16_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="TxD" physical_port="ULTRASONIC_TX" dir="out"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb14_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--LIDAR-->
+				<interface mode="master" name="LIDAR_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="lidar_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="LIDAR_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb17_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="LIDAR_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb17_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="LIDAR_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb17_cc_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="LIDAR_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb20_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="LIDAR_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb20_p"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="LIDAR_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb20_p"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="LIDAR_GPIO_I" type="xilinx.com:interface:gpio_rtl:1.0" of_component="lidar_gpio_i" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="LIDAR_GPIO_I" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb21_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="LIDAR_GPIO_O" type="xilinx.com:interface:gpio_rtl:1.0" of_component="lidar_gpio_o" >
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="LIDAR_GPIO_O" dir="in" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="fmc_hb17_cc_n"/>
+								<pin_map port_index="1" component_pin="fmc_hb18_n"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--EEPROM-->
+				<interface mode="master" name="EEPROM_IIC" type="xilinx.com:interface:iic_rtl:1.0" of_component="eeprom_iic">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="SCL_I" physical_port="EEPROM_SCL_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_scl_main"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_O" physical_port="EEPROM_SCL_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_scl_main"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SCL_T" physical_port="EEPROM_SCL_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_scl_main"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_I" physical_port="EEPROM_SDA_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_sda_main"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_O" physical_port="EEPROM_SDA_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_sda_main"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="SDA_T" physical_port="EEPROM_SDA_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="iic_sda_main"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--clocks-->
+				<interface mode="slave" name="CLK0" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk0" >
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="FCM_ADAS_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="CLK0_M2C_N" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="clk0_m2c_n"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="CLK0_M2C_P" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="clk0_m2c_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="CLK1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk1" >
+					<parameters>
+						<parameter name="frequency" value="200000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="FMC_ADAS_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="CLK1_M2C_N" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="clk1_m2c_n"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="CLK1_M2C_P" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="clk1_m2c_p"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+		      </interfaces>
+		</component>
+		
+		<!--DES common control signals-->
+		<component name="DES_common_ctrl" display_name="DES common control" type="chip" sub_type="chip" major_group="FMC">
+			<description>DES common control signals (BISTEN, PDB, OEN, OSS_SEL)</description>
+		</component>
+		
+		<!--DES1-->
+		<component name="DES1_PCLK" display_name="DES1 clock" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 clock</description>
+		</component>
+		
+		<component name="DES1_HSYNC" display_name="DES1 HSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 HSYNC signal</description>
+		</component>
+		
+		<component name="DES1_VSYNC" display_name="DES1 VSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 VSYNC signal</description>
+		</component>
+		
+		<component name="DES1_ROUT" display_name="DES1 data" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 data</description>
+		</component>
+		
+		<component name="DES1_IIC" display_name="DES1 IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 IIC</description>
+		</component>
+		
+		<component name="DES1_ctrl" display_name="DES1 LOCK and PASS signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 1 LOCK and PASS signals</description>
+		</component>
+		
+		<!--DES2-->
+		<component name="DES2_PCLK" display_name="DES2 clock" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 clock</description>
+		</component>
+		
+		<component name="DES2_HSYNC" display_name="DES2 HSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 HSYNC signal</description>
+		</component>
+		
+		<component name="DES2_VSYNC" display_name="DES2 VSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 VSYNC signal</description>
+		</component>
+		
+		<component name="DES2_ROUT" display_name="DES2 data" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 data</description>
+		</component>
+		
+		<component name="DES2_IIC" display_name="DES2 IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 IIC</description>
+		</component>
+		
+		<component name="DES2_ctrl" display_name="DES2 LOCK and PASS signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 2 LOCK and PASS signals</description>
+		</component>
+		
+		<!--DES3-->
+		<component name="DES3_PCLK" display_name="DES3 clock" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 clock</description>
+		</component>
+		
+		<component name="DES3_HSYNC" display_name="DES3 HSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 HSYNC signal</description>
+		</component>
+		
+		<component name="DES3_VSYNC" display_name="DES3 VSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 VSYNC signal</description>
+		</component>
+		
+		<component name="DES3_ROUT" display_name="DES3 data" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 data</description>
+		</component>
+		
+		<component name="DES3_IIC" display_name="DES3 IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 IIC</description>
+		</component>
+		
+		<component name="DES3_ctrl" display_name="DES3 LOCK and PASS signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 3 LOCK and PASS signals</description>
+		</component>
+		
+		<!--DES4-->
+		<component name="DES4_PCLK" display_name="DES4 clock" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 clock</description>
+		</component>
+		
+		<component name="DES4_HSYNC" display_name="DES4 HSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 HSYNC signal</description>
+		</component>
+		
+		<component name="DES4_VSYNC" display_name="DES4 VSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 VSYNC signal</description>
+		</component>
+		
+		<component name="DES4_ROUT" display_name="DES4 data" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 data</description>
+		</component>
+		
+		<component name="DES4_IIC" display_name="DES4 IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 IIC</description>
+		</component>
+		
+		<component name="DES4_ctrl" display_name="DES4 LOCK and PASS signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 4 LOCK and PASS signals</description>
+		</component>
+		
+		<!--DES5-->
+		<component name="DES5_PCLK" display_name="DES5 clock" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 clock</description>
+		</component>
+		
+		<component name="DES5_HSYNC" display_name="DES5 HSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 HSYNC signal</description>
+		</component>
+		
+		<component name="DES5_VSYNC" display_name="DES5 VSYNC signal" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 VSYNC signal</description>
+		</component>
+		
+		<component name="DES5_ROUT" display_name="DES5 data" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 data</description>
+		</component>
+		
+		<component name="DES5_IIC" display_name="DES5 IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 IIC</description>
+		</component>
+		
+		<component name="DES5_ctrl" display_name="DES5 LOCK and PASS signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>FPD_Link III Deserializer 5 LOCK and PASS signals</description>
+		</component>
+		
+		<!--ULTRASONIC SENSOR-->
+		<component name="ULTRASONIC_IIC" display_name="ULTRASONIC ADC IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>ULTRASONIC ADC IIC</description>
+		</component>
+		
+		<component name="ULTRASONIC_ctrl" display_name="ULTRASONIC control signals" type="chip" sub_type="chip" major_group="FMC">
+			<description>ULTRASONIC control signals (ECHO, RST, INVALID#, FORCEOFF#)</description>
+		</component>
+		
+		<component name="ULTRASONIC_UART" display_name="ULTRASONIC UART" type="chip" sub_type="chip" major_group="FMC">
+			<description>ULTRASONIC UART</description>
+		</component>
+		
+		<!--LIDAR-->
+		<component name="LIDAR_IIC" display_name="LIDAR IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>LIDAR IIC</description>
+		</component>
+		
+		<component name="LIDAR_GPIO_I" display_name="LIDAR PWM " type="chip" sub_type="chip" major_group="FMC">
+			<description>LIDAR PWM</description>
+		</component>
+		
+		<component name="LIDAR_GPIO_O" display_name="LIDAR TRIGGER and PWR_EN" type="chip" sub_type="chip" major_group="FMC">
+			<description>LIDAR TRIGGER and PWR_EN</description>
+		</component>
+		
+		<!--EEPROM-->
+		<component name="EEPROM_IIC" display_name="EEPROM IIC" type="chip" sub_type="chip" major_group="FMC">
+			<description>EEPROM IIC</description>
+		</component>
+		
+		<!--clocks-->
+		<component name="CLK0" display_name="CLK0" type="chip" sub_type="chip" major_group="FMC">
+			<description>LVDS Oscillator 100MHz</description>
+		</component>
+		
+		<component name="CLK1" display_name="CLK1" type="chip" sub_type="chip" major_group="FMC">
+			<description>LVDS Oscillator 200MHz</description>
+		</component>
+		
+	</components>
+  
+	<connections>
+	
+		<!--DES common control signals-->
+		<connection name="fmc_connector_des_common_ctrl" component1="fmc_connector" component2="DES_common_ctrl">
+			<connection_map name="fmc_connector_des_common_ctrl_1" c1_st_index="296" c1_end_index="296" c2_st_index="0" c2_end_index="0"/><!--DES_BISTEN-->
+			<connection_map name="fmc_connector_des_common_ctrl_2" c1_st_index="143" c1_end_index="143" c2_st_index="1" c2_end_index="1"/><!--DES_PDB-->
+			<connection_map name="fmc_connector_des_common_ctrl_3" c1_st_index="256" c1_end_index="256" c2_st_index="2" c2_end_index="2"/><!--DES_OEN-->
+			<connection_map name="fmc_connector_des_common_ctrl_4" c1_st_index="137" c1_end_index="137" c2_st_index="3" c2_end_index="3"/><!--DES_OSS_SEL-->
+		</connection>
+	
+		<!--DES1-->
+		<connection name="fmc_connector_des1_pclk" component1="fmc_connector" component2="DES1_PCLK">
+			<connection_map name="fmc_connector_des1_pclk_1" c1_st_index="247" c1_end_index="247" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des1_hsync" component1="fmc_connector" component2="DES1_HSYNC">
+			<connection_map name="fmc_connector_des1_hsync_1" c1_st_index="288" c1_end_index="288" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des1_vsync" component1="fmc_connector" component2="DES1_VSYNC">
+			<connection_map name="fmc_connector_des1_vsync_1" c1_st_index="287" c1_end_index="287" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des1_rout" component1="fmc_connector" component2="DES1_ROUT">
+			<connection_map name="fmc_connector_des1_rout_1" c1_st_index="134" c1_end_index="134" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des1_rout_2" c1_st_index="94" c1_end_index="94" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="fmc_connector_des1_rout_3" c1_st_index="293" c1_end_index="293" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="fmc_connector_des1_rout_4" c1_st_index="253" c1_end_index="253" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="fmc_connector_des1_rout_5" c1_st_index="252" c1_end_index="252" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="fmc_connector_des1_rout_6" c1_st_index="132" c1_end_index="132" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="fmc_connector_des1_rout_7" c1_st_index="291" c1_end_index="291" c2_st_index="6" c2_end_index="6"/>
+			<connection_map name="fmc_connector_des1_rout_8" c1_st_index="131" c1_end_index="131" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="fmc_connector_des1_rout_9" c1_st_index="91" c1_end_index="91" c2_st_index="8" c2_end_index="8"/>
+			<connection_map name="fmc_connector_des1_rout_10" c1_st_index="290" c1_end_index="290" c2_st_index="9" c2_end_index="9"/>
+			<connection_map name="fmc_connector_des1_rout_11" c1_st_index="250" c1_end_index="250" c2_st_index="10" c2_end_index="10"/>
+			<connection_map name="fmc_connector_des1_rout_12" c1_st_index="90" c1_end_index="90" c2_st_index="11" c2_end_index="11"/>
+		</connection>
+		
+		<connection name="fmc_connector_des1_iic" component1="fmc_connector" component2="DES1_IIC">
+			<connection_map name="fmc_connector_des1_iic_1" c1_st_index="246" c1_end_index="246" c2_st_index="0" c2_end_index="0"/><!--SCL-->
+			<connection_map name="fmc_connector_des1_iic_2" c1_st_index="249" c1_end_index="249" c2_st_index="1" c2_end_index="1"/><!--SDA-->
+		</connection>
+		
+		<connection name="fmc_connector_des1_ctrl" component1="fmc_connector" component2="DES1_ctrl">
+			<connection_map name="fmc_connector_des1_ctrl_1" c1_st_index="129" c1_end_index="129" c2_st_index="0" c2_end_index="0"/><!--LOCK-->
+			<connection_map name="fmc_connector_des1_ctrl_2" c1_st_index="128" c1_end_index="128" c2_st_index="1" c2_end_index="1"/><!--PASS-->
+		</connection>		
+		
+		<!--DES2-->
+		<connection name="fmc_connector_des2_pclk" component1="fmc_connector" component2="DES2_PCLK">
+			<connection_map name="fmc_connector_des2_pclk_1" c1_st_index="305" c1_end_index="305" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des2_hsync" component1="fmc_connector" component2="DES2_HSYNC">
+			<connection_map name="fmc_connector_des2_hsync_1" c1_st_index="146" c1_end_index="146" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des2_vsync" component1="fmc_connector" component2="DES2_VSYNC">
+			<connection_map name="fmc_connector_des2_vsync_1" c1_st_index="106" c1_end_index="106" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des2_rout" component1="fmc_connector" component2="DES2_ROUT">
+			<connection_map name="fmc_connector_des2_rout_1" c1_st_index="312" c1_end_index="312" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des2_rout_2" c1_st_index="273" c1_end_index="273" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="fmc_connector_des2_rout_3" c1_st_index="311" c1_end_index="311" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="fmc_connector_des2_rout_4" c1_st_index="271" c1_end_index="271" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="fmc_connector_des2_rout_5" c1_st_index="270" c1_end_index="270" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="fmc_connector_des2_rout_6" c1_st_index="309" c1_end_index="309" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="fmc_connector_des2_rout_7" c1_st_index="268" c1_end_index="268" c2_st_index="6" c2_end_index="6"/>
+			<connection_map name="fmc_connector_des2_rout_8" c1_st_index="308" c1_end_index="308" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="fmc_connector_des2_rout_9" c1_st_index="107" c1_end_index="107" c2_st_index="8" c2_end_index="8"/>
+			<connection_map name="fmc_connector_des2_rout_10" c1_st_index="267" c1_end_index="267" c2_st_index="9" c2_end_index="9"/>
+			<connection_map name="fmc_connector_des2_rout_11" c1_st_index="147" c1_end_index="147" c2_st_index="10" c2_end_index="10"/>
+			<connection_map name="fmc_connector_des2_rout_12" c1_st_index="306" c1_end_index="306" c2_st_index="11" c2_end_index="11"/>
+		</connection>
+		
+		<connection name="fmc_connector_des2_iic" component1="fmc_connector" component2="DES2_IIC">
+			<connection_map name="fmc_connector_des2_iic_1" c1_st_index="265" c1_end_index="265" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des2_iic_2" c1_st_index="264" c1_end_index="264" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_des2_ctrl" component1="fmc_connector" component2="DES2_ctrl">
+			<connection_map name="fmc_connector_des2_ctrl_1" c1_st_index="144" c1_end_index="144" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des2_ctrl_2" c1_st_index="303" c1_end_index="303" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<!--DES3-->
+		<connection name="fmc_connector_des3_pclk" component1="fmc_connector" component2="DES3_PCLK">
+			<connection_map name="fmc_connector_des3_pclk_1" c1_st_index="348" c1_end_index="348" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des3_hsync" component1="fmc_connector" component2="DES3_HSYNC">
+			<connection_map name="fmc_connector_des3_hsync_1" c1_st_index="389" c1_end_index="389" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des3_vsync" component1="fmc_connector" component2="DES3_VSYNC">
+			<connection_map name="fmc_connector_des3_vsync_1" c1_st_index="228" c1_end_index="228" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des3_rout" component1="fmc_connector" component2="DES3_ROUT">
+			<connection_map name="fmc_connector_des3_rout_1" c1_st_index="235" c1_end_index="235" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des3_rout_2" c1_st_index="232" c1_end_index="232" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="fmc_connector_des3_rout_3" c1_st_index="392" c1_end_index="392" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="fmc_connector_des3_rout_4" c1_st_index="191" c1_end_index="191" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="fmc_connector_des3_rout_5" c1_st_index="231" c1_end_index="231" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="fmc_connector_des3_rout_6" c1_st_index="351" c1_end_index="351" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="fmc_connector_des3_rout_7" c1_st_index="391" c1_end_index="391" c2_st_index="6" c2_end_index="6"/>
+			<connection_map name="fmc_connector_des3_rout_8" c1_st_index="190" c1_end_index="190" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="fmc_connector_des3_rout_9" c1_st_index="350" c1_end_index="350" c2_st_index="8" c2_end_index="8"/>
+			<connection_map name="fmc_connector_des3_rout_10" c1_st_index="188" c1_end_index="188" c2_st_index="9" c2_end_index="9"/>
+			<connection_map name="fmc_connector_des3_rout_11" c1_st_index="187" c1_end_index="187" c2_st_index="10" c2_end_index="10"/>
+			<connection_map name="fmc_connector_des3_rout_12" c1_st_index="229" c1_end_index="229" c2_st_index="11" c2_end_index="11"/>
+		</connection>
+		
+		<connection name="fmc_connector_des3_iic" component1="fmc_connector" component2="DES3_IIC">
+			<connection_map name="fmc_connector_des3_iic_1" c1_st_index="388" c1_end_index="388" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des3_iic_2" c1_st_index="185" c1_end_index="185" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_des3_ctrl" component1="fmc_connector" component2="DES3_ctrl">
+			<connection_map name="fmc_connector_des3_ctrl_1" c1_st_index="184" c1_end_index="184" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des3_ctrl_2" c1_st_index="347" c1_end_index="347" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+
+		<!--DES4-->
+		<connection name="fmc_connector_des4_pclk" component1="fmc_connector" component2="DES4_PCLK">
+			<connection_map name="fmc_connector_des4_pclk_1" c1_st_index="205" c1_end_index="205" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des4_hsync" component1="fmc_connector" component2="DES4_HSYNC">
+			<connection_map name="fmc_connector_des4_hsync_1" c1_st_index="327" c1_end_index="327" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des4_vsync" component1="fmc_connector" component2="DES4_VSYNC">
+			<connection_map name="fmc_connector_des4_vsync_1" c1_st_index="326" c1_end_index="326" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des4_rout" component1="fmc_connector" component2="DES4_ROUT">
+			<connection_map name="fmc_connector_des4_rout_1" c1_st_index="371" c1_end_index="371" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des4_rout_2" c1_st_index="170" c1_end_index="170" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="fmc_connector_des4_rout_3" c1_st_index="210" c1_end_index="210" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="fmc_connector_des4_rout_4" c1_st_index="370" c1_end_index="370" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="fmc_connector_des4_rout_5" c1_st_index="330" c1_end_index="330" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="fmc_connector_des4_rout_6" c1_st_index="169" c1_end_index="169" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="fmc_connector_des4_rout_7" c1_st_index="329" c1_end_index="329" c2_st_index="6" c2_end_index="6"/>
+			<connection_map name="fmc_connector_des4_rout_8" c1_st_index="208" c1_end_index="208" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="fmc_connector_des4_rout_9" c1_st_index="368" c1_end_index="368" c2_st_index="8" c2_end_index="8"/>
+			<connection_map name="fmc_connector_des4_rout_10" c1_st_index="167" c1_end_index="167" c2_st_index="9" c2_end_index="9"/>
+			<connection_map name="fmc_connector_des4_rout_11" c1_st_index="207" c1_end_index="207" c2_st_index="10" c2_end_index="10"/>
+			<connection_map name="fmc_connector_des4_rout_12" c1_st_index="367" c1_end_index="367" c2_st_index="11" c2_end_index="11"/>
+		</connection>
+		
+		<connection name="fmc_connector_des4_iic" component1="fmc_connector" component2="DES4_IIC">
+			<connection_map name="fmc_connector_des4_iic_1" c1_st_index="204" c1_end_index="204" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des4_iic_2" c1_st_index="163" c1_end_index="163" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_des4_ctrl" component1="fmc_connector" component2="DES4_ctrl">
+			<connection_map name="fmc_connector_des4_ctrl_1" c1_st_index="162" c1_end_index="162" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des4_ctrl_2" c1_st_index="166" c1_end_index="166" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+
+		<!--DES5-->
+		<connection name="fmc_connector_des5_pclk" component1="fmc_connector" component2="DES5_PCLK">
+			<connection_map name="fmc_connector_des5_pclk_1" c1_st_index="373" c1_end_index="373" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des5_hsync" component1="fmc_connector" component2="DES5_HSYNC">
+			<connection_map name="fmc_connector_des5_hsync_1" c1_st_index="173" c1_end_index="173" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des5_vsync" component1="fmc_connector" component2="DES5_VSYNC">
+			<connection_map name="fmc_connector_des5_vsync_1" c1_st_index="213" c1_end_index="213" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+		
+		<connection name="fmc_connector_des5_rout" component1="fmc_connector" component2="DES5_ROUT">
+			<connection_map name="fmc_connector_des5_rout_1" c1_st_index="99" c1_end_index="99" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des5_rout_2" c1_st_index="141" c1_end_index="141" c2_st_index="1" c2_end_index="1"/>
+			<connection_map name="fmc_connector_des5_rout_3" c1_st_index="261" c1_end_index="261" c2_st_index="2" c2_end_index="2"/>
+			<connection_map name="fmc_connector_des5_rout_4" c1_st_index="300" c1_end_index="300" c2_st_index="3" c2_end_index="3"/>
+			<connection_map name="fmc_connector_des5_rout_5" c1_st_index="140" c1_end_index="140" c2_st_index="4" c2_end_index="4"/>
+			<connection_map name="fmc_connector_des5_rout_6" c1_st_index="299" c1_end_index="299" c2_st_index="5" c2_end_index="5"/>
+			<connection_map name="fmc_connector_des5_rout_7" c1_st_index="259" c1_end_index="259" c2_st_index="6" c2_end_index="6"/>
+			<connection_map name="fmc_connector_des5_rout_8" c1_st_index="217" c1_end_index="217" c2_st_index="7" c2_end_index="7"/>
+			<connection_map name="fmc_connector_des5_rout_9" c1_st_index="336" c1_end_index="336" c2_st_index="8" c2_end_index="8"/>
+			<connection_map name="fmc_connector_des5_rout_10" c1_st_index="335" c1_end_index="335" c2_st_index="9" c2_end_index="9"/>
+			<connection_map name="fmc_connector_des5_rout_11" c1_st_index="214" c1_end_index="214" c2_st_index="10" c2_end_index="10"/>
+			<connection_map name="fmc_connector_des5_rout_12" c1_st_index="374" c1_end_index="374" c2_st_index="11" c2_end_index="11"/>
+		</connection>
+		
+		<connection name="fmc_connector_des5_iic" component1="fmc_connector" component2="DES5_IIC">
+			<connection_map name="fmc_connector_des5_iic_1" c1_st_index="297" c1_end_index="297" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des5_iic_2" c1_st_index="138" c1_end_index="138" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_des5_ctrl" component1="fmc_connector" component2="DES5_ctrl">
+			<connection_map name="fmc_connector_des5_ctrl_1" c1_st_index="258" c1_end_index="258" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_des5_ctrl_2" c1_st_index="98" c1_end_index="98" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<!--ULTRASONIC SENSOR-->
+		<connection name="fmc_connector_ultrasonic_iic" component1="fmc_connector" component2="ULTRASONIC_IIC">
+			<connection_map name="fmc_connector_ultrasonic_iic_1" c1_st_index="" c1_end_index="" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_ultrasonic_iic_2" c1_st_index="" c1_end_index="" c2_st_index="1" c2_end_index="1"/>
+		</connection>		
+		
+		<connection name="fmc_connector_ultrasonic_ctrl" component1="fmc_connector" component2="ULTRASONIC_ctrl">
+			<connection_map name="fmc_connector_ultrasonic_ctrl_1" c1_st_index="356" c1_end_index="356" c2_st_index="0" c2_end_index="0"/><!--ULTRASONIC_ECHO-->
+			<connection_map name="fmc_connector_ultrasonic_ctrl_2" c1_st_index="395" c1_end_index="395" c2_st_index="1" c2_end_index="1"/><!--ULTRASONIC_RST-->
+			<connection_map name="fmc_connector_ultrasonic_ctrl_3" c1_st_index="354" c1_end_index="354" c2_st_index="2" c2_end_index="2"/><!--ULTRASONIC_INVALID#-->
+			<connection_map name="fmc_connector_ultrasonic_ctrl_4" c1_st_index="194" c1_end_index="194" c2_st_index="3" c2_end_index="3"/><!--ULTRASONIC_FORCEOFF#-->
+		</connection>
+		
+		<connection name="fmc_connector_ultrasonic_uart" component1="fmc_connector" component2="ULTRASONIC_UART">
+			<connection_map name="fmc_connector_ultrasonic_uart_1" c1_st_index="234" c1_end_index="234" c2_st_index="0" c2_end_index="0"/><!--ULTRASONIC_RX-->
+			<connection_map name="fmc_connector_ultrasonic_uart_2" c1_st_index="394" c1_end_index="394" c2_st_index="1" c2_end_index="1"/><!--ULTRASONIC_TX-->
+		</connection>
+		
+		<!--LIDAR-->
+		<connection name="fmc_connector_lidar_iic" component1="fmc_connector" component2="LIDAR_IIC">
+			<connection_map name="fmc_connector_lidar_iic_1" c1_st_index="397" c1_end_index="397" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_lidar_iic_2" c1_st_index="237" c1_end_index="237" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_lidar_gpio_i" component1="fmc_connector" component2="LIDAR_GPIO_I">
+			<connection_map name="fmc_connector_lidar_gpio_i_1" c1_st_index="197" c1_end_index="197" c2_st_index="0" c2_end_index="0"/><!--PWM-->
+		</connection>
+		
+		<connection name="fmc_connector_lidar_gpio_o" component1="fmc_connector" component2="LIDAR_GPIO_O">
+			<connection_map name="fmc_connector_lidar_gpio_o_1" c1_st_index="398" c1_end_index="398" c2_st_index="0" c2_end_index="0"/><!--TRIGGER-->
+			<connection_map name="fmc_connector_lidar_gpio_o_2" c1_st_index="357" c1_end_index="357" c2_st_index="1" c2_end_index="1"/><!--PWR_EN-->
+		</connection>
+
+		<!--EEPROM-->
+		<connection name="fmc_connector_eeprom_iic" component1="fmc_connector" component2="EEPROM_IIC">
+			<connection_map name="fmc_connector_eeprom_iic_1" c1_st_index="110" c1_end_index="110" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_eeprom_iic_2" c1_st_index="111" c1_end_index="111" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<!--clocks-->
+		<connection name="fmc_connector_clk0" component1="fmc_connector" component2="CLK0">
+			<connection_map name="fmc_connector_clk0_1" c1_st_index="285" c1_end_index="285" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_clk0_2" c1_st_index="284" c1_end_index="284" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="fmc_connector_clk1" component1="fmc_connector" component2="CLK1">
+			<connection_map name="fmc_connector_clk1_1" c1_st_index="243" c1_end_index="243" c2_st_index="0" c2_end_index="0"/>
+			<connection_map name="fmc_connector_clk1_2" c1_st_index="242" c1_end_index="242" c2_st_index="1" c2_end_index="1"/>
+		</connection>
+
+	</connections>
+</board> 				

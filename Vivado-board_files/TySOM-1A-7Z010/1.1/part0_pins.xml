@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<part_info part_name="xc7z010clg225-1">
+    <pins>
+        <pin index="0" name ="HDMI_OUT_HPD" iostandard="LVCMOS33" loc="P9"/>
+	
+        <pin index="1" name ="PMOD1_IO1" iostandard="LVCMOS33" loc="G11"/>
+        <pin index="2" name ="PMOD1_IO2" iostandard="LVCMOS33" loc="G12"/>
+        <pin index="3" name ="PMOD1_IO3" iostandard="LVCMOS33" loc="G14"/>
+        <pin index="4" name ="PMOD1_IO4" iostandard="LVCMOS33" loc="H14"/>
+        <pin index="5" name ="PMOD1_IO5" iostandard="LVCMOS33" loc="H13"/>
+        <pin index="6" name ="PMOD1_IO6" iostandard="LVCMOS33" loc="J13"/>
+        <pin index="7" name ="PMOD1_IO7" iostandard="LVCMOS33" loc="K13"/>
+        <pin index="8" name ="PMOD1_IO8" iostandard="LVCMOS33" loc="J14"/>
+        <pin index="9" name ="PMOD2_IO1" iostandard="LVCMOS33" loc="F15"/>
+        <pin index="10" name ="PMOD2_IO2" iostandard="LVCMOS33" loc="G15"/>
+        <pin index="11" name ="PMOD2_IO3" iostandard="LVCMOS33" loc="E11"/>
+        <pin index="12" name ="PMOD2_IO4" iostandard="LVCMOS33" loc="F12"/>
+        <pin index="13" name ="PMOD2_IO5" iostandard="LVCMOS33" loc="E12"/>
+        <pin index="14" name ="PMOD2_IO6" iostandard="LVCMOS33" loc="F13"/>
+        <pin index="15" name ="PMOD2_IO7" iostandard="LVCMOS33" loc="E13"/>
+        <pin index="16" name ="PMOD2_IO8" iostandard="LVCMOS33" loc="F14"/>
+	
+	<pin index="17" name ="CLK_50M" iostandard="LVCMOS33" loc="K11"/>
+	
+	<pin index="18" name ="HDMI_OUT_DDCSCL" iostandard="LVCMOS33" loc="J15"/>
+	<pin index="19" name ="HDMI_OUT_DDCSDA" iostandard="LVCMOS33" loc="N8"/>
+	<pin index="20" name ="HDMI_OUT_CEC" iostandard="LVCMOS33" loc="L14"/>
+	<pin index="21" name ="HDMI_OUT_CLK_N" iostandard="LVCMOS33" loc="M15"/>	
+	<pin index="22" name ="HDMI_OUT_CLK_P" iostandard="LVCMOS33" loc="L15"/>	
+	<pin index="23" name ="HDMI_OUT_D0_N" iostandard="LVCMOS33" loc="P14"/>		
+	<pin index="24" name ="HDMI_OUT_D1_N" iostandard="LVCMOS33" loc="N14"/>	
+	<pin index="25" name ="HDMI_OUT_D2_N" iostandard="LVCMOS33" loc="R15"/>	
+	<pin index="26" name ="HDMI_OUT_D0_P" iostandard="LVCMOS33" loc="P13"/>	
+	<pin index="27" name ="HDMI_OUT_D1_P" iostandard="LVCMOS33" loc="N13"/>	
+	<pin index="28" name ="HDMI_OUT_D2_P" iostandard="LVCMOS33" loc="P15"/>
+	
+	<pin index="29" name ="HDMI_IN_DDCSCL" iostandard="LVCMOS33" loc="N7"/>
+	<pin index="30" name ="HDMI_IN_DDCSDA" iostandard="LVCMOS33" loc="L13"/>
+	<pin index="31" name ="HDMI_IN_CEC" iostandard="LVCMOS33" loc="P8"/>
+	<pin index="32" name ="HDMI_IN_CLK_N" iostandard="LVCMOS33" loc="N12"/>	
+	<pin index="33" name ="HDMI_IN_CLK_P" iostandard="LVCMOS33" loc="N11"/>	
+	<pin index="34" name ="HDMI_IN_D0_N" iostandard="LVCMOS33" loc="N9"/>		
+	<pin index="35" name ="HDMI_IN_D1_N" iostandard="LVCMOS33" loc="R11"/>	
+	<pin index="36" name ="HDMI_IN_D2_N" iostandard="LVCMOS33" loc="R13"/>	
+	<pin index="37" name ="HDMI_IN_D0_P" iostandard="LVCMOS33" loc="M9"/>	
+	<pin index="38" name ="HDMI_IN_D1_P" iostandard="LVCMOS33" loc="P11"/>	
+	<pin index="39" name ="HDMI_IN_D2_P" iostandard="LVCMOS33" loc="R12"/>
+    </pins>
+</part_info>
+

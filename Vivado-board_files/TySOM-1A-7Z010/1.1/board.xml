@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<board schema_version="2.0" vendor="aldec.com" name="TySOM-1A-7Z010" display_name="TySOM-1A-7Z010" url="https://www.aldec.com/en/products/embedded/tysom" preset_file="preset.xml">
+    <images>
+        <image name="TySOM-1A_board.png" display_name="TySOM-1A-7Z010 BOARD" sub_type="board">
+            <description>TySOM-1A-7Z010 Board</description>
+        </image>
+    </images>
+    <compatible_board_revisions>
+        <revision id="0">1.1</revision>
+    </compatible_board_revisions>
+    <file_version>1.1</file_version>
+    <description>Aldec TySOM-1A-7Z010 Zynq Evaluation and Development Kit</description>
+    <components>
+        <component name="part0" display_name="Aldec TySOM-1A-7Z010 Zynq Evaluation and Development Kit" type="fpga" part_name="xc7z010clg225-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://www.aldec.com/en/products/embedded/tysom">
+            <description>FPGA part on the board</description>
+            <interfaces>
+                <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset">
+                </interface>
+
+                <interface mode="master" name="GPIO_PMOD" type="xilinx.com:interface:gpio_rtl:1.0" of_component="gpio_pmod">
+                    <port_maps>
+                        <port_map logical_port="TRI_I" physical_port="GPIO_PMOD" dir="in" left="15" right="0">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="PMOD1_IO1"/>
+                                <pin_map port_index="1" component_pin="PMOD1_IO2"/>
+                                <pin_map port_index="2" component_pin="PMOD1_IO3"/>
+                                <pin_map port_index="3" component_pin="PMOD1_IO4"/>
+                                <pin_map port_index="4" component_pin="PMOD1_IO5"/>
+                                <pin_map port_index="5" component_pin="PMOD1_IO6"/>
+                                <pin_map port_index="6" component_pin="PMOD1_IO7"/>
+                                <pin_map port_index="7" component_pin="PMOD1_IO8"/>
+                                <pin_map port_index="8" component_pin="PMOD2_IO1"/>
+                                <pin_map port_index="9" component_pin="PMOD2_IO2"/>
+                                <pin_map port_index="10" component_pin="PMOD2_IO3"/>
+                                <pin_map port_index="11" component_pin="PMOD2_IO4"/>
+                                <pin_map port_index="12" component_pin="PMOD2_IO5"/>
+                                <pin_map port_index="13" component_pin="PMOD2_IO6"/>
+                                <pin_map port_index="14" component_pin="PMOD2_IO7"/>
+                                <pin_map port_index="15" component_pin="PMOD2_IO8"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+		
+                <interface mode="slave" name="CLK_50M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_50m">
+                    <preferred_ips>
+                        <preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_CLK_50M" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="CLK" physical_port="PL_CLK_50M_ext" dir="in">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="CLK_50M"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+		
+		<!-- HDMI-OUT-->
+                <interface mode="master" name="HDMI_OUT_HPD" type="xilinx.com:interface:gpio_rtl:1.0" of_component="hdmi_out_hpd" preset_proc="hdmi_out_hpd_preset" >
+                    <preferred_ips>
+                        <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="TRI_I" physical_port="HDMI_OUT_HPD" dir="in">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="HDMI_OUT_HPD"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>
+		
+		<interface mode="master" name="HDMI_OUT_DDC" type="xilinx.com:interface:iic_rtl:1.0" of_component="hdmi_out_ddc">
+			<preferred_ips>
+				<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="SCL_I" physical_port="HDMI_OUT_DDC_SCL_I" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SCL_O" physical_port="HDMI_OUT_DDC_SCL_O" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SCL_T" physical_port="HDMI_OUT_DDC_SCL_T" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_I" physical_port="HDMI_OUT_DDC_SDA_I" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_O" physical_port="HDMI_OUT_DDC_SDA_O" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_T" physical_port="HDMI_OUT_DDC_SDA_T" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>
+		
+                <interface mode="master" name="HDMI_OUT_CEC" type="Aldec.com:aldec_lib:io_interface_rtl:1.0" of_component="hdmi_out_cec">
+                    <preferred_ips>
+                        <preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_OUT_ports" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="io" physical_port="HDMI_OUT_CEC" dir="inout">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="HDMI_OUT_CEC"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>		
+
+		<interface mode="master" name="HDMI_OUT_CLK" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="hdmi_out_clk">
+			<parameters>
+				<parameter name="frequency" value="100000000" />
+			</parameters>
+			<preferred_ips>
+				<preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_OUT_ports" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="CLK_N" physical_port="HDMI_OUT_CLK_N" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_CLK_N"/>
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="CLK_P" physical_port="HDMI_OUT_CLK_P" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_CLK_P"/>
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>		
+
+		<interface mode="master" name="HDMI_OUT_D" type="xilinx.com:interface:gt_rtl:1.0" of_component="hdmi_out_d">
+			<preferred_ips>
+				<preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_OUT_ports" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="GTX_N" physical_port="HDMI_OUT_D_N" dir="out" left="2" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_D0_N"/>
+						<pin_map port_index="1" component_pin="HDMI_OUT_D1_N"/>
+						<pin_map port_index="2" component_pin="HDMI_OUT_D2_N"/>
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="GTX_P" physical_port="HDMI_OUT_D_P" dir="out" left="2" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_OUT_D0_P"/>
+						<pin_map port_index="1" component_pin="HDMI_OUT_D1_P"/>
+						<pin_map port_index="2" component_pin="HDMI_OUT_D2_P"/>
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>
+		
+		<!-- HDMI-IN-->
+		<interface mode="master" name="HDMI_IN_DDC" type="xilinx.com:interface:iic_rtl:1.0" of_component="hdmi_in_ddc">
+			<preferred_ips>
+				<preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="SCL_I" physical_port="HDMI_IN_DDC_SCL_I" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SCL_O" physical_port="HDMI_IN_DDC_SCL_O" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SCL_T" physical_port="HDMI_IN_DDC_SCL_T" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSCL"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_I" physical_port="HDMI_IN_DDC_SDA_I" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_O" physical_port="HDMI_IN_DDC_SDA_O" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="SDA_T" physical_port="HDMI_IN_DDC_SDA_T" dir="out">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_DDCSDA"/> 
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>
+		
+                <interface mode="slave" name="HDMI_IN_CEC" type="Aldec.com:aldec_lib:io_interface_rtl:1.0" of_component="hdmi_in_cec">
+                    <preferred_ips>
+                        <preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_IN_ports" order="0"/>
+                    </preferred_ips>
+                    <port_maps>
+                        <port_map logical_port="io" physical_port="HDMI_IN_CEC" dir="inout">
+                            <pin_maps>
+                                <pin_map port_index="0" component_pin="HDMI_IN_CEC"/>
+                            </pin_maps>
+                        </port_map>
+                    </port_maps>
+                </interface>		
+
+		<interface mode="slave" name="HDMI_IN_CLK" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="hdmi_in_clk">
+			<parameters>
+				<parameter name="frequency" value="100000000" />
+			</parameters>
+			<preferred_ips>
+				<preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_IN_ports" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="CLK_N" physical_port="HDMI_IN_CLK_N" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_CLK_N"/>
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="CLK_P" physical_port="HDMI_IN_CLK_P" dir="in">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_CLK_P"/>
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>		
+
+		<interface mode="slave" name="HDMI_IN_D" type="xilinx.com:interface:gt_rtl:1.0" of_component="hdmi_in_d">
+			<preferred_ips>
+				<preferred_ip vendor="Aldec.com" library="aldec_lib" name="HDMI_IN_ports" order="0"/>
+			</preferred_ips>
+			<port_maps>
+				<port_map logical_port="GTX_N" physical_port="HDMI_IN_D_N" dir="in" left="2" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_D0_N"/>
+						<pin_map port_index="1" component_pin="HDMI_IN_D1_N"/>
+						<pin_map port_index="2" component_pin="HDMI_IN_D2_N"/>
+					</pin_maps>
+				</port_map>
+				<port_map logical_port="GTX_P" physical_port="HDMI_IN_D_P" dir="in" left="2" right="0">
+					<pin_maps>
+						<pin_map port_index="0" component_pin="HDMI_IN_D0_P"/>
+						<pin_map port_index="1" component_pin="HDMI_IN_D1_P"/>
+						<pin_map port_index="2" component_pin="HDMI_IN_D2_P"/>
+					</pin_maps>
+				</port_map>
+			</port_maps>
+		</interface>
+            </interfaces>
+        </component>
+
+        <component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+
+        <component name="GPIO_PMOD" display_name="GPIO PMODs" type="chip" sub_type="chip" major_group="PMOD">
+            <description>GPIO PMODs connections</description>
+        </component>
+	
+        <component name="CLK_50M" display_name="PL clock 50MHz" type="chip" sub_type="chip" major_group="Clock">
+            <description>PL clock 50MHz</description>
+        </component>
+	
+        <component name="HDMI_OUT_HPD" display_name="HDMI-OUT HPD signal" type="chip" sub_type="chip" major_group="HDMI-OUT">
+            <description>HDMI-OUT HPD signal</description>
+        </component>
+	
+        <component name="HDMI_OUT_DDC" display_name="HDMI-OUT DDC signals" type="chip" sub_type="chip" major_group="HDMI-OUT">
+            <description>HDMI-OUT DDC signals</description>
+        </component>
+	
+        <component name="HDMI_OUT_CEC" display_name="HDMI-OUT CEC signal" type="chip" sub_type="chip" major_group="HDMI-OUT">
+            <description>HDMI-OUT CEC signal</description>
+        </component>
+	
+        <component name="HDMI_OUT_CLK" display_name="HDMI-OUT clock" type="chip" sub_type="chip" major_group="HDMI-OUT">
+            <description>HDMI-OUT clock</description>
+        </component>
+	
+        <component name="HDMI_OUT_D" display_name="HDMI-OUT data" type="chip" sub_type="chip" major_group="HDMI-OUT">
+            <description>HDMI-OUT data</description>
+        </component>
+	
+        <component name="HDMI_IN_DDC" display_name="HDMI-IN DDC signals" type="chip" sub_type="chip" major_group="HDMI-IN">
+            <description>HDMI-IN DDC signals</description>
+        </component>
+	
+        <component name="HDMI_IN_CEC" display_name="HDMI-IN CEC signal" type="chip" sub_type="chip" major_group="HDMI-IN">
+            <description>HDMI-IN CEC signal</description>
+        </component>
+	
+        <component name="HDMI_IN_CLK" display_name="HDMI-IN clock" type="chip" sub_type="chip" major_group="HDMI-IN">
+            <description>HDMI-IN clock</description>
+        </component>
+	
+        <component name="HDMI_IN_D" display_name="HDMI-IN data" type="chip" sub_type="chip" major_group="HDMI-IN">
+            <description>HDMI-IN data</description>
+        </component>
+    </components>
+
+    <connections>
+        <connection name="part0_hdmi_out_hpd" component1="part0" component2="HDMI_OUT_HPD">
+            <connection_map name="part0_hdmi_out_hpd_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+        </connection>    
+
+        <connection name="part0_gpio_pmod" component1="part0" component2="GPIO_PMOD">
+            <connection_map name="part0_gpio_pmod_1" c1_st_index="1" c1_end_index="16" c2_st_index="0" c2_end_index="15"/>
+        </connection>
+	
+        <connection name="part0_clk_50m" component1="part0" component2="CLK_50M">
+            <connection_map name="part0_clk_50m_1" c1_st_index="17" c1_end_index="17" c2_st_index="0" c2_end_index="0"/>
+        </connection>
+	
+        <connection name="part0_hdmi_out_ddc" component1="part0" component2="HDMI_OUT_DDC">
+            <connection_map name="part0_hdmi_out_ddc_1" c1_st_index="18" c1_end_index="19" c2_st_index="0" c2_end_index="1"/>
+        </connection>
+	
+        <connection name="part0_hdmi_out_cec" component1="part0" component2="HDMI_OUT_CEC">
+            <connection_map name="part0_hdmi_out_cec_1" c1_st_index="20" c1_end_index="20" c2_st_index="0" c2_end_index="0"/>
+        </connection>
+	
+        <connection name="part0_hdmi_out_clk" component1="part0" component2="HDMI_OUT_CLK">
+            <connection_map name="part0_hdmi_out_clk_1" c1_st_index="21" c1_end_index="22" c2_st_index="0" c2_end_index="1"/>
+        </connection>
+	
+        <connection name="part0_hdmi_out_d" component1="part0" component2="HDMI_OUT_D">
+            <connection_map name="part0_hdmi_out_d_1" c1_st_index="23" c1_end_index="28" c2_st_index="0" c2_end_index="5"/>
+        </connection>
+	
+        <connection name="part0_hdmi_in_ddc" component1="part0" component2="HDMI_IN_DDC">
+            <connection_map name="part0_hdmi_in_ddc_1" c1_st_index="29" c1_end_index="30" c2_st_index="0" c2_end_index="1"/>
+        </connection>
+	
+        <connection name="part0_hdmi_in_cec" component1="part0" component2="HDMI_IN_CEC">
+            <connection_map name="part0_hdmi_in_cec_1" c1_st_index="31" c1_end_index="31" c2_st_index="0" c2_end_index="0"/>
+        </connection>
+	
+        <connection name="part0_hdmi_in_clk" component1="part0" component2="HDMI_IN_CLK">
+            <connection_map name="part0_hdmi_in_clk_1" c1_st_index="32" c1_end_index="33" c2_st_index="0" c2_end_index="1"/>
+        </connection>
+	
+        <connection name="part0_hdmi_in_d" component1="part0" component2="HDMI_IN_D">
+            <connection_map name="part0_hdmi_in_d_1" c1_st_index="34" c1_end_index="39" c2_st_index="0" c2_end_index="5"/>
+        </connection>
+    </connections>
+</board>

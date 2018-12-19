@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.0" vendor="aldec.com" name="TySOM-1-7Z030" display_name="TySOM-1-7Z030" url="https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1" preset_file="preset.xml">
+	<images>
+		<image name="TySOM_board.png" display_name="TySOM-1-7Z030 BOARD" sub_type="board">
+			<description>TySOM-1-7Z030 Board File Image</description>
+		</image>
+	</images>
+	
+	<compatible_board_revisions>
+		<revision id="0">1.1</revision>
+	</compatible_board_revisions>
+	
+	<file_version>1.1</file_version>
+	
+	<description>Zynq-7000 TySOM-1-7Z030 Development Platform</description>
+	
+	<parameters>
+		<parameter name="heat_sink_type" value="medium" value_type="string"/>
+		<parameter name="heat_sink_temperature" value_type="range" value_min="20.0" value_max="30.0"/>
+	</parameters>
+	
+	<jumpers></jumpers>
+	
+	<components> 	
+		<component name="part0" display_name="Aldec TySOM-1-7Z030 Zynq Evaluation and Development Kit" type="fpga" part_name="xc7z030fbg484-1" pin_map_file="part0_pins.xml" vendor="aldec" spec_url="https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1">
+			<description>FPGA part on the board</description>
+			<interfaces>
+				<interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="processing_system7" order="0"/>
+					</preferred_ips>
+				</interface>			
+				<interface mode="master" name="PL_user_LEDs" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_user_leds" preset_proc="pl_user_leds_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="PL_user_leds" dir="out" left="7" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="LED0"/> 
+								<pin_map port_index="1" component_pin="LED1"/> 
+								<pin_map port_index="2" component_pin="LED2"/> 
+								<pin_map port_index="3" component_pin="LED3"/> 
+								<pin_map port_index="4" component_pin="LED4"/> 
+								<pin_map port_index="5" component_pin="LED5"/> 
+								<pin_map port_index="6" component_pin="LED6"/> 
+								<pin_map port_index="7" component_pin="LED7"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="PL_user_switches" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_user_switches" preset_proc="pl_user_switches_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="PL_user_switches" dir="in" left="7" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="BUTTON0"/> 
+								<pin_map port_index="1" component_pin="BUTTON1"/> 
+								<pin_map port_index="2" component_pin="BUTTON2"/> 
+								<pin_map port_index="3" component_pin="BUTTON3"/> 
+								<pin_map port_index="4" component_pin="BUTTON4"/> 
+								<pin_map port_index="5" component_pin="BUTTON5"/> 
+								<pin_map port_index="6" component_pin="BUTTON6"/> 
+								<pin_map port_index="7" component_pin="BUTTON7"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="User_reset" type="xilinx.com:interface:gpio_rtl:1.0" of_component="user_reset" preset_proc="user_reset_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_I" physical_port="User_reset" dir="in"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="USER_RESET"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<!--PL clocks-->
+				<interface mode="slave" name="CLK_25M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_25m">
+					<parameters>
+						<parameter name="frequency" value="25000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="CLK_25M_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_25M"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="CLK_50M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_50m">
+					<parameters>
+						<parameter name="frequency" value="50000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK" physical_port="CLK_50M_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_50M"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<interface mode="slave" name="CLK_156M25_CLK2" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_156m25_clk2">
+					<parameters>
+						<parameter name="frequency" value="156250000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="CLK_156M25_CLK2N_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_156M25_CLK2N"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="CLK_156M25_CLK2P_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_156M25_CLK2P"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<interface mode="slave" name="PCIE_100M_CLK0" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="pcie_100m_clk0">
+					<parameters>
+						<parameter name="frequency" value="100000000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="PCIE_100M_CLK0N_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="PCIE_100M_CLK0N"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="PCIE_100M_CLK0P_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="PCIE_100M_CLK0P"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<interface mode="slave" name="CLK_156M25_CLK1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_156m25_clk1">
+					<parameters>
+						<parameter name="frequency" value="156250000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="CLK_156M25_CLK1N_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_156M25_CLK1N"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="CLK_156M25_CLK1P_ext" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CLK_156M25_CLK1P"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<!--MIPI Camera Serial Interface-->
+				<interface mode="slave" name="CAM_D" type="xilinx.com:interface:gt_rtl:1.0" of_component="cam_d">
+					<preferred_ips>
+						<preferred_ip vendor="smunaut" library="smunaut_library" name="mipi_csi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="GTX_N" physical_port="CAM_DN" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DN0"/>
+								<pin_map port_index="1" component_pin="CAM_DN1"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="GTX_P" physical_port="CAM_DP" dir="in" left="1" right="0">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DP0"/>
+								<pin_map port_index="1" component_pin="CAM_DP1"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="CAM_C1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="cam_c1">
+					<parameters>
+						<parameter name="frequency" value="250000" />
+					</parameters>
+					<preferred_ips>
+						<preferred_ip vendor="smunaut" library="smunaut_library" name="mipi_csi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="CLK_N" physical_port="CAM_CN1" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_CN1"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="CLK_P" physical_port="CAM_CP1" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_CP1"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+				<interface mode="slave" name="CAM_C_SE" type="xilinx.com:interface:gt_rtl:1.0" of_component="cam_c_se">
+					<preferred_ips>
+						<preferred_ip vendor="smunaut" library="smunaut_library" name="mipi_csi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="GTX_N" physical_port="CAM_CN_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_CN_SE"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="GTX_P" physical_port="CAM_CP_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_CP_SE"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="CAM_D0_SE" type="xilinx.com:interface:gt_rtl:1.0" of_component="cam_d0_se">
+					<preferred_ips>
+						<preferred_ip vendor="smunaut" library="smunaut_library" name="mipi_csi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="GTX_N" physical_port="CAM_DN0_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DN0_SE"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="GTX_P" physical_port="CAM_DP0_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DP0_SE"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="slave" name="CAM_D1_SE" type="xilinx.com:interface:gt_rtl:1.0" of_component="cam_d1_se">
+					<preferred_ips>
+						<preferred_ip vendor="smunaut" library="smunaut_library" name="mipi_csi" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="GTX_N" physical_port="CAM_DN1_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DN1_SE"/>
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="GTX_P" physical_port="CAM_DP1_SE" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_DP1_SE"/>
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="CAM_out" type="xilinx.com:interface:gpio_rtl:1.0" of_component="cam_out" preset_proc="cam_out_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="CAM_out" dir="out" left="1" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="CAM_GPIO33"/> 
+								<pin_map port_index="1" component_pin="CAM_CLK33"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+				
+				<interface mode="master" name="PMOD" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pmod" preset_proc="pmod_preset">
+					<preferred_ips>
+						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+					</preferred_ips>
+					<port_maps>
+						<port_map logical_port="TRI_O" physical_port="PL_user_leds" dir="out" left="7" right="0"> 
+							<pin_maps>
+								<pin_map port_index="0" component_pin="GPIO_0"/> 
+								<pin_map port_index="1" component_pin="GPIO_1"/> 
+								<pin_map port_index="2" component_pin="GPIO_2"/> 
+								<pin_map port_index="3" component_pin="GPIO_3"/> 
+								<pin_map port_index="4" component_pin="GPIO_4"/> 
+								<pin_map port_index="5" component_pin="GPIO_5"/> 
+								<pin_map port_index="6" component_pin="GPIO_6"/> 
+								<pin_map port_index="7" component_pin="GPIO_7"/> 
+							</pin_maps>
+						</port_map>
+					</port_maps>
+				</interface>
+
+			</interfaces>
+		</component>
+		
+		<component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+
+		<component name="PL_user_leds" display_name="PL user LEDs" type="chip" sub_type="chip" major_group="Miscellaneous">
+			<description>PL user LEDs</description>
+		</component>
+		
+		<component name="PL_user_switches" display_name="PL user switches" type="chip" sub_type="chip" major_group="Miscellaneous">
+			<description>PL user switches</description>
+		</component>
+		
+		<component name="User_reset" display_name="PL user reset" type="chip" sub_type="chip" major_group="Reset">
+			<description>PL user reset</description>
+		</component>
+		
+		<component name="CLK_25M" display_name="CLK_25M port" type="chip" sub_type="chip" major_group="PL clocks ports">
+			<description>CLK_25M port</description>
+		</component>
+		
+		<component name="CLK_50M" display_name="CLK_50M port" type="chip" sub_type="chip" major_group="PL clocks ports">
+			<description>CLK_50M port</description>
+		</component>
+		
+		<component name="CLK_156M25_CLK2" display_name="CLK_156M25_CLK2 port" type="chip" sub_type="chip" major_group="PL clocks ports">
+			<description>CLK_156M25_CLK2 port</description>
+		</component>	
+
+		<component name="PCIE_100M_CLK0" display_name="PCIE_100M_CLK0 port" type="chip" sub_type="chip" major_group="PL clocks ports">
+			<description>PCIE_100M_CLK0 port</description>
+		</component>
+		
+		<component name="CLK_156M25_CLK1" display_name="CLK_156M25_CLK1 port" type="chip" sub_type="chip" major_group="PL clocks ports">
+			<description>CLK_156M25_CLK1 port</description>
+		</component>
+		
+		<component name="CAM_D" display_name="Camera MIPI CSI-2 data" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera MIPI CSI-2 data</description>
+		</component>
+		
+		<component name="CAM_C1" display_name="Camera MIPI CSI-2 clock" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera MIPI CSI-2 clock</description>
+		</component>
+		
+		<component name="CAM_C_SE" display_name="Camera MIPI C SE lines" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera MIPI C Single Ended Lines</description>
+		</component>
+		
+		<component name="CAM_D0_SE" display_name="Camera MIPI D0 SE lines" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera MIPI D0 Single Ended Lines</description>
+		</component>
+		
+		<component name="CAM_D1_SE" display_name="Camera MIPI D1 SE lines" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera MIPI D1 Single Ended Lines</description>
+		</component>
+		
+		<component name="CAM_out" display_name="Camera LED and ENABLE" type="chip" sub_type="chip" major_group="Camera">
+			<description>Camera LED and ENABLE</description>
+		</component>
+		
+		<component name="PMOD" display_name="PL PMOD Connector" type="chip" sub_type="chip" major_group="Miscellaneous">
+			<description>PL PMOD Connector</description>
+		</component>
+	</components>
+	
+	<jtag_chains>
+		<jtag_chain name="chain1">
+			<position name="0" component="part0"/>
+		</jtag_chain>
+	</jtag_chains>
+  
+    	<connections>
+		<connection name="part0_pl_user_leds" component1="part0" component2="PL_user_LEDs">
+			<connection_map name="part0_pl_user_leds_1" c1_st_index="0" c1_end_index="7" c2_st_index="0" c2_end_index="7"/>
+		</connection>
+		
+		<connection name="part0_pl_user_switches" component1="part0" component2="PL_user_switches">
+			<connection_map name="part0_pl_user_switches_1" c1_st_index="8" c1_end_index="15" c2_st_index="0" c2_end_index="7"/>
+		</connection>
+		
+		<connection name="part0_clk_25m" component1="part0" component2="CLK_25M">
+			<connection_map name="part0_clk_25m_1" c1_st_index="16" c1_end_index="16" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+
+		<connection name="part0_clk_50m" component1="part0" component2="CLK_50M">
+			<connection_map name="part0_clk_50m_1" c1_st_index="17" c1_end_index="17" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+
+		<connection name="part0_clk_156m25_clk2" component1="part0" component2="CLK_156M25_CLK2">
+			<connection_map name="part0_clk_156m25_clk2_1" c1_st_index="18" c1_end_index="19" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="part0_pcie_100m_clk0" component1="part0" component2="PCIE_100M_CLK0">
+			<connection_map name="part0_pcie_100m_clk0_1" c1_st_index="20" c1_end_index="21" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="part0_clk_156m25_clk1" component1="part0" component2="CLK_156M25_CLK1">
+			<connection_map name="part0_clk_156m25_clk1_1" c1_st_index="22" c1_end_index="23" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+
+		<connection name="part0_cam_d" component1="part0" component2="CAM_D">
+			<connection_map name="part0_mipi_csi_1" c1_st_index="24" c1_end_index="27" c2_st_index="0" c2_end_index="3"/>
+		</connection>
+		
+		<connection name="part0_cam_c1" component1="part0" component2="CAM_C1">
+			<connection_map name="part0_cam_c1_1" c1_st_index="28" c1_end_index="29" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="part0_cam_c_se" component1="part0" component2="CAM_C_SE">
+			<connection_map name="part0_cam_c_se_1" c1_st_index="30" c1_end_index="31" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+		
+		<connection name="part0_cam_d0_se" component1="part0" component2="CAM_D0_SE">
+			<connection_map name="part0_cam_d0_se_1" c1_st_index="32" c1_end_index="33" c2_st_index="0" c2_end_index="1"/>
+		</connection>		
+		
+		<connection name="part0_cam_d1_se" component1="part0" component2="CAM_D1_SE">
+			<connection_map name="part0_cam_d1_se_1" c1_st_index="34" c1_end_index="35" c2_st_index="0" c2_end_index="1"/>
+		</connection>	
+		
+		<connection name="part0_cam_out" component1="part0" component2="CAM_out">
+			<connection_map name="part0_cam_out_1" c1_st_index="36" c1_end_index="37" c2_st_index="0" c2_end_index="1"/>
+		</connection>
+
+		<connection name="part0_user_reset" component1="part0" component2="User_reset">
+			<connection_map name="part0_user_reset_1" c1_st_index="38" c1_end_index="38" c2_st_index="0" c2_end_index="0"/>
+		</connection>
+
+		<connection name="part0_pmod" component1="part0" component2="PMOD">
+			<connection_map name="part0_pmod_1" c1_st_index="39" c1_end_index="46" c2_st_index="0" c2_end_index="7"/>
+		</connection>
+	</connections>
+</board>
+

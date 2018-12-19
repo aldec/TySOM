@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7z030fbg484-1">
+<pins>
+	<pin index="0" name ="LED0" iostandard="LVCMOS33" loc="W19"/>
+	<pin index="1" name ="LED1" iostandard="LVCMOS33" loc="U18"/>
+	<pin index="2" name ="LED2" iostandard="LVCMOS33" loc="W20"/>
+	<pin index="3" name ="LED3" iostandard="LVCMOS33" loc="V20"/>
+	<pin index="4" name ="LED4" iostandard="LVCMOS33" loc="U19"/>
+	<pin index="5" name ="LED5" iostandard="LVCMOS33" loc="T20"/>
+	<pin index="6" name ="LED6" iostandard="LVCMOS33" loc="P18"/>
+	<pin index="7" name ="LED7" iostandard="LVCMOS33" loc="P19"/>
+	
+	<pin index="8" name ="BUTTON0" iostandard="LVCMOS33" loc="V11"/>
+	<pin index="9" name ="BUTTON1" iostandard="LVCMOS33" loc="T11"/>
+	<pin index="10" name ="BUTTON2" iostandard="LVCMOS33" loc="T12"/>
+	<pin index="11" name ="BUTTON3" iostandard="LVCMOS33" loc="U12"/>
+	<pin index="12" name ="BUTTON4" iostandard="LVCMOS33" loc="V12"/>
+	<pin index="13" name ="BUTTON5" iostandard="LVCMOS33" loc="U15"/>
+	<pin index="14" name ="BUTTON6" iostandard="LVCMOS33" loc="U14"/>
+	<pin index="15" name ="BUTTON7" iostandard="LVCMOS33" loc="V16"/>
+	
+	<pin index="16" name ="CLK_25M" iostandard="LVCMOS33" loc="R19"/>
+	<pin index="17" name ="CLK_50M" iostandard="LVCMOS33" loc="Y12"/>
+	<pin index="18" name ="CLK_156M25_CLK2N" iostandard="LVCMOS18" loc="J4"/>
+	<pin index="19" name ="CLK_156M25_CLK2P" iostandard="LVCMOS18" loc="J5"/>
+	<pin index="20" name ="PCIE_100M_CLK0N" loc="U5"/>
+	<pin index="21" name ="PCIE_100M_CLK0P" loc="U6"/>
+	<pin index="22" name ="CLK_156M25_CLK1N" loc="W5"/>
+	<pin index="23" name ="CLK_156M25_CLK1P" loc="W6"/>
+	
+	<pin index="24" name ="CAM_DN0" iostandard="LVCMOS18" loc="B2"/>
+	<pin index="25" name ="CAM_DN1" iostandard="LVCMOS18" loc="A4"/>
+	<pin index="26" name ="CAM_DP0" iostandard="LVCMOS18" loc="C2"/>
+	<pin index="27" name ="CAM_DP1" iostandard="LVCMOS18" loc="B4"/>
+	<pin index="28" name ="CAM_CN1" iostandard="LVCMOS18" loc="A1"/>
+	<pin index="29" name ="CAM_CP1" iostandard="LVCMOS18" loc="A2"/>	
+	<pin index="30" name ="CAM_CN_SE" iostandard="LVCMOS18" loc="B3"/>
+	<pin index="31" name ="CAM_CP_SE" iostandard="LVCMOS18" loc="E2"/>
+	<pin index="32" name ="CAM_DN0_SE" iostandard="LVCMOS18" loc="C3"/>
+	<pin index="33" name ="CAM_DP0_SE" iostandard="LVCMOS18" loc="C1"/>
+	<pin index="34" name ="CAM_DN1_SE" iostandard="LVCMOS18" loc="D3"/>
+	<pin index="35" name ="CAM_DP1_SE" iostandard="LVCMOS18" loc="E3"/>
+	<pin index="36" name ="CAM_GPIO33" iostandard="LVCMOS33" loc="Y18"/>
+	<pin index="37" name ="CAM_CLK33" iostandard="LVCMOS33" loc="Y19"/>
+	
+	<pin index="38" name ="USER_RESET" iostandard="LVCMOS18" loc="L5"/>
+	
+	<pin index="39" name ="GPIO_0" iostandard="LVCMOS33" loc="U17"/>
+	<pin index="40" name ="GPIO_1" iostandard="LVCMOS33" loc="R17"/>
+	<pin index="41" name ="GPIO_2" iostandard="LVCMOS33" loc="R18"/>
+	<pin index="42" name ="GPIO_3" iostandard="LVCMOS33" loc="R16"/>
+	<pin index="43" name ="GPIO_4" iostandard="LVCMOS33" loc="T16"/>
+	<pin index="44" name ="GPIO_5" iostandard="LVCMOS33" loc="AB18"/>
+	<pin index="45" name ="GPIO_6" iostandard="LVCMOS33" loc="P20"/>
+	<pin index="46" name ="GPIO_7" iostandard="LVCMOS33" loc="N17"/>
+</pins>
+</part_info>

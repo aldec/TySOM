@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7z045ffg900-2">
+	<pins>
+		<pin index="0" name ="switch_8bits_tri_i_0" iostandard="LVCMOS18" loc="K13"/>
+		<pin index="1" name ="switch_8bits_tri_i_1" iostandard="LVCMOS18" loc="J14"/>
+		<pin index="2" name ="switch_8bits_tri_i_2" iostandard="LVCMOS18" loc="H14"/>
+		<pin index="3" name ="switch_8bits_tri_i_3" iostandard="LVCMOS18" loc="K15"/>
+		<pin index="4" name ="switch_8bits_tri_i_4" iostandard="LVCMOS18" loc="J15"/>
+		<pin index="5" name ="switch_8bits_tri_i_5" iostandard="LVCMOS18" loc="J16"/>
+		<pin index="6" name ="switch_8bits_tri_i_6" iostandard="LVCMOS18" loc="H16"/>
+		<pin index="7" name ="switch_8bits_tri_i_7" iostandard="LVCMOS18" loc="G17"/>
+		<pin index="8" name ="leds_4bits_tri_o_0" iostandard="LVCMOS18" loc="L14"/>
+		<pin index="9" name ="leds_4bits_tri_o_1" iostandard="LVCMOS18" loc="J13"/>
+		<pin index="10" name ="leds_4bits_tri_o_2" iostandard="LVCMOS18" loc="H13"/>
+		<pin index="11" name ="leds_4bits_tri_o_3" iostandard="LVCMOS18" loc="L13"/>
+	</pins>
+</part_info>

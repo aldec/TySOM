@@ -2,6 +2,7 @@
 1. [TySOM](#tysom_main)
    - [SDx-platforms](#tysom_sdx_platforms)
      - [How to use TySOM platform with SDx](#tysom_sdx_platform_use)
+   - [Vivado - board definition files](#tysom_board_def_files)
    - [Supported OSes](#tysom_supported_os)
      - [Ubuntu-Linaro](#ubuntu_linaro_os)
      - [Debian-Linaro](#debian_linaro_os)
@@ -10,7 +11,6 @@
      - [VxWorks](#vxworks_os)
      - [freeRTOS](#freertos_os)
      - [OpenWrt](#openwrt_os)
-
 
 <a name="tysom_main"/>
 
@@ -59,6 +59,26 @@ In **Choose Hardware Platform** window user has to add TySOM platform by using *
 See **Appendix B: Managing Platforms and Repositories** of Xilinx instruction for more information.
 
 [Document](https://github.com/Aldecinc/TySOM/blob/master/SDx-platforms/How_to_use_Aldec_TySOM_board_in_Xilinx_SDx.pdf) contains all necessary information about using Aldec TySOM board in Xilinx SDx tool.
+
+<a name="tysom_board_def_files"/>
+
+## Vivado - board definition files
+
+Vivado board definition files contain configuration of Processing System and interfaces available on the board to simplify using the Aldec TySOM board in Xilinx Vivado tool.
+
+The board definition files for all TySOM boards can be found in Vivado-board_files folder.
+
+[Document](https://github.com/Aldecinc/TySOM/blob/master/Vivado-board_files/How_to_build_an_FPGA_design_for_Aldec_TySOM_boards_using_board_definition_in_Xilinx_Vivado.pdf) contains all necessary information about using Aldec TySOM board in Xilinx Vivado tool with the board definition files.
+
+The board definition files are provided for the following Aldec TySOM boards:
+-	[TySOM-3 (Xilinx Zynq UltraScale+ Zu7EV)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_ultrascale_mpsoc_boards/tysom_3)
+-	[TySOM-2 (Xilinx Zynq XC7Z045 or XC7Z100)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2)
+-	[TySOM-2A (Xilinx Zynq XC7Z030)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_2a)
+-	[TySOM-1 (Xilinx Zynq XC7Z030)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
+-	[TySOM-1A (Xilinx Zynq XC7Z010)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1a)
+
+The board definition files contains also FMC cards definitions:
+-	[FMC-ADAS](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 <a name="tysom_supported_os"/>
 
