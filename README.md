@@ -77,7 +77,7 @@ The board definition files are provided for the following Aldec TySOM boards:
 -	[TySOM-1 (Xilinx Zynq XC7Z030)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1)
 -	[TySOM-1A (Xilinx Zynq XC7Z010)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_7000/tysom_1a)
 
-The board definition files contains also FMC cards definitions:
+The board definition files contain also FMC cards definitions:
 -	[FMC-ADAS](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
 <a name="tysom_supported_os"/>
