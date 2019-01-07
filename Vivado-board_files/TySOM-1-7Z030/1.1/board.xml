@@ -294,7 +294,7 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="TRI_O" physical_port="PL_user_leds" dir="out" left="7" right="0"> 
+						<port_map logical_port="TRI_O" physical_port="PMOD" dir="out" left="7" right="0"> 
 							<pin_maps>
 								<pin_map port_index="0" component_pin="GPIO_0"/> 
 								<pin_map port_index="1" component_pin="GPIO_1"/> 
