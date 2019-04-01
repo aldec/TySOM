@@ -80,13 +80,12 @@
     phy-mode = "rgmii-id";
     status = "okay";
     xlnx,ptp-enet-clock = <0x0>;
-    phy-reset-gpio = <&eth1_resetn 0 0 1>;
+    phy-reset-gpio = <&eth1_resetn 0 0 0>;
     phy-reset-duration = <2>;
-    phy-reset-active-low;
+    phy-reset-active-low = <1>;
     phy-handle = <&phy1>;
-    gmii2rgmii-phy-handle = <&gmii_to_rgmii_0>;
-	local-mac-address = [00 0a 35 3a 02 00];
-    ps7_ethernet_1_mdio: mdio {
+    local-mac-address = [00 0a 35 3a 02 00];
+    mdio: mdio {
         #address-cells = <1>;
         #size-cells = <0>;
         phy1: phy@8 {
@@ -95,9 +94,9 @@
             ti,rx-internal-delay = <0x8>;
             ti,tx-internal-delay = <0xa>;
             ti,fifo-depth = <0x1>;
+            ti,rxctrl-strap-worka;
         };
         gmii_to_rgmii_0: phy@7 {
-			device_type = "ethernet-phy";
             compatible = "xlnx,gmii-to-rgmii-1.0";
             reg = <7>;
             phy-handle = <&phy1>;
@@ -108,9 +107,8 @@
     status = "okay";
     phy-handle = <&phy0>;
     phy-mode = "rgmii-id";
-    //phy-reset-gpio = <&gpio 11 1>;
-    //phy-reset-duration = <2>;
-    //phy-reset-active-low;
+    phy-reset-gpio = <&gpio 11 0>;
+    phy-reset-duration = <2>;
     local-mac-address = [00 0a 35 3a 02 01];
     phy0: phy@9 {
         device_type = "ethernet-phy";
@@ -119,7 +117,6 @@
         ti,tx-internal-delay = <0xa>;
         ti,fifo-depth = <0x1>;
         ti,rxctrl-strap-worka;
-		reset-gpios = <&gpio 11 1>;
     };
 };
 &fpd_dma_chan1 {
