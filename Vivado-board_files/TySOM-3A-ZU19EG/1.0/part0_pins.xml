@@ -11,8 +11,8 @@
 	<pin index="8" name ="DP_HPD" iostandard="LVCMOS33" loc="AC14"/>
 	<pin index="9" name ="DP_REFCLK_N" loc="AC9"/>
 	<pin index="10" name ="DP_REFCLK_P" loc="AC10"/>
-	<pin index="11" name ="DP_CLKN" loc="L17"/>
-	<pin index="12" name ="DP_CLKP" loc="M18"/>
+	<pin index="11" name ="DP_CLKN" iostandard="LVCMOS18" loc="L17"/>
+	<pin index="12" name ="DP_CLKP" iostandard="LVCMOS18" loc="M18"/>
 	
 	<pin index="13" name ="HDMI_RX_CLKN" loc="AG9"/>
 	<pin index="14" name ="HDMI_RX_CLKP" loc="AG10"/>
@@ -23,14 +23,14 @@
 	<pin index="18" name ="CLK_125M" iostandard="LVCMOS33" loc="AG13"/>
 	<pin index="19" name ="CLK_PL_CLK1N" iostandard="LVCMOS25" loc="U13"/>
 	<pin index="20" name ="CLK_PL_CLK1P" iostandard="LVCMOS25" loc="V13"/>
-	<pin index="21" name ="CLK_PL_CLK0N" loc="AR17"/>
-	<pin index="22" name ="CLK_PL_CLK0P" loc="AR18"/>
+	<pin index="21" name ="CLK_PL_CLK0N" iostandard="LVCMOS18" loc="AR17"/>
+	<pin index="22" name ="CLK_PL_CLK0P" iostandard="LVCMOS18" loc="AR18"/>
 	<pin index="23" name ="CLK_MGTX_CLK2N" loc="N9"/>
 	<pin index="24" name ="CLK_MGTX_CLK2P" loc="N10"/>
 	<pin index="25" name ="CLK_MGTX_CLK1N" loc="AA9"/>
 	<pin index="26" name ="CLK_MGTX_CLK1P" loc="AA10"/>
-	<pin index="27" name ="CLK_300M_N" loc="T33"/>
-	<pin index="28" name ="CLK_300M_P" loc="U33"/>
+	<pin index="27" name ="CLK_300M_N" iostandard="LVCMOS18" loc="T33"/>
+	<pin index="28" name ="CLK_300M_P" iostandard="LVCMOS18" loc="U33"/>
 
 	
 	<pin index="29" name ="PL_SW0" iostandard="LVCMOS25" loc="W14"/>
@@ -40,8 +40,8 @@
 	
 	<pin index="33" name ="PL_LED0" iostandard="LVCMOS25" loc="AA12"/>
 	<pin index="34" name ="PL_LED1" iostandard="LVCMOS25" loc="Y13"/>
-	<pin index="35" name ="PL_LED2" loc="AV11"/>
-	<pin index="36" name ="PL_LED3" loc="AU11"/>
+	<pin index="35" name ="PL_LED2" iostandard="LVCMOS18" loc="AV11"/>
+	<pin index="36" name ="PL_LED3" iostandard="LVCMOS18" loc="AU11"/>
 	
 	<pin index="37" name ="PL_PB" iostandard="LVCMOS25" loc="AB14"/>
 
@@ -68,7 +68,7 @@
 	<pin index="56" name ="BT_HCI_TX" iostandard="LVCMOS33" loc="AF12"/>
 	<pin index="57" name ="BT_HCI_RX" iostandard="LVCMOS33" loc="AE14"/>
 
-	<pin index="58" name ="PL_ETH1_RESETN" loc="A22"/>
+	<pin index="58" name ="PL_ETH1_RESETN" iostandard="LVCMOS18" loc="A22"/>
 	
 	<!--FMC1 Connector-->
 	<pin index="164" name="fmc_hpc0_la00_cc_n" loc="AV7"/>

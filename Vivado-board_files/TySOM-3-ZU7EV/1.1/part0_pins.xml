@@ -13,8 +13,8 @@
 	<pin index="8" name ="DP_HPD" iostandard="LVCMOS18" loc="B11"/>
 	<pin index="9" name ="DP_REFCLK_N" loc="T7"/>
 	<pin index="10" name ="DP_REFCLK_P" loc="T8"/>
-	<pin index="11" name ="DP_CLKN" loc="A6"/>
-	<pin index="12" name ="DP_CLKP" loc="B6"/>
+	<pin index="11" name ="DP_CLKN" iostandard="LVCMOS18" loc="A6"/>
+	<pin index="12" name ="DP_CLKP" iostandard="LVCMOS18" loc="B6"/>
 	
 	<pin index="13" name ="HDMI_RX_C_CLKN" loc="R9"/>
 	<pin index="14" name ="HDMI_RX_C_CLKP" loc="R10"/>
@@ -37,10 +37,10 @@
 	<pin index="29" name ="PL_SW2" iostandard="LVCMOS25" loc="B5"/>
 	<pin index="30" name ="PL_SW3" iostandard="LVCMOS25" loc="A3"/>
 	
-	<pin index="31" name ="PL_LED0" iostandard="LVCMOS33" loc="A12"/>
-	<pin index="32" name ="PL_LED1" iostandard="LVCMOS33" loc="A11"/>
-	<pin index="33" name ="PL_LED2" iostandard="LVCMOS33" loc="A9"/>
-	<pin index="34" name ="PL_LED3" iostandard="LVCMOS33" loc="A10"/>
+	<pin index="31" name ="PL_LED0" iostandard="LVCMOS18" loc="A12"/>
+	<pin index="32" name ="PL_LED1" iostandard="LVCMOS18" loc="A11"/>
+	<pin index="33" name ="PL_LED2" iostandard="LVCMOS18" loc="A9"/>
+	<pin index="34" name ="PL_LED3" iostandard="LVCMOS18" loc="A10"/>
 	
 	<pin index="35" name ="PL_PB" iostandard="LVCMOS33" loc="J7"/>
 	
