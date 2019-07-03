@@ -2,8 +2,10 @@
 [TySOM - SDx-platforms](#tysom_sdx_platforms)
    - [TySOM-3A-ZU19EG](#tysom_3a_zu19eg)
      - [TySOM-3A-ZU19EG_FMC1_ADAS](#tysom_3a_zu19eg_fmc1_adas)
+     - [TySOM-3A-ZU19EG_FMC1_ADAS_AI](#tysom_3a_zu19eg_fmc1_adas_ai)
    - [TySOM-3-ZU7](#tysom_3_zu7)
      - [TySOM-3-ZU7_FMC1_FMC-ADAS](#tysom_3_zu7_fmc1_fmc_adas)
+     - [TySOM-3-ZU7_FMC1_FMC-ADAS_AI](#tysom_3_zu7_fmc1_fmc_adas_ai)
      - [TySOM_3_ZU7_FMC2_LI_IMX274MIPI_FMC_V1_1](#tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1)
    - [TySOM-2-7Z100](#tysom_2_7z100)
      - [TySOM-2-7Z100_FMC2_FMC-ADAS](#tysom_2_7z100_fmc2_fmc_adas)
@@ -79,6 +81,16 @@ Note: This platform is supported in Xilinx SDx 2018.3 version.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
+<a name="tysom_3a_zu19eg_fmc1_adas_ai"/>
+
+## TySOM-3A-ZU19EG_FMC1_ADAS_AI
+
+This platform is designed to be used in AI applications in SDx 2018.3 version.
+
+It supports FMC-ADAS as well.
+
+[Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
 <a name="tysom_3_zu7"/>
 
 ## TySOM-3-ZU7EV
@@ -120,6 +132,16 @@ Current Monitor |
 ## TySOM-3-ZU7_FMC1_FMC-ADAS
 
 Note: This platform is supported in Xilinx SDx 2017.4 or newer.
+
+[Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+<a name="tysom_3_zu7_fmc1_fmc_adas_ai"/>
+
+## TySOM-3-ZU7_FMC1_FMC-ADAS_AI
+
+This platform is designed to be used in AI applications in SDx 2018.3 version.
+
+It supports FMC-ADAS as well.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
