@@ -165,6 +165,7 @@
 		temperature-stability = <50>;
 		factory-fout = <156250000>;
 		clock-frequency = <156250000>;
+		lock-gpios = <&wl18xx_ctrl 2 0 1>;
 	};
 	
 	eeprom@50 {

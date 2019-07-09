@@ -346,7 +346,7 @@
 			xlnx,all-outputs-2 = <0x0>;
 			xlnx,dout-default = <0x00000000>;
 			xlnx,dout-default-2 = <0x00000000>;
-			xlnx,gpio-width = <0x2>;
+			xlnx,gpio-width = <0x3>;
 			xlnx,gpio2-width = <0x20>;
 			xlnx,interrupt-present = <0x0>;
 			xlnx,is-dual = <0x0>;
