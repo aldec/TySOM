@@ -33,7 +33,7 @@
 		regulator-name = "wlan-en-regulator";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
-		gpio = <&wl18xx_ctrl 0x0 0x0>;
+		//gpio = <&wl18xx_ctrl 0x0 0x0>;
 		startup-delay-us = <70000>;
 		regulator-always-on;
 	};
