@@ -6,41 +6,11 @@
 	
 	<pin index="2" name ="PS_I2C_SCL" iostandard="LVCMOS33" loc="N8"/>
 	<pin index="3" name ="PS_I2C_SDA" iostandard="LVCMOS33" loc="N9"/>
-	<pin index="4" name ="DP_I2C_SCL" iostandard="LVCMOS18" loc="C12"/>
-	<pin index="5" name ="DP_I2C_SDA" iostandard="LVCMOS18" loc="C11"/>
-	<pin index="6" name ="DP_SCL" iostandard="LVCMOS18" loc="C7"/>
-	<pin index="7" name ="DP_SDA" iostandard="LVCMOS18" loc="B10"/>
-	<pin index="8" name ="DP_HPD" iostandard="LVCMOS18" loc="B11"/>
-	<pin index="9" name ="DP_REFCLK_N" loc="T7"/>
-	<pin index="10" name ="DP_REFCLK_P" loc="T8"/>
-	<pin index="11" name ="DP_CLKN" iostandard="LVCMOS18" loc="A6"/>
-	<pin index="12" name ="DP_CLKP" iostandard="LVCMOS18" loc="B6"/>
-	
-	<pin index="13" name ="HDMI_RX_C_CLKN" loc="R9"/>
-	<pin index="14" name ="HDMI_RX_C_CLKP" loc="R10"/>
-	<pin index="15" name ="HDMI_RX_Q_SCL" loc="C9"/>
-	<pin index="16" name ="HDMI_RX_Q_SDA" loc="B8"/>
-	
-	<pin index="17" name ="CLK_MGTX_CLK0N" loc="AH17"/>
-	<pin index="18" name ="CLK_MGTX_CLK0P" loc="AH18"/>
-	<pin index="19" name ="CLK_MGTX_CLK1N" loc="AD7"/>
-	<pin index="20" name ="CLK_MGTX_CLK1P" loc="AD8"/>
-	<pin index="21" name ="CLK_MGTX_CLK2N" loc="Y7"/>
-	<pin index="22" name ="CLK_MGTX_CLK2P" loc="Y8"/>
-	<pin index="23" name ="CLK_MGTX_CLK3N" loc="U9"/>
-	<pin index="24" name ="CLK_MGTX_CLK3P" loc="U10"/>
-	<pin index="25" name ="CLK_125M" iostandard="LVCMOS33" loc="M10"/>
-	<pin index="26" name ="CLK_50M" iostandard="LVCMOS33" loc="M9"/>
 	
 	<pin index="27" name ="PL_SW0" iostandard="LVCMOS25" loc="A2"/>
 	<pin index="28" name ="PL_SW1" iostandard="LVCMOS25" loc="A5"/>
 	<pin index="29" name ="PL_SW2" iostandard="LVCMOS25" loc="B5"/>
 	<pin index="30" name ="PL_SW3" iostandard="LVCMOS25" loc="A3"/>
-	
-	<pin index="31" name ="PL_LED0" iostandard="LVCMOS18" loc="A12"/>
-	<pin index="32" name ="PL_LED1" iostandard="LVCMOS18" loc="A11"/>
-	<pin index="33" name ="PL_LED2" iostandard="LVCMOS18" loc="A9"/>
-	<pin index="34" name ="PL_LED3" iostandard="LVCMOS18" loc="A10"/>
 	
 	<pin index="35" name ="PL_PB" iostandard="LVCMOS33" loc="J7"/>
 	

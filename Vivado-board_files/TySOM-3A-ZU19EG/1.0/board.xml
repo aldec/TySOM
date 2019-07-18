@@ -199,104 +199,6 @@
 					</port_maps>
 				</interface>
 				
-				<!--PL clocks-->
-				<interface mode="slave" name="CLK_50M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_50m">
-					<parameters>
-						<parameter name="frequency" value="50000000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK" physical_port="CLK_50M_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_50M"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-				<interface mode="slave" name="CLK_125M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_125m">
-					<parameters>
-						<parameter name="frequency" value="125000000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK" physical_port="CLK_125M_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_125M"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-				<interface mode="slave" name="CLK_PL_CLK1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_pl_clk1">
-					<parameters>
-						<!--choose frequency according to your project-->
-						<parameter name="frequency" value="100000000"/>
-						<!--parameter name="frequency" value="156250000"/-->
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="CLK_PL_CLK1N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_PL_CLK1N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="CLK_PL_CLK1P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_PL_CLK1P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-				<interface mode="slave" name="CLK_PL_CLK0" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_pl_clk0">
-					<parameters>
-						<!--choose frequency according to your project-->
-						<parameter name="frequency" value="100000000"/>
-						<!--parameter name="frequency" value="156250000"/-->
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="CLK_PL_CLK0N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_PL_CLK0N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="CLK_PL_CLK0P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_PL_CLK0P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-				<interface mode="slave" name="CLK_300M" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_300m">
-					<parameters>
-						<parameter name="frequency" value="300000000"/>
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="CLK_300M_N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_300M_N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="CLK_300M_P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_300M_P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-
-
-				
 				<interface mode="master" name="PL_user_switches" type="xilinx.com:interface:gpio_rtl:1.0" of_component="pl_user_switches" preset_proc="pl_user_switches_preset">
 					<preferred_ips>
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
@@ -660,26 +562,6 @@
 		<component name="HDMI_RX_I2C" display_name="HDMI_RX_I2C" type="chip" sub_type="chip" major_group="HDMI-IN">
 			<description>HDMI_RX_I2C</description>
 		</component>
-
-		<component name="CLK_50M" display_name="CLK_50M" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_50M</description>
-		</component>
-		
-		<component name="CLK_125M" display_name="CLK_125M" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_125M</description>
-		</component>
-
-		<component name="CLK_PL_CLK1" display_name="CLK_PL_CLK1" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_PL_CLK1</description>
-		</component>
-
-		<component name="CLK_PL_CLK0" display_name="CLK_PL_CLK0" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_PL_CLK0</description>
-		</component>
-
-		<component name="CLK_300M" display_name="CLK_300M" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_300M</description>
-		</component>	
 	
 		<component name="PL_user_switches" display_name="PL user switches" type="chip" sub_type="chip" major_group="Miscellaneous">
 			<description>PL user switches</description>
@@ -1169,34 +1051,6 @@
 						
 		<connection name="part0_hdmi_rx_i2c" component1="part0" component2="HDMI_RX_I2C">
 			<connection_map name="part0_hdmi_rx_i2c_1" c1_st_index="15" c1_end_index="16" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-		
-		<connection name="part0_clk_50m" component1="part0" component2="CLK_50M">
-			<connection_map name="part0_clk_50m_1" c1_st_index="17" c1_end_index="17" c2_st_index="0" c2_end_index="0"/>
-		</connection>
-		
-		<connection name="part0_clk_125m" component1="part0" component2="CLK_125M">
-			<connection_map name="part0_clk_125m_1" c1_st_index="18" c1_end_index="18" c2_st_index="0" c2_end_index="0"/>
-		</connection>
-
-		<connection name="part0_clk_pl_clk1" component1="part0" component2="CLK_PL_CLK1">
-			<connection_map name="part0_clk_pl_clk1_1" c1_st_index="19" c1_end_index="20" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-
-		<connection name="part0_clk_pl_clk0" component1="part0" component2="CLK_PL_CLK0">
-			<connection_map name="part0_clk_pl_clk0_1" c1_st_index="21" c1_end_index="22" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-
-		<connection name="part0_clk_mgtx_clk2" component1="part0" component2="CLK_MGTX_CLK2">
-			<connection_map name="part0_clk_mgtx_clk2_1" c1_st_index="23" c1_end_index="24" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-
-		<connection name="part0_clk_mgtx_clk1" component1="part0" component2="CLK_MGTX_CLK1">
-			<connection_map name="part0_clk_mgtx_clk1_1" c1_st_index="25" c1_end_index="26" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-
-		<connection name="part0_clk_300m" component1="part0" component2="CLK_300M">
-			<connection_map name="part0_clk_300m_1" c1_st_index="27" c1_end_index="28" c2_st_index="0" c2_end_index="1"/>
 		</connection>
 
 		<connection name="part0_pl_user_switches" component1="part0" component2="PL_user_switches">

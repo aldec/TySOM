@@ -11,27 +11,13 @@
 	<pin index="8" name ="DP_HPD" iostandard="LVCMOS33" loc="AC14"/>
 	<pin index="9" name ="DP_REFCLK_N" loc="AC9"/>
 	<pin index="10" name ="DP_REFCLK_P" loc="AC10"/>
-	<pin index="11" name ="DP_CLKN" iostandard="LVCMOS18" loc="L17"/>
-	<pin index="12" name ="DP_CLKP" iostandard="LVCMOS18" loc="M18"/>
+	<pin index="11" name ="DP_CLKN" iostandard="LVDS" loc="L17"/>
+	<pin index="12" name ="DP_CLKP" iostandard="LVDS" loc="M18"/>
 	
 	<pin index="13" name ="HDMI_RX_CLKN" loc="AG9"/>
 	<pin index="14" name ="HDMI_RX_CLKP" loc="AG10"/>
-	<pin index="15" name ="HDMI_RX_SCL" loc="L15"/>
-	<pin index="16" name ="HDMI_RX_SDA" loc="L16"/>
-
-	<pin index="17" name ="CLK_50M" iostandard="LVCMOS33" loc="AF13"/>	
-	<pin index="18" name ="CLK_125M" iostandard="LVCMOS33" loc="AG13"/>
-	<pin index="19" name ="CLK_PL_CLK1N" iostandard="LVCMOS25" loc="U13"/>
-	<pin index="20" name ="CLK_PL_CLK1P" iostandard="LVCMOS25" loc="V13"/>
-	<pin index="21" name ="CLK_PL_CLK0N" iostandard="LVCMOS18" loc="AR17"/>
-	<pin index="22" name ="CLK_PL_CLK0P" iostandard="LVCMOS18" loc="AR18"/>
-	<pin index="23" name ="CLK_MGTX_CLK2N" loc="N9"/>
-	<pin index="24" name ="CLK_MGTX_CLK2P" loc="N10"/>
-	<pin index="25" name ="CLK_MGTX_CLK1N" loc="AA9"/>
-	<pin index="26" name ="CLK_MGTX_CLK1P" loc="AA10"/>
-	<pin index="27" name ="CLK_300M_N" iostandard="LVCMOS18" loc="T33"/>
-	<pin index="28" name ="CLK_300M_P" iostandard="LVCMOS18" loc="U33"/>
-
+	<pin index="15" name ="HDMI_RX_SCL" iostandard="LVCMOS33" loc="L15"/>
+	<pin index="16" name ="HDMI_RX_SDA" iostandard="LVCMOS33" loc="L16"/>
 	
 	<pin index="29" name ="PL_SW0" iostandard="LVCMOS25" loc="W14"/>
 	<pin index="30" name ="PL_SW1" iostandard="LVCMOS25" loc="Y14"/>
@@ -394,121 +380,121 @@
 	<!--FMC2 Connector END-->
 
 
-	<pin index="540" name="ddr4_adr0" iostandard="LVCMOS12" loc="C31"/>
-	<pin index="541" name="ddr4_adr1" iostandard="LVCMOS12" loc="D32"/>
-	<pin index="542" name="ddr4_adr2" iostandard="LVCMOS12" loc="J31"/>
-	<pin index="543" name="ddr4_adr3" iostandard="LVCMOS12" loc="C33"/>
-	<pin index="544" name="ddr4_adr4" iostandard="LVCMOS12" loc="J30"/>
-	<pin index="545" name="ddr4_adr5" iostandard="LVCMOS12" loc="D31"/>
-	<pin index="546" name="ddr4_adr6" iostandard="LVCMOS12" loc="D34"/>
-	<pin index="547" name="ddr4_adr7" iostandard="LVCMOS12" loc="E32"/>
-	<pin index="548" name="ddr4_adr8" iostandard="LVCMOS12" loc="H31"/>
-	<pin index="549" name="ddr4_adr9" iostandard="LVCMOS12" loc="J29"/>
-	<pin index="550" name="ddr4_adr10" iostandard="LVCMOS12" loc="D30"/>
-	<pin index="551" name="ddr4_adr11" iostandard="LVCMOS12" loc="G33"/>
-	<pin index="552" name="ddr4_adr12" iostandard="LVCMOS12" loc="B34"/>
-	<pin index="553" name="ddr4_adr13" iostandard="LVCMOS12" loc="A35"/>
-	<pin index="554" name="ddr4_adr14" iostandard="LVCMOS12" loc="B31"/>
-	<pin index="555" name="ddr4_adr15" iostandard="LVCMOS12" loc="B35"/>
-	<pin index="556" name="ddr4_adr16" iostandard="LVCMOS12" loc="A36"/>
-	<pin index="557" name="ddr4_act_n" iostandard="LVCMOS12" loc="E33"/>
-	<pin index="558" name="ddr4_ba0" iostandard="LVCMOS12" loc="A37"/>
-	<pin index="559" name="ddr4_ba1" iostandard="LVCMOS12" loc="A33"/>
-	<pin index="560" name="ddr4_bg0" iostandard="LVCMOS12" loc="C34"/>
-	<pin index="561" name="ddr4_bg1" iostandard="LVCMOS12" loc="G30"/>
-	<pin index="562" name="ddr4_ck_c0" iostandard="LVCMOS12" loc="G29"/>
-	<pin index="563" name="ddr4_ck_t0" iostandard="LVCMOS12" loc="H29"/>
-	<pin index="564" name="ddr4_cke0" iostandard="LVCMOS12" loc="G31"/>
-	<pin index="565" name="ddr4_cs0_n" iostandard="LVCMOS12" loc="A32"/>
-	<pin index="566" name="ddr4_dm_dbi_n0" iostandard="LVCMOS12" loc="M38"/>
-	<pin index="567" name="ddr4_dm_dbi_n1" iostandard="LVCMOS12" loc="M34"/>
-	<pin index="568" name="ddr4_dm_dbi_n2" iostandard="LVCMOS12" loc="G35"/>
-	<pin index="569" name="ddr4_dm_dbi_n3" iostandard="LVCMOS12" loc="E38"/>
-	<pin index="570" name="ddr4_dm_dbi_n4" iostandard="LVCMOS12" loc="D27"/>
-	<pin index="571" name="ddr4_dm_dbi_n5" iostandard="LVCMOS12" loc="L25"/>
-	<pin index="572" name="ddr4_dm_dbi_n6" iostandard="LVCMOS12" loc="G28"/>
-	<pin index="573" name="ddr4_dm_dbi_n7" iostandard="LVCMOS12" loc="R25"/>
-	<pin index="574" name="ddr4_dq0" iostandard="LVCMOS12" loc="L38"/>
-	<pin index="575" name="ddr4_dq1" iostandard="LVCMOS12" loc="K38"/>
-	<pin index="576" name="ddr4_dq2" iostandard="LVCMOS12" loc="L36"/>
-	<pin index="577" name="ddr4_dq3" iostandard="LVCMOS12" loc="H38"/>
-	<pin index="578" name="ddr4_dq4" iostandard="LVCMOS12" loc="M36"/>
-	<pin index="579" name="ddr4_dq5" iostandard="LVCMOS12" loc="L37"/>
-	<pin index="580" name="ddr4_dq6" iostandard="LVCMOS12" loc="H37"/>
-	<pin index="581" name="ddr4_dq7" iostandard="LVCMOS12" loc="K37"/>
-	<pin index="582" name="ddr4_dq8" iostandard="LVCMOS12" loc="K35"/>
-	<pin index="583" name="ddr4_dq9" iostandard="LVCMOS12" loc="J34"/>
-	<pin index="584" name="ddr4_dq10" iostandard="LVCMOS12" loc="J36"/>
-	<pin index="585" name="ddr4_dq11" iostandard="LVCMOS12" loc="K33"/>
-	<pin index="586" name="ddr4_dq12" iostandard="LVCMOS12" loc="L35"/>
-	<pin index="587" name="ddr4_dq13" iostandard="LVCMOS12" loc="L33"/>
-	<pin index="588" name="ddr4_dq14" iostandard="LVCMOS12" loc="H36"/>
-	<pin index="589" name="ddr4_dq15" iostandard="LVCMOS12" loc="J35"/>
-	<pin index="590" name="ddr4_dq16" iostandard="LVCMOS12" loc="G39"/>
-	<pin index="591" name="ddr4_dq17" iostandard="LVCMOS12" loc="E37"/>
-	<pin index="592" name="ddr4_dq18" iostandard="LVCMOS12" loc="E34"/>
-	<pin index="593" name="ddr4_dq19" iostandard="LVCMOS12" loc="E35"/>
-	<pin index="594" name="ddr4_dq20" iostandard="LVCMOS12" loc="H39"/>
-	<pin index="595" name="ddr4_dq21" iostandard="LVCMOS12" loc="F37"/>
-	<pin index="596" name="ddr4_dq22" iostandard="LVCMOS12" loc="F35"/>
-	<pin index="597" name="ddr4_dq23" iostandard="LVCMOS12" loc="F36"/>
-	<pin index="598" name="ddr4_dq24" iostandard="LVCMOS12" loc="D37"/>
-	<pin index="599" name="ddr4_dq25" iostandard="LVCMOS12" loc="A38"/>
-	<pin index="600" name="ddr4_dq26" iostandard="LVCMOS12" loc="D35"/>
-	<pin index="601" name="ddr4_dq27" iostandard="LVCMOS12" loc="C37"/>
-	<pin index="602" name="ddr4_dq28" iostandard="LVCMOS12" loc="D39"/>
-	<pin index="603" name="ddr4_dq29" iostandard="LVCMOS12" loc="C39"/>
-	<pin index="604" name="ddr4_dq30" iostandard="LVCMOS12" loc="D36"/>
-	<pin index="605" name="ddr4_dq31" iostandard="LVCMOS12" loc="B38"/>
-	<pin index="606" name="ddr4_dq32" iostandard="LVCMOS12" loc="C29"/>
-	<pin index="607" name="ddr4_dq33" iostandard="LVCMOS12" loc="A27"/>
-	<pin index="608" name="ddr4_dq34" iostandard="LVCMOS12" loc="B25"/>
-	<pin index="609" name="ddr4_dq35" iostandard="LVCMOS12" loc="B28"/>
-	<pin index="610" name="ddr4_dq36" iostandard="LVCMOS12" loc="B29"/>
-	<pin index="611" name="ddr4_dq37" iostandard="LVCMOS12" loc="C28"/>
-	<pin index="612" name="ddr4_dq38" iostandard="LVCMOS12" loc="A25"/>
-	<pin index="613" name="ddr4_dq39" iostandard="LVCMOS12" loc="A28"/>
-	<pin index="614" name="ddr4_dq40" iostandard="LVCMOS12" loc="H26"/>
-	<pin index="615" name="ddr4_dq41" iostandard="LVCMOS12" loc="J27"/>
-	<pin index="616" name="ddr4_dq42" iostandard="LVCMOS12" loc="K24"/>
-	<pin index="617" name="ddr4_dq43" iostandard="LVCMOS12" loc="K28"/>
-	<pin index="618" name="ddr4_dq44" iostandard="LVCMOS12" loc="H27"/>
-	<pin index="619" name="ddr4_dq45" iostandard="LVCMOS12" loc="H28"/>
-	<pin index="620" name="ddr4_dq46" iostandard="LVCMOS12" loc="K27"/>
-	<pin index="621" name="ddr4_dq47" iostandard="LVCMOS12" loc="J24"/>
-	<pin index="622" name="ddr4_dq48" iostandard="LVCMOS12" loc="G25"/>
-	<pin index="623" name="ddr4_dq49" iostandard="LVCMOS12" loc="D25"/>
-	<pin index="624" name="ddr4_dq50" iostandard="LVCMOS12" loc="E27"/>
-	<pin index="625" name="ddr4_dq51" iostandard="LVCMOS12" loc="F26"/>
-	<pin index="626" name="ddr4_dq52" iostandard="LVCMOS12" loc="G24"/>
-	<pin index="627" name="ddr4_dq53" iostandard="LVCMOS12" loc="G26"/>
-	<pin index="628" name="ddr4_dq54" iostandard="LVCMOS12" loc="E28"/>
-	<pin index="629" name="ddr4_dq55" iostandard="LVCMOS12" loc="D26"/>
-	<pin index="630" name="ddr4_dq56" iostandard="LVCMOS12" loc="L26"/>
-	<pin index="631" name="ddr4_dq57" iostandard="LVCMOS12" loc="M26"/>
-	<pin index="632" name="ddr4_dq58" iostandard="LVCMOS12" loc="N27"/>
-	<pin index="633" name="ddr4_dq59" iostandard="LVCMOS12" loc="P27"/>
-	<pin index="634" name="ddr4_dq60" iostandard="LVCMOS12" loc="M28"/>
-	<pin index="635" name="ddr4_dq61" iostandard="LVCMOS12" loc="L28"/>
-	<pin index="636" name="ddr4_dq62" iostandard="LVCMOS12" loc="N26"/>
-	<pin index="637" name="ddr4_dq63" iostandard="LVCMOS12" loc="P26"/>
-	<pin index="638" name="ddr4_dqs_c0" iostandard="LVCMOS12" loc="J39"/>
-	<pin index="639" name="ddr4_dqs_c1" iostandard="LVCMOS12" loc="H34"/>
-	<pin index="640" name="ddr4_dqs_c2" iostandard="LVCMOS12" loc="F38"/>
-	<pin index="641" name="ddr4_dqs_c3" iostandard="LVCMOS12" loc="B36"/>
-	<pin index="642" name="ddr4_dqs_c4" iostandard="LVCMOS12" loc="A26"/>
-	<pin index="643" name="ddr4_dqs_c5" iostandard="LVCMOS12" loc="J26"/>
-	<pin index="644" name="ddr4_dqs_c6" iostandard="LVCMOS12" loc="E25"/>
-	<pin index="645" name="ddr4_dqs_c7" iostandard="LVCMOS12" loc="M25"/>
-	<pin index="646" name="ddr4_dqs_t0" iostandard="LVCMOS12" loc="K39"/>
-	<pin index="647" name="ddr4_dqs_t1" iostandard="LVCMOS12" loc="H33"/>
-	<pin index="648" name="ddr4_dqs_t2" iostandard="LVCMOS12" loc="G38"/>
-	<pin index="649" name="ddr4_dqs_t3" iostandard="LVCMOS12" loc="C36"/>
-	<pin index="650" name="ddr4_dqs_t4" iostandard="LVCMOS12" loc="B26"/>
-	<pin index="651" name="ddr4_dqs_t5" iostandard="LVCMOS12" loc="J25"/>
-	<pin index="652" name="ddr4_dqs_t6" iostandard="LVCMOS12" loc="F25"/>
-	<pin index="653" name="ddr4_dqs_t7" iostandard="LVCMOS12" loc="M24"/>
-	<pin index="654" name="ddr4_odt0" iostandard="LVCMOS12" loc="A31"/>
+	<pin index="540" name="ddr4_adr0" iostandard="SSTL12_DCI" loc="C31"/>
+	<pin index="541" name="ddr4_adr1" iostandard="SSTL12_DCI" loc="D32"/>
+	<pin index="542" name="ddr4_adr2" iostandard="SSTL12_DCI" loc="J31"/>
+	<pin index="543" name="ddr4_adr3" iostandard="SSTL12_DCI" loc="C33"/>
+	<pin index="544" name="ddr4_adr4" iostandard="SSTL12_DCI" loc="J30"/>
+	<pin index="545" name="ddr4_adr5" iostandard="SSTL12_DCI" loc="D31"/>
+	<pin index="546" name="ddr4_adr6" iostandard="SSTL12_DCI" loc="D34"/>
+	<pin index="547" name="ddr4_adr7" iostandard="SSTL12_DCI" loc="E32"/>
+	<pin index="548" name="ddr4_adr8" iostandard="SSTL12_DCI" loc="H31"/>
+	<pin index="549" name="ddr4_adr9" iostandard="SSTL12_DCI" loc="J29"/>
+	<pin index="550" name="ddr4_adr10" iostandard="SSTL12_DCI" loc="D30"/>
+	<pin index="551" name="ddr4_adr11" iostandard="SSTL12_DCI" loc="G33"/>
+	<pin index="552" name="ddr4_adr12" iostandard="SSTL12_DCI" loc="B34"/>
+	<pin index="553" name="ddr4_adr13" iostandard="SSTL12_DCI" loc="A35"/>
+	<pin index="554" name="ddr4_adr14" iostandard="SSTL12_DCI" loc="B31"/>
+	<pin index="555" name="ddr4_adr15" iostandard="SSTL12_DCI" loc="B35"/>
+	<pin index="556" name="ddr4_adr16" iostandard="SSTL12_DCI" loc="A36"/>
+	<pin index="557" name="ddr4_act_n" iostandard="SSTL12_DCI" loc="E33"/>
+	<pin index="558" name="ddr4_ba0" iostandard="SSTL12_DCI" loc="A37"/>
+	<pin index="559" name="ddr4_ba1" iostandard="SSTL12_DCI" loc="A33"/>
+	<pin index="560" name="ddr4_bg0" iostandard="SSTL12_DCI" loc="C34"/>
+	<pin index="561" name="ddr4_bg1" iostandard="SSTL12_DCI" loc="G30"/>
+	<pin index="562" name="ddr4_ck_c0" iostandard="SSTL12_DCI" loc="G29"/>
+	<pin index="563" name="ddr4_ck_t0" iostandard="SSTL12_DCI" loc="H29"/>
+	<pin index="564" name="ddr4_cke0" iostandard="SSTL12_DCI" loc="G31"/>
+	<pin index="565" name="ddr4_cs0_n" iostandard="SSTL12_DCI" loc="A32"/>
+	<pin index="566" name="ddr4_dm_dbi_n0" iostandard="POD12_DCI" loc="M38"/>
+	<pin index="567" name="ddr4_dm_dbi_n1" iostandard="POD12_DCI" loc="M34"/>
+	<pin index="568" name="ddr4_dm_dbi_n2" iostandard="POD12_DCI" loc="G35"/>
+	<pin index="569" name="ddr4_dm_dbi_n3" iostandard="POD12_DCI" loc="E38"/>
+	<pin index="570" name="ddr4_dm_dbi_n4" iostandard="POD12_DCI" loc="D27"/>
+	<pin index="571" name="ddr4_dm_dbi_n5" iostandard="POD12_DCI" loc="L25"/>
+	<pin index="572" name="ddr4_dm_dbi_n6" iostandard="POD12_DCI" loc="G28"/>
+	<pin index="573" name="ddr4_dm_dbi_n7" iostandard="POD12_DCI" loc="R25"/>
+	<pin index="574" name="ddr4_dq0" iostandard="POD12_DCI" loc="L38"/>
+	<pin index="575" name="ddr4_dq1" iostandard="POD12_DCI" loc="K38"/>
+	<pin index="576" name="ddr4_dq2" iostandard="POD12_DCI" loc="L36"/>
+	<pin index="577" name="ddr4_dq3" iostandard="POD12_DCI" loc="H38"/>
+	<pin index="578" name="ddr4_dq4" iostandard="POD12_DCI" loc="M36"/>
+	<pin index="579" name="ddr4_dq5" iostandard="POD12_DCI" loc="L37"/>
+	<pin index="580" name="ddr4_dq6" iostandard="POD12_DCI" loc="H37"/>
+	<pin index="581" name="ddr4_dq7" iostandard="POD12_DCI" loc="K37"/>
+	<pin index="582" name="ddr4_dq8" iostandard="POD12_DCI" loc="K35"/>
+	<pin index="583" name="ddr4_dq9" iostandard="POD12_DCI" loc="J34"/>
+	<pin index="584" name="ddr4_dq10" iostandard="POD12_DCI" loc="J36"/>
+	<pin index="585" name="ddr4_dq11" iostandard="POD12_DCI" loc="K33"/>
+	<pin index="586" name="ddr4_dq12" iostandard="POD12_DCI" loc="L35"/>
+	<pin index="587" name="ddr4_dq13" iostandard="POD12_DCI" loc="L33"/>
+	<pin index="588" name="ddr4_dq14" iostandard="POD12_DCI" loc="H36"/>
+	<pin index="589" name="ddr4_dq15" iostandard="POD12_DCI" loc="J35"/>
+	<pin index="590" name="ddr4_dq16" iostandard="POD12_DCI" loc="G39"/>
+	<pin index="591" name="ddr4_dq17" iostandard="POD12_DCI" loc="E37"/>
+	<pin index="592" name="ddr4_dq18" iostandard="POD12_DCI" loc="E34"/>
+	<pin index="593" name="ddr4_dq19" iostandard="POD12_DCI" loc="E35"/>
+	<pin index="594" name="ddr4_dq20" iostandard="POD12_DCI" loc="H39"/>
+	<pin index="595" name="ddr4_dq21" iostandard="POD12_DCI" loc="F37"/>
+	<pin index="596" name="ddr4_dq22" iostandard="POD12_DCI" loc="F35"/>
+	<pin index="597" name="ddr4_dq23" iostandard="POD12_DCI" loc="F36"/>
+	<pin index="598" name="ddr4_dq24" iostandard="POD12_DCI" loc="D37"/>
+	<pin index="599" name="ddr4_dq25" iostandard="POD12_DCI" loc="A38"/>
+	<pin index="600" name="ddr4_dq26" iostandard="POD12_DCI" loc="D35"/>
+	<pin index="601" name="ddr4_dq27" iostandard="POD12_DCI" loc="C37"/>
+	<pin index="602" name="ddr4_dq28" iostandard="POD12_DCI" loc="D39"/>
+	<pin index="603" name="ddr4_dq29" iostandard="POD12_DCI" loc="C39"/>
+	<pin index="604" name="ddr4_dq30" iostandard="POD12_DCI" loc="D36"/>
+	<pin index="605" name="ddr4_dq31" iostandard="POD12_DCI" loc="B38"/>
+	<pin index="606" name="ddr4_dq32" iostandard="POD12_DCI" loc="C29"/>
+	<pin index="607" name="ddr4_dq33" iostandard="POD12_DCI" loc="A27"/>
+	<pin index="608" name="ddr4_dq34" iostandard="POD12_DCI" loc="B25"/>
+	<pin index="609" name="ddr4_dq35" iostandard="POD12_DCI" loc="B28"/>
+	<pin index="610" name="ddr4_dq36" iostandard="POD12_DCI" loc="B29"/>
+	<pin index="611" name="ddr4_dq37" iostandard="POD12_DCI" loc="C28"/>
+	<pin index="612" name="ddr4_dq38" iostandard="POD12_DCI" loc="A25"/>
+	<pin index="613" name="ddr4_dq39" iostandard="POD12_DCI" loc="A28"/>
+	<pin index="614" name="ddr4_dq40" iostandard="POD12_DCI" loc="H26"/>
+	<pin index="615" name="ddr4_dq41" iostandard="POD12_DCI" loc="J27"/>
+	<pin index="616" name="ddr4_dq42" iostandard="POD12_DCI" loc="K24"/>
+	<pin index="617" name="ddr4_dq43" iostandard="POD12_DCI" loc="K28"/>
+	<pin index="618" name="ddr4_dq44" iostandard="POD12_DCI" loc="H27"/>
+	<pin index="619" name="ddr4_dq45" iostandard="POD12_DCI" loc="H28"/>
+	<pin index="620" name="ddr4_dq46" iostandard="POD12_DCI" loc="K27"/>
+	<pin index="621" name="ddr4_dq47" iostandard="POD12_DCI" loc="J24"/>
+	<pin index="622" name="ddr4_dq48" iostandard="POD12_DCI" loc="G25"/>
+	<pin index="623" name="ddr4_dq49" iostandard="POD12_DCI" loc="D25"/>
+	<pin index="624" name="ddr4_dq50" iostandard="POD12_DCI" loc="E27"/>
+	<pin index="625" name="ddr4_dq51" iostandard="POD12_DCI" loc="F26"/>
+	<pin index="626" name="ddr4_dq52" iostandard="POD12_DCI" loc="G24"/>
+	<pin index="627" name="ddr4_dq53" iostandard="POD12_DCI" loc="G26"/>
+	<pin index="628" name="ddr4_dq54" iostandard="POD12_DCI" loc="E28"/>
+	<pin index="629" name="ddr4_dq55" iostandard="POD12_DCI" loc="D26"/>
+	<pin index="630" name="ddr4_dq56" iostandard="POD12_DCI" loc="L26"/>
+	<pin index="631" name="ddr4_dq57" iostandard="POD12_DCI" loc="M26"/>
+	<pin index="632" name="ddr4_dq58" iostandard="POD12_DCI" loc="N27"/>
+	<pin index="633" name="ddr4_dq59" iostandard="POD12_DCI" loc="P27"/>
+	<pin index="634" name="ddr4_dq60" iostandard="POD12_DCI" loc="M28"/>
+	<pin index="635" name="ddr4_dq61" iostandard="POD12_DCI" loc="L28"/>
+	<pin index="636" name="ddr4_dq62" iostandard="POD12_DCI" loc="N26"/>
+	<pin index="637" name="ddr4_dq63" iostandard="POD12_DCI" loc="P26"/>
+	<pin index="638" name="ddr4_dqs_c0" iostandard="DIFF_POD12_DCI" loc="J39"/>
+	<pin index="639" name="ddr4_dqs_c1" iostandard="DIFF_POD12_DCI" loc="H34"/>
+	<pin index="640" name="ddr4_dqs_c2" iostandard="DIFF_POD12_DCI" loc="F38"/>
+	<pin index="641" name="ddr4_dqs_c3" iostandard="DIFF_POD12_DCI" loc="B36"/>
+	<pin index="642" name="ddr4_dqs_c4" iostandard="DIFF_POD12_DCI" loc="A26"/>
+	<pin index="643" name="ddr4_dqs_c5" iostandard="DIFF_POD12_DCI" loc="J26"/>
+	<pin index="644" name="ddr4_dqs_c6" iostandard="DIFF_POD12_DCI" loc="E25"/>
+	<pin index="645" name="ddr4_dqs_c7" iostandard="DIFF_POD12_DCI" loc="M25"/>
+	<pin index="646" name="ddr4_dqs_t0" iostandard="DIFF_POD12_DCI" loc="K39"/>
+	<pin index="647" name="ddr4_dqs_t1" iostandard="DIFF_POD12_DCI" loc="H33"/>
+	<pin index="648" name="ddr4_dqs_t2" iostandard="DIFF_POD12_DCI" loc="G38"/>
+	<pin index="649" name="ddr4_dqs_t3" iostandard="DIFF_POD12_DCI" loc="C36"/>
+	<pin index="650" name="ddr4_dqs_t4" iostandard="DIFF_POD12_DCI" loc="B26"/>
+	<pin index="651" name="ddr4_dqs_t5" iostandard="DIFF_POD12_DCI" loc="J25"/>
+	<pin index="652" name="ddr4_dqs_t6" iostandard="DIFF_POD12_DCI" loc="F25"/>
+	<pin index="653" name="ddr4_dqs_t7" iostandard="DIFF_POD12_DCI" loc="M24"/>
+	<pin index="654" name="ddr4_odt0" iostandard="SSTL12_DCI" loc="A31"/>
 	<pin index="655" name="ddr4_reset_n" iostandard="LVCMOS12" loc="K34"/>
 </pins>
 </part_info>

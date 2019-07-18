@@ -1403,16 +1403,6 @@
 		</ip>
 	</ip_preset>
 	
-	<ip_preset preset_proc_name="pl_user_leds_preset">
-		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
-			<user_parameters>
-				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/> 
-				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
-				<user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
-			</user_parameters>
-		</ip>
-	</ip_preset>
-	
 	<ip_preset preset_proc_name="pl_user_pushbutton_preset">
 		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
 			<user_parameters>
