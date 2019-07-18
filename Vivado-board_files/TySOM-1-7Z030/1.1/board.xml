@@ -84,100 +84,40 @@
 				</interface>
 
 				<!--PL clocks-->
-				<interface mode="slave" name="CLK_25M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_25m">
-					<parameters>
-						<parameter name="frequency" value="25000000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK" physical_port="CLK_25M_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_25M"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-				
-				<interface mode="slave" name="CLK_50M" type="Aldec.com:aldec_lib:clock_rtl:1.0" of_component="clk_50m">
-					<parameters>
-						<parameter name="frequency" value="50000000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK" physical_port="CLK_50M_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_50M"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
+				<interface mode="slave" name="CLK_25M" type="xilinx.com:signal:clock_rtl:1.0" of_component="clk_25m" preset_proc="clk_25m_preset">
+				 <parameters>
+				   <parameter name="frequency" value="25000000" />
+				 </parameters>				  
+				  <preferred_ips>
+				    <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+				    <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				  </preferred_ips>
+				  <port_maps>
+				    <port_map logical_port="CLK" physical_port="CLK_25M_ext" dir="in">
+				      <pin_maps>
+					<pin_map port_index="0" component_pin="CLK_25M"/> 
+				      </pin_maps>
+				    </port_map>
+				  </port_maps>
 				</interface>
 
-				<interface mode="slave" name="CLK_156M25_CLK2" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_156m25_clk2">
-					<parameters>
-						<parameter name="frequency" value="156250000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="CLK_156M25_CLK2N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_156M25_CLK2N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="CLK_156M25_CLK2P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_156M25_CLK2P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
+				<interface mode="slave" name="CLK_50M" type="xilinx.com:signal:clock_rtl:1.0" of_component="clk_50m" preset_proc="clk_50m_preset">
+				 <parameters>
+				   <parameter name="frequency" value="50000000" />
+				 </parameters>				  
+				  <preferred_ips>
+				    <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+				    <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				  </preferred_ips>
+				  <port_maps>
+				    <port_map logical_port="CLK" physical_port="CLK_50M_ext" dir="in">
+				      <pin_maps>
+					<pin_map port_index="0" component_pin="CLK_50M"/> 
+				      </pin_maps>
+				    </port_map>
+				  </port_maps>
 				</interface>
 
-				<interface mode="slave" name="PCIE_100M_CLK0" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="pcie_100m_clk0">
-					<parameters>
-						<parameter name="frequency" value="100000000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="PCIE_100M_CLK0N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="PCIE_100M_CLK0N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="PCIE_100M_CLK0P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="PCIE_100M_CLK0P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
-
-				<interface mode="slave" name="CLK_156M25_CLK1" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_156m25_clk1">
-					<parameters>
-						<parameter name="frequency" value="156250000" />
-					</parameters>
-					<preferred_ips>
-						<preferred_ip vendor="Aldec.com" library="aldec_lib" name="PL_clocks_ports" order="0"/>
-					</preferred_ips>
-					<port_maps>
-						<port_map logical_port="CLK_N" physical_port="CLK_156M25_CLK1N_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_156M25_CLK1N"/>
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="CLK_P" physical_port="CLK_156M25_CLK1P_ext" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="CLK_156M25_CLK1P"/>
-							</pin_maps>
-						</port_map>
-					</port_maps>
-				</interface>
 				
 				<!--MIPI Camera Serial Interface-->
 				<interface mode="slave" name="CAM_D" type="xilinx.com:interface:gt_rtl:1.0" of_component="cam_d">
@@ -334,18 +274,6 @@
 			<description>CLK_50M port</description>
 		</component>
 		
-		<component name="CLK_156M25_CLK2" display_name="CLK_156M25_CLK2 port" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_156M25_CLK2 port</description>
-		</component>	
-
-		<component name="PCIE_100M_CLK0" display_name="PCIE_100M_CLK0 port" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>PCIE_100M_CLK0 port</description>
-		</component>
-		
-		<component name="CLK_156M25_CLK1" display_name="CLK_156M25_CLK1 port" type="chip" sub_type="chip" major_group="PL clocks ports">
-			<description>CLK_156M25_CLK1 port</description>
-		</component>
-		
 		<component name="CAM_D" display_name="Camera MIPI CSI-2 data" type="chip" sub_type="chip" major_group="Camera">
 			<description>Camera MIPI CSI-2 data</description>
 		</component>
@@ -396,18 +324,6 @@
 
 		<connection name="part0_clk_50m" component1="part0" component2="CLK_50M">
 			<connection_map name="part0_clk_50m_1" c1_st_index="17" c1_end_index="17" c2_st_index="0" c2_end_index="0"/>
-		</connection>
-
-		<connection name="part0_clk_156m25_clk2" component1="part0" component2="CLK_156M25_CLK2">
-			<connection_map name="part0_clk_156m25_clk2_1" c1_st_index="18" c1_end_index="19" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-		
-		<connection name="part0_pcie_100m_clk0" component1="part0" component2="PCIE_100M_CLK0">
-			<connection_map name="part0_pcie_100m_clk0_1" c1_st_index="20" c1_end_index="21" c2_st_index="0" c2_end_index="1"/>
-		</connection>
-		
-		<connection name="part0_clk_156m25_clk1" component1="part0" component2="CLK_156M25_CLK1">
-			<connection_map name="part0_clk_156m25_clk1_1" c1_st_index="22" c1_end_index="23" c2_st_index="0" c2_end_index="1"/>
 		</connection>
 
 		<connection name="part0_cam_d" component1="part0" component2="CAM_D">

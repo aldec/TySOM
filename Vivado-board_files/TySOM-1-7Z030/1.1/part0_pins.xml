@@ -23,10 +23,6 @@
 	<pin index="17" name ="CLK_50M" iostandard="LVCMOS33" loc="Y12"/>
 	<pin index="18" name ="CLK_156M25_CLK2N" iostandard="LVCMOS18" loc="J4"/>
 	<pin index="19" name ="CLK_156M25_CLK2P" iostandard="LVCMOS18" loc="J5"/>
-	<pin index="20" name ="PCIE_100M_CLK0N" loc="U5"/>
-	<pin index="21" name ="PCIE_100M_CLK0P" loc="U6"/>
-	<pin index="22" name ="CLK_156M25_CLK1N" loc="W5"/>
-	<pin index="23" name ="CLK_156M25_CLK1P" loc="W6"/>
 	
 	<pin index="24" name ="CAM_DN0" iostandard="LVCMOS18" loc="B2"/>
 	<pin index="25" name ="CAM_DN1" iostandard="LVCMOS18" loc="A4"/>
