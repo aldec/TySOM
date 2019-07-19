@@ -91,7 +91,7 @@ It supports FMC-ADAS as well.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
-To get more information about Deep Learning Using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
+To get more information about Deep Learning using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
 
 An instruction of running AI application on TySOM boards is also available [link](https://www.aldec.com/en/downloads/private/1221).
 
@@ -149,7 +149,7 @@ It supports FMC-ADAS as well.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
-To get more information about Deep Learning Using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
+To get more information about Deep Learning using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
 
 An instruction of running AI application on TySOM boards is also available [link](https://www.aldec.com/en/downloads/private/1221).
 
