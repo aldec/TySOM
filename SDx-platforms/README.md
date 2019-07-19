@@ -91,6 +91,10 @@ It supports FMC-ADAS as well.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
+To get more information about Deep Learning Using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
+
+An instruction of running AI application on TySOM boards is also available [link](https://www.aldec.com/en/downloads/private/1221).
+
 <a name="tysom_3_zu7"/>
 
 ## TySOM-3-ZU7EV
@@ -144,6 +148,10 @@ This platform is designed to be used in AI applications in SDx 2018.3 version.
 It supports FMC-ADAS as well.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
+
+To get more information about Deep Learning Using Zynq US+ FPGA board go to [Aldec website](https://www.aldec.com/en/solutions/embedded/deep-learning-using-fpga).
+
+An instruction of running AI application on TySOM boards is also available [link](https://www.aldec.com/en/downloads/private/1221).
 
 <a name="tysom_3_zu7_fmc2_li_imx274mipi_fmc_v1_1"/>
 
