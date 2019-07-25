@@ -11,6 +11,11 @@
 		#size-cells = <2>;
 		compatible = "simple-bus";
 		ranges ;
+		DDR4_PL: ddr4@000500000000 {
+			compatible = "xlnx,ddr4-2.2";
+			device_type = "memory";
+			reg = <0x00000005 0x00000000 0x0 0x20000000>;
+		};
 		axi_iic_0: i2c@a000b000 {
 			#address-cells = <1>;
 			#size-cells = <0>;
@@ -435,7 +440,7 @@
 			xlnx,all-outputs-2 = <0x0>;
 			xlnx,dout-default = <0x00000000>;
 			xlnx,dout-default-2 = <0x00000000>;
-			xlnx,gpio-width = <0x2>;
+			xlnx,gpio-width = <0x3>;
 			xlnx,gpio2-width = <0x20>;
 			xlnx,interrupt-present = <0x0>;
 			xlnx,is-dual = <0x0>;
