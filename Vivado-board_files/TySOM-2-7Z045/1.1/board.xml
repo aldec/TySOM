@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="aldec.com" name="TySOM-2-7Z045" display_name="TySOM-2-7Z045" url="https://www.aldec.com/en/products/embedded/tysom" preset_file="preset.xml">
+<board schema_version="2.0" vendor="aldec.com" name="TySOM_2_7Z045" display_name="TySOM-2-7Z045" url="https://www.aldec.com/en/products/embedded/tysom" preset_file="preset.xml">
 	<images>
 		<image name="TySOM_board.png" display_name="TySOM-2-7Z045 BOARD" sub_type="board">
 			<description>TySOM-2-7Z045 Board</description>
