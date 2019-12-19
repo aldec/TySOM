@@ -3,6 +3,7 @@
    - [SDx-platforms](#tysom_sdx_platforms)
      - [How to use TySOM platform with SDx](#tysom_sdx_platform_use)
    - [Vivado - board definition files](#tysom_board_def_files)
+   - [PetaLinux - BSP](#tysom_petalinux_bsp)
    - [Supported OSes](#tysom_supported_os)
      - [Ubuntu-Linaro](#ubuntu_linaro_os)
      - [Debian-Linaro](#debian_linaro_os)
@@ -83,6 +84,25 @@ The board definition files are provided for the following Aldec TySOM boards:
 The board definition files contain also FMC cards definitions:
 -	[FMC-ADAS](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
+<a name="tysom_petalinux_bsp"/>
+
+## PetaLinux - BSP
+
+Many embedded hardware platforms require small-sized embedded Linux OS and filesystem.
+Aldec TySOM boards which based on Xilinx Zynq can be used in any embedded systems.
+For this purpose, Xilinx PetaLinux tools can be used to generate a custom filesystem image with additional built-in libraries, applications and system tools.
+
+The board definition files for TySOM boards can be found in Petalinux_BSP folder.
+
+[Document](https://github.com/Aldecinc/TySOM/blob/master/Petalinux_BSP/Preparing_Custom_Linux_Boot_Files_with_Xilinx_Petalinux_Tools.pdf) contains all necessary information about building PetaLinux OS and filesystem for TySOM boards.
+
+The PetaLinux BSP files are provided for the following Aldec TySOM boards:
+-	[TySOM-3A (Xilinx Zynq UltraScale+ ZU19EG)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_ultrascale_mpsoc_boards/tysom_3a)
+-	[TySOM-3 (Xilinx Zynq UltraScale+ Zu7EV)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_ultrascale_mpsoc_boards/tysom_3)
+
+The PetaLinux BSP files are provided for the following PetaLinux versions:
+- 2018.3
+
 <a name="tysom_supported_os"/>
 
 ## Supported OSes
@@ -140,7 +160,7 @@ Yocto project provides all necessary functions and scripts to build a custom Lin
 
 <a name="petalinux_os"/>
 
-4. Linux OS build system: Petalinux tools 
+4. Linux OS build system: Petalinux tools
 
 <img width="298" height="68" src="images/petalinuxlogo.png">
 
@@ -160,7 +180,7 @@ Filesystem Version: 2017.2
 
 <img width="345" height="150" src="images/VxWorkslogo.png">
 
-The VxWorks is an industry’s real-time operating system which provides a set of very important features such as: safety and security. 
+The VxWorks is an industry’s real-time operating system which provides a set of very important features such as: safety and security.
 
 VxWorks version: 7
 
@@ -186,7 +206,7 @@ freeRTOS version: 8.2.3
 
 7. OpenWrt
 
-<img width="312" height="71" src="images/openWrtLogo.png"> 
+<img width="312" height="71" src="images/openWrtLogo.png">
 
 The OpenWrt is a GNU/Linux distribution for embedded devices such as wireless routers. It is built to be easily modifiable operating system for routers.
 
@@ -210,4 +230,3 @@ Aldec provides configuration for Yocto project for the following list of boards:
 -	[TySOM-3 (Xilinx Zynq UltraScale+ ZU7EV)](https://www.aldec.com/en/products/emulation/tysom_boards/zynq_ultrascale_mpsoc_boards/tysom_3)
 
 [Document](https://github.com/Aldecinc/TySOM/blob/master/Yocto_Project/How_to_configure_and_build_Linux_OS_with_Yocto_project.pdf) contains all necessary information about using the Yocto Project to build a custom Linux for the boards.
-
