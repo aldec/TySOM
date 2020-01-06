@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<ip_presets schema="1.0">
+
+   <ip_preset preset_proc_name="pcie_refclk_preset">
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk0_m2c_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="125"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="i2c_addr_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="2"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pciex1_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X1" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip>	
+    <ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X1" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="pciex2_fmc1_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X2" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X2" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+   </ip_preset>
+   
+   <ip_preset preset_proc_name="pciex4_fmc1_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X4" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X4" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+   </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex8_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X8" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X8" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pcie_perstn_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="recoveryb_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="8"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="rstb_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="8"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qspi_fmc1_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_SPI_MODE" value="2"/> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pciex1_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X1" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip>	
+    <ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X1" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="pciex2_fmc2_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X2" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X2" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+   </ip_preset>
+   
+   <ip_preset preset_proc_name="pciex4_fmc2_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X4" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X4" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+   </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex8_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X8" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="5.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" />
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X8" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="5.0_GT/s" />
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="100_MHz" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pcie_perstn_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="1"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="recoveryb_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="7"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="rstb_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="7"/> 
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0"/> 
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qspi_fmc2_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_SPI_MODE" value="2"/> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+</ip_presets>
