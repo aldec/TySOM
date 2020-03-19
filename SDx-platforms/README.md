@@ -99,7 +99,7 @@ An instruction of running AI application on TySOM boards is also available [link
 
 ## TySOM-3-ZU7EV
 
-Note: This platform is supported in Xilinx SDx 2017.4 or newer.
+Note: This platform is supported in Xilinx SDx 2017.4 or newer up to 2018.2.
 
 The configuration for Aldec TySOM-3-ZU7EV board consists of:
 
@@ -135,7 +135,7 @@ Current Monitor |
 
 ## TySOM-3-ZU7_FMC1_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.4 or newer.
+Note: This platform is supported in Xilinx SDx 2017.4 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -167,7 +167,7 @@ Note: This camera cannot be connected directly to the TySOM-3 board, special ada
 
 ## TySOM-2-7Z100
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 The configuration for Aldec TySOM-2-7Z100 board consists of:
 
@@ -203,7 +203,7 @@ Temperature Sensor |
 
 ### TySOM-2-7Z100_FMC2_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -211,7 +211,7 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 ### TySOM-2-7Z100_FMC2_FMC-VISION_FMC3_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -229,13 +229,13 @@ This is a copy of TySOM-2-7Z100_FMC2_FMC-VISION_FMC3_FMC-ADAS platform with shor
 
 [Link to the FMC-VISION board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_vision)
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 <a name="tysom_2_7z045"/>
 
 ## TySOM-2-7Z045
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 The configuration for Aldec TySOM-2-7Z045 board consists of:
 
@@ -271,7 +271,7 @@ Temperature Sensor |
 
 ### TySOM-2-7Z045_FMC2_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -279,7 +279,7 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 ### TySOM-2-7Z045_FMC2_FMC-VISION_FMC3_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -295,7 +295,7 @@ This is a copy of TySOM-2-7Z045_FMC2_FMC-VISION_FMC3_FMC-ADAS platform with shor
 
 ## TySOM-2A-7Z030
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 The configuration for Aldec TySOM-2A-7Z030 board consists of:
 
@@ -332,7 +332,7 @@ Temperature Sensor |
 
 ### TySOM-2A-7Z030_FMC-ADAS
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 [Link to the FMC-ADAS board page](https://www.aldec.com/en/products/emulation/daughter_cards/fmc_daughter/fmc_adas)
 
@@ -340,7 +340,7 @@ Note: This platform is supported in Xilinx SDx 2017.2 or newer.
 
 ## TySOM-1-7Z030
 
-Note: This platform is supported in Xilinx SDx 2017.2 or newer.
+Note: This platform is supported in Xilinx SDx 2017.2 or newer up to 2018.2.
 
 The configuration for Aldec TySOM-1-7Z030 board consists of:
 
