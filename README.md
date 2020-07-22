@@ -1,3 +1,12 @@
+# Attention!
+This repository is discontinued. To get updated board resources please visit one of the following repositories:
+-	[TySOM-3A-ZU19EG](https://github.com/aldec/TySOM-3A-ZU19EG)
+-	[TySOM-3-ZU7EV](https://github.com/aldec/TySOM-3-ZU7EV)
+-	[TySOM-2-7Z100](https://github.com/aldec/TySOM-2-7Z100)
+-	[TySOM-2A-7Z030](https://github.com/aldec/TySOM-2A-7Z030)
+-	[TySOM-1-7Z030](https://github.com/aldec/TySOM-1-7Z030)
+-	[TySOM-1A-7Z010](https://github.com/aldec/TySOM-1A-7Z010)
+
 # Table of Content
 1. [TySOM](#tysom_main)
    - [SDx-platforms](#tysom_sdx_platforms)
